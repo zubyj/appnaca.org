@@ -1,3 +1,10 @@
+body {
+    padding-top:10rem;
+}
+
 .navbar-brand {
-    width:60%
+    width:60%;
+}
+
+#textCarousel {
 }
