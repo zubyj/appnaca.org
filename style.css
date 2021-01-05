@@ -1,5 +1,5 @@
 body {
-    padding-top:10rem;
+    padding-top:8rem;
 }
 
 .navbar-brand {
@@ -11,5 +11,9 @@ body {
 }
 
 .carousel-item {
-    background-color:#006600
+    background-color:#006600;
+}
+
+.card {
+    background-color:#006600 !important;
 }
