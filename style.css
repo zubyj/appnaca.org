@@ -2,10 +2,13 @@ body {
     padding-top:8rem;
 }
 
-
 .navbar-brand {
     width:60%;
-} 
+}
+
+.nav-link {
+    color:#006600;
+}
 
 .carousel-item {
     color:#006600;
@@ -16,6 +19,10 @@ body {
     border: 2px solid black;
     margin:auto;
     background-image:url("img/moroccan-flower.png") !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color:green !important;
 }
 
 .card-header {
