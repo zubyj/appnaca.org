@@ -18,12 +18,11 @@ Created by Zuby Javed.
         <!-- Facebook Plugin -->
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="LNKPY0pv"></script>
-
-        <navbar class="navbar navbar-expand-lg fixed-top bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container">
                 <!-- APPNA Logo-->
                 <a class="navbar-brand" href=#>
-                    <img src="img/logo.png" id="logo" alt="APPNA Logo" />
+                    <img src="img/logo.png" alt="APPNA Logo" />
                 </a>
                 <!-- Collapsible Navbar-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation bar">
@@ -31,7 +30,7 @@ Created by Zuby Javed.
                         <i class="fas fa-bars" style="color:#006600; font-size:35px;"></i>
                     </span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbar">
+                <div id="navbar" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto px-4">
                         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item dropdown">
@@ -51,25 +50,25 @@ Created by Zuby Javed.
                     </ul>
                 </div>
             </div>
-        </navbar>
+        </nav>
         <!-- Sliding Text & Images-->
         <div class="container-fluid">
             <div id="carouselIndicators" class="carousel slide" data-ride="carousel" id="textCarousel">
-                <div class="carousel-inner text-center text-light ">
+                <div class="carousel-inner text-center">
                     <div class="carousel-item active">
-                        <h2 class="py-3">WELCOME TO APPNA</h1>
-                        <h5 class="py-3">NORTHERN CALIFORNIA CHAPTER</h4>
+                        <h3 class="py-3">WELCOME TO APPNA</h1>
+                        <h5 class="py-3">NORTHERN CALIFORNIA CHAPTER</h5>
                             <img class="d-block w-100" src="img/goldengate.jpg" alt="Golden Gate Bridge" />
                     </div>
                     <div class="carousel-item">
-                        <h2 class="py-3">EVENTS</h2>
-                        <h5 class="py-3">FREE HEALTH CLINIC</h4>
-                        <img class="d-block w-100" src="img/free_clinic.jpg" alt="Golden Gate Bridge" />
+                        <h3 class="py-3">EVENTS</h3>
+                        <h5 class="py-3">FREE HEALTH CLINIC</h5>
+                        <img class="d-block w-100" src="img/free_clinic.jpg" alt="Free Health Clinic Flyer" />
                     </div>
                     <div class="carousel-item">
-                        <h2 class="py-3">EVENTS</h2>
-                        <h5 class="py-3">COVID WEBINAR</h4>
-                        <img class="d-block w-100" src="img/covid_webinar.jpg" alt="Golden Gate Bridge" />
+                        <h3 class="py-3">EVENTS</h3>
+                        <h5 class="py-3">COVID WEBINAR</h5>
+                        <img class="d-block w-100" src="img/covid_webinar.jpg" alt="Covid Webinar Flyer" />
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -83,23 +82,51 @@ Created by Zuby Javed.
             </div>
         </div>
         <!-- Cards & Facebook Plugin-->
-        <div class="container-fluid text-light">
+        <div class="container-fluid">
             <div class="row text-center my-3">
                 <!-- Org Info Cards-->
                 <div class="col-lg-6">
                     <div class="card py-2">
                         <div class="card-header">
-                            <h5>Presidents Message</h5>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#missionCollapse" aria-expanded="true" aria-controls="missionCollapse">
+                                <h5>Presidents Message</h5>
+                            </button>
+                        </div>
+                        <div class="collapse" id="missionCollapse" aria-labelledby="missionSec" data-parent="#accordian">
+                            <div class="card-body">
+                                <p>Strengthening cross-community collaboration to support community services & initiatives.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card py-2">
                         <div class="card-header">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#covidCollapse" aria-expanded="true" aria-controls="covidCollapse">
                             <h5>Covid-19 Updates</h5>
+                            </button>
+                            <div class="collapse" id="covidCollapse" aria-labelledby="missionSec" data-parent="#accordian">
+                                <div class="card-body">
+                                    <h5><a target="_blank" href="https://www.facebook.com/paccbayarea/videos/153119052758541/">Urdu Covid Webinar</a></h5>
+                                    <h5><a target="_blank" href="https://www.facebook.com/135955409917905/videos/223722272165443/">English Covid Webinar</a></h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="card py-2">
                         <div class="card-header">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#boardCollapse" aria-expanded="true" aria-controls="boardCollapse">
                             <h5>Executive Committee</h5>
+                            </button>
+                            <div class="collapse" id="boardCollapse" aria-labelledby="missionSec" data-parent="#accordian">
+                                <div class="card-body text-left">
+                                    <h6>
+                                        President - Dr Humaira Ahmad<br>
+                                        President Elect - Dr Lubna Hasanain<br>
+                                        Secretary - Dr Imtiaz Qureshi
+                                        Treasurer - Dr Saima Javed<br>
+                                        Exec. Director - Dr Shahid Abbasi
+                                    </h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -109,7 +136,6 @@ Created by Zuby Javed.
                 </div>
             </div>
         </div>
-        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -11,19 +11,14 @@ body {
     border: 2px solid black;
 }
 
-.carousel-item {
-    background-color:#006600;
+.card-header {
+    border: 1px solid black;
 }
 
-.carousel-indicators .active{
-    background-color:#006600;
-}
-
-.card {
-    background-color:#006600 !important;
+#covidCollapse {
+    color:#006600 !important;
 }
 
 #fb-plugin {
-    border: 5px solid #006600;
     margin-top:2rem;
 }
