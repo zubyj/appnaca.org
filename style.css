@@ -2,17 +2,32 @@ body {
     padding-top:8rem;
 }
 
+
 .navbar-brand {
     width:60%;
 } 
 
+.carousel-item {
+    color:#006600;
+}
+
 .carousel-item img {
     height:30rem;
     border: 2px solid black;
+    margin:auto;
+    background-image:url("img/moroccan-flower.png") !important;
 }
 
 .card-header {
     border: 1px solid black;
+}
+
+.card-header button {
+    color: #006600;
+}
+
+.card-header a {
+    color: #006600;
 }
 
 #covidCollapse {
@@ -21,4 +36,11 @@ body {
 
 #fb-plugin {
     margin-top:2rem;
+}
+
+@media (min-width: 768px) {
+    .carousel-item img {
+        width: auto !important;
+        height:45rem;
+    }
 }
