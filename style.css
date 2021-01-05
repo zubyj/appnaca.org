@@ -14,8 +14,17 @@ nav {
 
 /* Carousel */
 
+#slides {
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
 .carousel-item {
     color:#006600;
+}
+
+.carousel-item .display-4 {
+    font-size:2rem !important;
 }
 
 .carousel-item img {
@@ -35,7 +44,6 @@ nav {
 }
 
 /* Cards */
-
 .card-header {
     border: 1px solid black;
 }
@@ -73,6 +81,10 @@ nav {
 
 .jumbotron .display-4 {
     font-size:2.5rem;
+}
+
+#contact {
+    margin-top:2rem;
 }
 
 #fb-plugin {
