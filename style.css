@@ -4,7 +4,12 @@ body {
 
 .navbar-brand {
     width:60%;
+} 
+
+.carousel-item img {
+    height:30rem;
 }
 
-#textCarousel {
+.carousel-item {
+    background-color:#006600
 }
