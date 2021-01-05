@@ -4,6 +4,14 @@ nav {
     border-bottom: 2px solid #006600;
 }
 
+#header {
+    background-color:#006600;
+}
+
+#header p {
+    font-size:1rem;
+}
+
 .navbar-brand {
     width:60%;
 }
@@ -29,7 +37,7 @@ nav {
 
 .carousel-item img {
     height:30rem;
-    border: 2px solid black;
+    border: 2px solid #006600;
     margin:auto;
     background-image:url("img/moroccan-flower.png") !important;
 }
