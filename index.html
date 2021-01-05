@@ -15,7 +15,7 @@ Created by Zuby Javed.
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <title>APPNA Northern California</title>
     </head>
-    <body>
+    <body id="body">
         <!-- Facebook Plugin -->
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="LNKPY0pv"></script>
@@ -26,7 +26,7 @@ Created by Zuby Javed.
         <nav class="navbar navbar-expand-lg sticky-top bg-light">
             <div class="container">
                 <!-- APPNA Logo-->
-                <a class="navbar-brand" href=#>
+                <a class="navbar-brand" href="#body">
                     <img src="img/logo.png" alt="APPNA Logo" />
                 </a>
                 <!-- Collapsible Navbar-->
@@ -68,13 +68,17 @@ Created by Zuby Javed.
                     </div>
                     <div class="carousel-item">
                         <h3 class="py-3 display-4 text-dark">EVENTS</h3>
-                        <h5 class="py-3 display-5">FREE HEALTH CLINIC</h5>
-                        <img class="d-block w-100" src="img/free_clinic.jpg" alt="Free Health Clinic Flyer" />
+                        <a class="nav-link" href="https://appnafreeclinicca.org/" target="_blank">
+                            <h5 class="py-3 display-5">FREE HEALTH CLINIC</h5>
+                            <img class="d-block w-100" src="img/free_clinic.jpg" alt="Free Health Clinic Flyer" />
+                        </a>
                     </div>
                     <div class="carousel-item">
                         <h3 class="py-3 display-4 text-dark">EVENTS</h3>
-                        <h5 class="py-3 display-5">COVID WEBINAR</h5>
-                        <img class="d-block w-100" src="img/covid_webinar.jpg" alt="Covid Webinar Flyer" />
+                        <a class="nav-link" href="https://www.facebook.com/paccbayarea/videos/234234834764052/" target="_blank">
+                            <h5 class="py-3 display-5">COVID WEBINAR</h5>
+                            <img class="d-block w-100" src="img/covid_webinar.jpg" alt="Covid Webinar Flyer" />
+                        </a>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
