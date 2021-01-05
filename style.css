@@ -2,6 +2,8 @@ body {
     padding-top:8rem;
 }
 
+/* Navigation Bar */
+
 .navbar-brand {
     width:60%;
 }
@@ -9,6 +11,8 @@ body {
 .nav-link {
     color:#006600;
 }
+
+/* Carousel */
 
 .carousel-item {
     color:#006600;
@@ -25,6 +29,13 @@ body {
     background-color:green !important;
 }
 
+#backArrow, #forwardArrow {
+    color: black;
+    font-size:2rem;
+}
+
+/* Cards */
+
 .card-header {
     border: 1px solid black;
 }
@@ -33,12 +44,27 @@ body {
     color: #006600;
 }
 
+.card-header button:hover {
+    color:black;
+    text-decoration:none;
+}
+
 .card-header a {
     color: #006600;
 }
 
+.card-body a:hover {
+    color:black;
+    text-decoration:none;
+}
+
 #covidCollapse {
     color:#006600 !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color:#006600 !important;
 }
 
 #fb-plugin {
@@ -46,6 +72,10 @@ body {
 }
 
 @media (min-width: 768px) {
+    #carouselIndicators, #slides {
+        width:800px;
+    }
+
     .carousel-item img {
         width: auto !important;
         height:45rem;
