@@ -1,9 +1,3 @@
-/* Navigation Bar */
-
-nav {
-    border-bottom: 2px solid #660000;
-}
-
 #header {
     background-color:#006600;
 }
@@ -12,12 +6,24 @@ nav {
     font-size:1rem;
 }
 
+/* Navigation Bar */
+
+nav {
+    border-bottom: 2px solid #660000;
+}
+
 .navbar-brand {
     width:60%;
 }
 
 .nav-link {
-    color:#006600;
+    color:#006600 !important;
+}
+
+.nav-link:hover {
+    text-decoration:none;
+    font-weight:bold;
+    color: #660000 !important;
 }
 
 /* Carousel */
@@ -27,9 +33,10 @@ nav {
     margin-bottom:2rem;
 }
 
-.carousel-item {
-    color:#006600;
+.carousel-item, .carousel-item a{
+    color:#006600 !important;
 }
+
 
 .carousel-item .display-4 {
     font-size:2rem !important;
@@ -49,16 +56,17 @@ nav {
 
 /* Cards */
 .card-header {
-    border: 1px solid #006600;
+    border: 2px solid #660000;
 }
 
 .card-header button {
-    color: #660000;
+    color: #006600;
 }
 
 .card-header button:hover {
-    color:black;
+    color:white;
     text-decoration:none;
+    background-color:#660000;
 }
 
 .card-header a {
