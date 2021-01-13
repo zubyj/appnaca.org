@@ -26,6 +26,8 @@ nav {
     color: #660000 !important;
 }
 
+
+
 /* Carousel */
 
 #slides {
@@ -77,9 +79,15 @@ nav {
     background-color:#006600;
 }
 
+
+.card-body a{
+    color:#ffffff;
+}
+
 .card-body a:hover {
-    color:black;
     text-decoration:none;
+    color:#ffffff;
+    background-color: #660000;
 }
 
 #covidCollapse {
