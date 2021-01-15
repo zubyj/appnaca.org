@@ -9,7 +9,7 @@
 /* Navigation Bar */
 
 nav {
-    border-bottom: 2px solid #660000;
+    border-bottom: 1px solid #660000;
 }
 
 .navbar-brand {
@@ -39,14 +39,17 @@ nav {
     color:#006600 !important;
 }
 
+.carousel-item .display-4{
+    font-size:2rem;
+}
 
-.carousel-item .display-4 {
-    font-size:2rem !important;
+.carousel-item .display-5 {
+    font-size:1.5rem;
 }
 
 .carousel-item img {
     height:30rem;
-    border: 2px solid #660000;
+    border: 1px solid #660000;
     margin:auto;
     background-image:url("img/moroccan-flower.png") !important;
 }
@@ -58,7 +61,15 @@ nav {
 
 /* Cards */
 .card-header {
-    border: 2px solid #660000;
+    border: 1px solid #660000;
+}
+
+.card-header h3 {
+    font-size:1rem;
+}
+
+.card-header a {
+    color: #006600;
 }
 
 .card-header button {
@@ -71,14 +82,13 @@ nav {
     background-color:#660000;
 }
 
-.card-header a {
-    color: #006600;
-}
-
 .card-body {
     background-color:#006600;
 }
 
+.card-body h3, .card-body .lead {
+    font-size: 1rem;
+}
 
 .card-body a{
     color:#ffffff;
@@ -103,16 +113,25 @@ nav {
     background-color:#006600 !important;
 }
 
-.jumbotron .display-4 {
-    font-size:2.5rem;
-}
-
 #contact {
     padding:30px;
 }
 
+#contact .lead {
+    font-size:1rem;
+}
+
+#email {
+    display:inline-block;
+}
+
+#email:hover {
+    color:#006600;
+    background-color:#ffffff;
+}
+
 #fb-plugin {
-    border: 2px solid #660000;
+    border: 1px solid #660000;
     background-image:url("img/moroccan-flower.png")
 }
 
@@ -130,4 +149,10 @@ nav {
         width: auto !important;
         height:45rem;
     }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    /* Styles */
+
 }
