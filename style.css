@@ -148,9 +148,3 @@ nav {
         height:45rem;
     }
 }
-
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-    /* Styles */
-
-}

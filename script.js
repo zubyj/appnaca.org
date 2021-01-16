@@ -1,3 +1,14 @@
+$(function(){
+    /* All mobile devices */
+    if ($(window).width() < 992) {
+        $('nav').removeClass('sticky-top')
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+    else {
+        $('nav').addClass('sticky-top')
+    }
+});
+
 let email = document.getElementById("email");
 // Copies the email to clipboard on click.
 email.onclick = function() {
@@ -11,3 +22,4 @@ email.onclick = function() {
     setTimeout(() => {  email.innerHTML = "appnaca@gmail.com"; }, 3000);
 
 };
+
