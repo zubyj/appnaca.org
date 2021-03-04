@@ -1,3 +1,6 @@
+ #body {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); }
+
 #header {
     background-color:#006600;
 }
@@ -10,6 +13,7 @@
 
 nav {
     border-bottom: 1px solid #660000;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .navbar-brand {
@@ -55,6 +59,9 @@ nav {
 #backArrow, #forwardArrow {
     color: #660000;
     font-size:2rem;
+}
+.card {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 /* Cards */
