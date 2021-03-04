@@ -1,5 +1,6 @@
  #body {
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); }
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+ }
 
 #header {
     background-color:#006600;
@@ -13,11 +14,11 @@
 
 nav {
     border-bottom: 1px solid #660000;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
 }
 
 .navbar-brand {
-    width:60%;
+    width: 50%;
 }
 
 .nav-link {
@@ -26,15 +27,19 @@ nav {
 
 .nav-link:hover {
     text-decoration:none;
-    font-weight:bold;
-    color: #660000 !important;
+    font-weight:bolder;
+    border: 1px solid white;
 }
+
+/* .nav-item {
+    margin-left: 10px;
+} */
 
 /* Carousel */
 
 #slides {
-    margin-top:2rem;
-    margin-bottom:2rem;
+    margin-top:3rem;
+    margin-bottom:5rem;
 }
 
 .carousel-item, .carousel-item a{
@@ -60,13 +65,18 @@ nav {
     color: #660000;
     font-size:2rem;
 }
+
+#cards {
+    margin-bottom: 3rem;
+}
+
 .card {
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 /* Cards */
 .card-header {
-    border: 1px solid #660000;
+    background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
 }
 
 .card-header h3 {
@@ -113,39 +123,27 @@ nav {
     font-weight:normal;
 }
 
-/* Contact */
-.jumbotron {
-    background-color:#006600 !important;
-}
-
-#contact {
-    padding:30px;
-}
-
-#contact .lead {
-    font-size:1rem;
-}
-
-#email {
-    display:inline-block;
-}
-
-#email:hover {
-    color:#006600;
-    background-color:#ffffff;
-}
-
 #fb-plugin {
-    border: 1px solid #660000;
-    background-image:url("img/moroccan-flower.png")
+    background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+    margin-bottom: 1rem;
 }
 
-.footer-copyright {
+footer {
     background-color:#006600;
     border-top: 1px solid #660000;
+    border-bottom: 1px solid #660000;
 }
 
 @media (min-width: 768px) {
+    .navbar-brand {
+        width: auto;
+    }
+
+    .nav-item {
+        margin-left: 20px;
+    }
+
+
     #carouselIndicators, #slides {
         width:800px;
     }
@@ -153,5 +151,9 @@ nav {
     .carousel-item img {
         width: auto !important;
         height:45rem;
+    }
+
+    #slides {
+        margin-bottom: 10rem;
     }
 }
