@@ -64,11 +64,8 @@ nav {
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-#cards {
-    margin-bottom: 3rem;
-}
-
 .card {
+    background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%);
     margin-bottom: 2rem;
 }
 
@@ -78,9 +75,8 @@ nav {
 } */
 
 .card-header {
-    background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%);
     border: 2px solid #660000;
-    border-radius:
+    border-radius: 3px;
 }
 
 .card-header h3 {
@@ -97,8 +93,6 @@ nav {
     background-color:#660000;
 }
 
-.card-body {
-    background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%);}
 
 .card-body h3, .card-body .lead {
     font-size: 1rem;
@@ -181,6 +175,15 @@ footer {
     .slides-header {
         font-size: 3.5rem !important;
     }
+
+    .slides-text {
+        font-size: 2rem !important;
+    }
+
+    .card {
+        margin-bottom: 4rem;
+    }
+
 
     #fb-header {
         margin-bottom: 3rem;
