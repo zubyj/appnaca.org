@@ -18,8 +18,9 @@ email.onclick = function() {
     el.select();
     document.execCommand("copy")
     document.body.removeChild(el);
-    email.innerHTML = "Copied to clipboard!";
-    setTimeout(() => {  email.innerHTML = "appnaca@gmail.com"; }, 3000);
+    oldText = email.innerHTML
+    email.innerHTML = "<span style='color: black;'>Copied to clipboard!</span>";
+    setTimeout(() => {  email.innerHTML = oldText; }, 3000);
 
 };
 
