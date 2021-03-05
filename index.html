@@ -61,102 +61,106 @@ Created by Zuby Javed.
             </div>
         </nav>
         <!-- Sliding Text & Images-->
-        <div id="slides" class="container-fluid">
-            <div id="carouselIndicators" class="carousel slide text-center" data-ride="carousel" id="textCarousel">
-                <div class="carousel-inner text-center">
-                    <div class="carousel-item active">
-                        <h1 class="py-3 display-4 text-dark">WELCOME TO APPNA</h1>
-                        <h2 class="py-3 display-5">NORTHERN CALIFORNIA CHAPTER</h2>
-                        <img class="d-block w-100" src="img/goldengate.jpg" alt="Golden Gate Bridge" />
+        <div id="slides-bg" class="container-fluid" >
+            <div id="slides" class="container-fluid">
+                <div id="carouselIndicators" class="carousel slide text-center" data-ride="carousel" id="textCarousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <h1 class="py-3 display-4 text-light">WELCOME TO APPNA</h1>
+                            <h2 class="py-3 display-5">NORTHERN CALIFORNIA CHAPTER</h2>
+                            <img class="d-block w-100" src="img/goldengate.jpg" alt="Golden Gate Bridge" />
+                        </div>
+                        <div class="carousel-item">
+                            <h1 class="py-3 display-4 text-dark">EVENTS</h1>
+                            <a href="https://appnafreeclinicca.org/" target="_blank">
+                                <h2 class="py-3 display-5">FREE HEALTH CLINIC</h2>
+                                <img class="d-block w-100" src="img/free_clinic.jpg" alt="Free Health Clinic Flyer" />
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <h1 class="py-3 display-4 text-dark">EVENTS</h1>
+                            <a href="https://www.facebook.com/paccbayarea/videos/234234834764052/" target="_blank">
+                                <h2 class="py-3 display-5">COVID WEBINAR</h2>
+                                <img class="d-block w-100" src="img/covid_webinar.jpg" alt="Covid Webinar Flyer" />
+                            </a>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <h1 class="py-3 display-4 text-dark">EVENTS</h1>
-                        <a href="https://appnafreeclinicca.org/" target="_blank">
-                            <h2 class="py-3 display-5">FREE HEALTH CLINIC</h2>
-                            <img class="d-block w-100" src="img/free_clinic.jpg" alt="Free Health Clinic Flyer" />
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <h1 class="py-3 display-4 text-dark">EVENTS</h1>
-                        <a href="https://www.facebook.com/paccbayarea/videos/234234834764052/" target="_blank">
-                            <h2 class="py-3 display-5">COVID WEBINAR</h2>
-                            <img class="d-block w-100" src="img/covid_webinar.jpg" alt="Covid Webinar Flyer" />
-                        </a>
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                        <i id="backArrow" class="fas fa-arrow-left"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                        <i id="forwardArrow" class="fas fa-arrow-right"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                    <i id="backArrow" class="fas fa-arrow-left"></i>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                    <i id="forwardArrow" class="fas fa-arrow-right"></i>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
         <!-- Cards & Facebook Plugin-->
-        <div class="container">
-            <div class="row text-center my-3">
-                <div class="col-lg-6" id="cards">
-                    <div class="card py-2">
-                        <div class="card-header">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#covidCollapse" aria-expanded="true" aria-controls="covidCollapse">
-                                <h3>Covid-19 Updates</h3>
-                            </button>
+        <div class="container-fluid" id="cards-fb-bg">
+            <div class="container">
+                <div class="row text-center my-3">
+                    <div class="col-lg-6" id="cards">
+                        <div class="card py-2">
+                            <div class="card-header">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#covidCollapse" aria-expanded="true" aria-controls="covidCollapse">
+                                    <h3>Covid-19 Updates</h3>
+                                </button>
+                            </div>
+                            <div class="collapse" id="covidCollapse" aria-labelledby="missionSec" data-parent="#accordian">
+                                <div class="card-body">
+                                    <h3><a target="_blank" href="https://www.facebook.com/paccbayarea/videos/153119052758541/">Urdu Covid Webinar</a></h3>
+                                    <h3><a target="_blank" href="https://www.facebook.com/135955409917905/videos/223722272165443/">English Covid Webinar</a></h3>
+                                </div>
+                            </div>
                         </div>
-                        <div class="collapse" id="covidCollapse" aria-labelledby="missionSec" data-parent="#accordian">
-                            <div class="card-body">
-                                <h3><a target="_blank" href="https://www.facebook.com/paccbayarea/videos/153119052758541/">Urdu Covid Webinar</a></h3>
-                                <h3><a target="_blank" href="https://www.facebook.com/135955409917905/videos/223722272165443/">English Covid Webinar</a></h3>
+                        <div class="card py-2">
+                            <div class="card-header">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#missionCollapse" aria-expanded="true" aria-controls="missionCollapse">
+                                    <h3>Presidents Message</h3>
+                                </button>
+                            </div>
+                            <div class="collapse" id="missionCollapse" aria-labelledby="missionSec" data-parent="#accordian">
+                                <div class="card-body text-light">
+                                    <p class="lead">Strengthening cross-community collaboration to support community services & initiatives.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card py-2">
+                            <div class="card-header">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#boardCollapse" aria-expanded="true" aria-controls="boardCollapse">
+                                    <h3>Executive Committee</h3>
+                                </button>
+                            </div>
+                            <div class="collapse" id="boardCollapse" aria-labelledby="missionSec" data-parent="#accordian">
+                                <div class="card-body text-light">
+                                    <p class="lead" style="text-align:center;">
+                                        President - Dr Humaira Ahmad<br>
+                                        President Elect - Dr Lubna Hasanain<br>
+                                        Secretary - Dr Imtiaz Qureshi<br>
+                                        Treasurer - Dr Saima Javed<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card py-2">
+                            <div class="card-header">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#contactCollapse" aria-expanded="true" aria-controls="covidCollapse">
+                                    <h3>Contact</h3>
+                                </button>
+                            </div>
+                            <div class="collapse" id="contactCollapse" aria-labelledby="missionSec" data-parent="#accordian">
+                                <div class="card-body text-light">
+                                    <div id="email"><p class="lead">appnaca@gmail.com</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card py-2">
-                        <div class="card-header">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#missionCollapse" aria-expanded="true" aria-controls="missionCollapse">
-                                <h3>Presidents Message</h3>
-                            </button>
-                        </div>
-                        <div class="collapse" id="missionCollapse" aria-labelledby="missionSec" data-parent="#accordian">
-                            <div class="card-body text-light">
-                                <p class="lead">Strengthening cross-community collaboration to support community services & initiatives.</p>
-                            </div>
-                        </div>
+                    <!-- Facebook Plugin-->
+                    <div id="fb-plugin" class="col-sm-12 col-lg-6">
+                         <h3 class="display-4" id="fb-header">Check out our Facebook</h3>
+                        <div class="fb-page" data-href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" data-tabs="timeline" data-width="450" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/">APPNA, Northern California Chapter.</a></blockquote></div>
                     </div>
-                    <div class="card py-2">
-                        <div class="card-header">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#boardCollapse" aria-expanded="true" aria-controls="boardCollapse">
-                                <h3>Executive Committee</h3>
-                            </button>
-                        </div>
-                        <div class="collapse" id="boardCollapse" aria-labelledby="missionSec" data-parent="#accordian">
-                            <div class="card-body text-light">
-                                <p class="lead" style="text-align:center;">
-                                    President - Dr Humaira Ahmad<br>
-                                    President Elect - Dr Lubna Hasanain<br>
-                                    Secretary - Dr Imtiaz Qureshi<br>
-                                    Treasurer - Dr Saima Javed<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card py-2">
-                        <div class="card-header">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#contactCollapse" aria-expanded="true" aria-controls="covidCollapse">
-                                <h3>Contact</h3>
-                            </button>
-                        </div>
-                        <div class="collapse" id="contactCollapse" aria-labelledby="missionSec" data-parent="#accordian">
-                            <div class="card-body text-light">
-                                <div id="email"><p class="lead">appnaca@gmail.com</p></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Facebook Plugin-->
-                <div id="fb-plugin" class="col-sm-12 col-lg-6">
-                     <h3 class="display-4" id="fb-header">Check out our Facebook</h3>
-                    <div class="fb-page" data-href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" data-tabs="timeline" data-width="450" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/">APPNA, Northern California Chapter.</a></blockquote></div>
                 </div>
             </div>
         </div>
