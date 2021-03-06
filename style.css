@@ -1,13 +1,4 @@
-#header {
-    background-color:#006600;
-}
-
-#header p {
-    font-size:1rem;
-}
-
 /* Navigation Bar */
-
 nav {
     border-bottom: 1px solid #660000;
 }
@@ -28,8 +19,8 @@ nav {
 
 /* Carousel */
 #slides-bg {
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-    padding-top: 1rem;
+    background: linear-gradient(to top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;    padding-top: 1rem;
     padding-bottom: 3rem;
  }
 
@@ -57,25 +48,24 @@ nav {
     font-size:2rem;
 }
 
+/* Cards and Facebook  Plugin */
 #cards-fb-bg {
-    border-top: 2px solid #660000;
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border-top: 1px solid #006600;
+    border-bottom: 1px solid #660000;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .card {
-    background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%);
+    width: 20rem;
     margin-bottom: 2rem;
+    background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%);
 }
 
-/* Cards */
-/* .card-header {
-    background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
-} */
-
 .card-header {
-    border: 2px solid #660000;
+    border: 1px solid #006600;
     border-radius: 3px;
 }
 
@@ -93,6 +83,9 @@ nav {
     background-color:#660000;
 }
 
+.card-body {
+    font-family: sans-serif;
+}
 
 .card-body h3, .card-body .lead {
     font-size: 1rem;
@@ -104,7 +97,7 @@ nav {
 
  .card-body p{
     color: black;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 .card-body a:hover {
@@ -136,7 +129,7 @@ nav {
 }
 
 #fb-plugin {
-    border: 2px solid #660000;
+    border: 1px solid #006600;
     border-radius: 10px;
     margin-bottom: 1rem;
     background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%);}
@@ -144,6 +137,7 @@ nav {
 footer {
     background-color:#006600;
     border-bottom: 1px solid #660000;
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -181,6 +175,7 @@ footer {
     }
 
     .card {
+        width: 25rem;
         margin-bottom: 4rem;
     }
 
