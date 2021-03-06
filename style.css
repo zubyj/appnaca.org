@@ -2,6 +2,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.section-header {
+    font-size: 1.5rem;
+    color: #222;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 /* Navigation Bar */
 
 .navbar-brand {
@@ -20,13 +27,13 @@ html {
 
 /* Carousel */
 #slides-bg {
-    background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     padding-bottom: 3rem;
  }
 
  .slides-header {
     font-size:2.1rem !important;
-    font-weight: bold;
+    color: #222;
 }
 
 .carousel-item, .carousel-item a{
@@ -47,11 +54,11 @@ html {
     font-size:2rem;
 }
 
-/* Cards and Facebook  Plugin */
-#cards-fb-bg {
-    background-color: #DCD9D4;
+/* Cards */
+#cards {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 .card {
@@ -59,7 +66,7 @@ html {
     margin-bottom: 2rem;
 }
 
-.card-header h3 {
+.card-header h3{
     font-size:1.1rem;
 }
 
@@ -116,16 +123,14 @@ html {
     font-weight: bolder;
 }
 
-#fb-header {
-    padding-top: 1rem;
-    font-size: 2rem;
-    color: #006600;
+#fb-container {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 #fb-plugin {
     margin-bottom: 1rem;
-    background-image: linear-gradient(to top, #fdfcfb 0%, #e2d1c3 100%);
 }
+
 
 footer {
     background-color:#006600;
@@ -166,11 +171,17 @@ footer {
         font-size: 2rem !important;
     }
 
-    .card {
-        width: 25rem;
-        margin-bottom: 4rem;
+    .section-header {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
+    .card {
+        margin-bottom: 4rem;
+        width: 15rem;
+    }
 
     #fb-header {
         margin-bottom: 3rem;
