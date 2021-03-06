@@ -1,7 +1,8 @@
-/* Navigation Bar */
-nav {
-    border-bottom: 1px solid #660000;
+html {
+    scroll-behavior: smooth;
 }
+
+/* Navigation Bar */
 
 .navbar-brand {
     width: 50%;
@@ -19,8 +20,7 @@ nav {
 
 /* Carousel */
 #slides-bg {
-    background: linear-gradient(to top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;    padding-top: 1rem;
+    background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
     padding-bottom: 3rem;
  }
 
@@ -39,7 +39,6 @@ nav {
 
 .carousel-item img {
     height:30rem;
-    border: 1px solid #660000;
     margin:auto;
 }
 
@@ -51,9 +50,6 @@ nav {
 /* Cards and Facebook  Plugin */
 #cards-fb-bg {
     background-color: #DCD9D4;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-    border-top: 1px solid #006600;
-    border-bottom: 1px solid #660000;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -61,12 +57,6 @@ nav {
 .card {
     width: 20rem;
     margin-bottom: 2rem;
-    background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%);
-}
-
-.card-header {
-    border: 1px solid #006600;
-    border-radius: 3px;
 }
 
 .card-header h3 {
@@ -106,6 +96,10 @@ nav {
     color: #660000;
 }
 
+.fa-virus, .fa-quote-right, .fa-handshake, .fa-envelope {
+    font-size:2rem;
+}
+
 #covidCollapse {
     color:#006600 !important;
 }
@@ -129,14 +123,12 @@ nav {
 }
 
 #fb-plugin {
-    border: 1px solid #006600;
-    border-radius: 10px;
     margin-bottom: 1rem;
-    background-image: linear-gradient(to top, #fdfcfb 0%, #e2d1c3 100%);}
+    background-image: linear-gradient(to top, #fdfcfb 0%, #e2d1c3 100%);
+}
 
 footer {
     background-color:#006600;
-    border-bottom: 1px solid #660000;
     font-size: 1rem;
 }
 
