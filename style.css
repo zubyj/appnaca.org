@@ -132,7 +132,7 @@ nav {
     border: 1px solid #006600;
     border-radius: 10px;
     margin-bottom: 1rem;
-    background-image: linear-gradient(to bottom, #fdfcfb 0%, #e2d1c3 100%);}
+    background-image: linear-gradient(to top, #fdfcfb 0%, #e2d1c3 100%);}
 
 footer {
     background-color:#006600;
