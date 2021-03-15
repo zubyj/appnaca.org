@@ -23,9 +23,3 @@ email.onclick = function() {
     email.innerHTML = "<span style='color: black;'>Copied to clipboard!</span>";
     setTimeout(() => {  email.innerHTML = oldText; }, 3000);
 };
-
-$('#contactBtn').on('click' , function () {
-    $('html, body').animate({
-        scrollTop: $('#contactCollapse').offset().top
-        }, 500, 'slow');
-    })
