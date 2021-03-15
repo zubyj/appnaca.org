@@ -138,20 +138,9 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .navbar-brand {
-        width: auto;
-    }
-
-    .nav-link {
-        font-size: 1.1rem;
-    }
-
-    .nav-item {
-        margin-left: 20px;
-    }
-
+    
     #carouselIndicators, #slides {
-        width:800px;
+        width:800px
     }
 
     .carousel-item img {
@@ -185,5 +174,19 @@ footer {
 
     #fb-header {
         margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        width: auto;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .nav-item {
+        margin-left: 20px;
     }
 }

@@ -7,6 +7,7 @@ $(function(){
     else {
         $('nav').addClass('sticky-top')
     }
+
 });
 
 let email = document.getElementById("email");
@@ -21,6 +22,10 @@ email.onclick = function() {
     oldText = email.innerHTML
     email.innerHTML = "<span style='color: black;'>Copied to clipboard!</span>";
     setTimeout(() => {  email.innerHTML = oldText; }, 3000);
-
 };
 
+$('#contactBtn').on('click' , function () {
+    $('html, body').animate({
+        scrollTop: $('#contactCollapse').offset().top
+        }, 500, 'slow');
+    })
