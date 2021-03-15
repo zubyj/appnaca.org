@@ -140,7 +140,7 @@ footer {
 @media (min-width: 768px) {
     
     #carouselIndicators, #slides {
-        width:800px
+        width: auto;
     }
 
     .carousel-item img {
@@ -178,15 +178,12 @@ footer {
 }
 
 @media (min-width: 992px) {
-    .navbar-brand {
-        width: auto;
-    }
-
-    .nav-link {
-        font-size: 1.1rem;
-    }
-
+    
     .nav-item {
         margin-left: 20px;
+    }
+
+    #carouselIndicators, #slides {
+        width:800px;
     }
 }
