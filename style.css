@@ -92,15 +92,14 @@ html {
     color: #006600;
 }
 
+.card-body a:hover {
+    text-decoration: none;
+    font-weight: bolder !important;
+}
+
  .card-body p{
     color: black;
     font-family: sans-serif;
-}
-
-.card-body a:hover {
-    text-decoration:none;
-    font-weight: bolder;
-    color: #660000;
 }
 
 .fa-virus, .fa-quote-right, .fa-handshake, .fa-envelope {
