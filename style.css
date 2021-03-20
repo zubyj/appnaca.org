@@ -66,6 +66,8 @@ html {
     margin-bottom: 2rem;
 }
 
+
+
 .card-header h3{
     font-size:1.1rem;
 }
@@ -80,13 +82,10 @@ html {
     background-color:#660000;
 }
 
-.card-body {
-    font-family: sans-serif;
+.card-body th {
+    color: black;
 }
 
-.card-body h3, .card-body .lead {
-    font-size: 1rem;
-}
 
 .card-body a {
     color: #006600;
@@ -94,12 +93,14 @@ html {
 
 .card-body a:hover {
     text-decoration: none;
+    color: #660000;
     font-weight: bolder !important;
 }
 
- .card-body p{
-    color: black;
-    font-family: sans-serif;
+#pres-message {
+    color: black !important;
+    font-size: 1.2rem;
+    
 }
 
 .fa-virus, .fa-quote-right, .fa-handshake, .fa-envelope {
@@ -114,12 +115,14 @@ html {
     font-weight:normal;
 }
 
-#email p{
-    color: #006600;
+#email .btn{
+    background-color: #006600;
+    color: white !important;
 }
 
-#email:hover {
-    font-weight: bolder;
+#email .btn:hover {
+    text-decoration: none;
+    background-color: #660000;
 }
 
 #fb-container {
