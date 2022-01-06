@@ -5,9 +5,6 @@
 - APPNA = The Association of Physicians of Pakistani Descent of North America
 - American nonprofit organization 
 - Third largest medical association in the United States after American Medical Association and the American Association of Physicians of Indian Origin
-
-<br>
-
 ## Technologies
 - Bootstrap 4 for styling
 - Digitalocean server
