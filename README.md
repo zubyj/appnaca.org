@@ -1,6 +1,6 @@
-# Website for <b>APPNA's Northern California Chapter
+# Website for APPNA's Northern California Chapter
 
-### <u>Every Sunday, we're hosting free medical consultations in San Jose open to anyone. Check out the website for more info. </u>
+### Every Sunday, we're hosting <u>free medical consultations</u> in San Jose, CA. Check out the website for more info.
 
 <br>
 
@@ -12,10 +12,10 @@
 <br>
 
 ## Technologies
-- Digitalocean server
-- Nginx to deploy website
-- ExpressJS to handle email requests.
 - Bootstrap 4 for styling
-- Google domains for pointing appnaca.org to our Digitalocean server. 
+- Digitalocean server
+- Nginx to deploy website on server
+- Google domains for pointing appnaca.org to server
+- ExpressJS to handle email requests.
 
 
