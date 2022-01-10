@@ -16,13 +16,13 @@ html {
 }
 
 .nav-link {
-    font-family: sans-serif;
-    color:#006600 !important;
+    color:#660000;
 }
 
 .nav-link:hover {
     text-decoration: none;
     font-weight: bolder;
+    color:#660000;
 }
 
 /* Carousel */
@@ -143,6 +143,28 @@ html {
 footer {
     background-color:#006600;
     font-size: 1rem;
+}
+
+/* Contact Form */
+#contactArea {
+    padding-top: 3rem;
+}
+
+#contactForm {
+    width: 80%;
+}
+
+#contactHeader {
+}
+
+.form-control {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contactSubmitBtn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {

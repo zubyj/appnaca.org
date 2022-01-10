@@ -1,6 +1,6 @@
 # Website for APPNA's Northern California Chapter
 
-### Every Sunday, we're hosting <b>free medical consultations</b> in San Jose, CA. Check out the website for more info.
+Every Sunday, we're hosting <b>free medical consultations</b> in San Jose, CA. Check out the website for more info.
 ## Background
 - APPNA = The Association of Physicians of Pakistani Descent of North America
 - American nonprofit organization 
@@ -11,6 +11,3 @@
 - Nginx to deploy website on server
 - Google domains for pointing appnaca.org to server
 - ExpressJS to handle email requests.
-
-
-
