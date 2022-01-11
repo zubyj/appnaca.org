@@ -161,13 +161,8 @@ footer {
     margin-bottom: 6rem;
     width: 80%;
     z-index: 1;
-    border: 1px solid #660000;
+    border: 3px solid #006600;
     background: #f8f8ff;
-}
-
-#contactHeader {
-    font-size: 2rem;
-    color: #006600;
 }
 
 .form-control {
@@ -244,6 +239,6 @@ footer {
     }
 
     #contactArea {
-        width: 30%;
+        width: 20%;
     }
 }

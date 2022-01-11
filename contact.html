@@ -26,7 +26,11 @@
     </head>
     <body id="body">
         <footer>
-            <div class="footer-copyright text-light text-center">We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.</div>
+            <div class="footer-copyright text-light text-center">
+                <p>
+                We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.</div>
+                </p>
+            </div>
         </footer>
         <!-- Navigation Bar-->
         <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-light" id="nav">
@@ -66,12 +70,12 @@
         <div id="googlemaps"></div>
         <div class="container-fluid" id="contactArea">
             <div class="container text-center" id="contactForm">
-                <h3 class="section-header" id="contactHeader">CONTACT US</h3>
+                <h3 class="section-header" id="sectionHeader">CONTACT US</h3>
                 <form action="http://appnaca.org:100" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="inputName" placeholder="Name" >
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" >
-                        <textarea class="form-control" id="inputMessage" rows="4" placeholder="Enter your message"></textarea>
+                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Name" >
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" >
+                        <textarea class="form-control" id="inputMessage" rows="4" name="message" placeholder="Enter your message"></textarea>
                         <button type="submit" class="btn" id="contactSubmitBtn">Submit</button>
                     </div>
                 </form>
