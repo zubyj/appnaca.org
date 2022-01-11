@@ -145,16 +145,29 @@ footer {
     font-size: 1rem;
 }
 
-/* Contact Form */
-#contactArea {
-    padding-top: 3rem;
+/* Contact Page */
+#googlemaps {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-#contactForm {
+#contactArea {
+    position: relative;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     width: 80%;
+    z-index: 1;
+    border: 1px solid #660000;
+    background: #f8f8ff;
 }
 
 #contactHeader {
+    font-size: 2rem;
+    color: #006600;
 }
 
 .form-control {
@@ -165,7 +178,13 @@ footer {
 #contactSubmitBtn {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: #660000;
 }
+
+#contactSubmitBtn:hover {
+    font-weight: bold;
+}
+
 
 @media (min-width: 768px) {
     
@@ -205,6 +224,13 @@ footer {
     #fb-header {
         margin-bottom: 3rem;
     }
+
+    #contactArea {
+        width: 50%;
+        margin-top: 11rem;
+        margin-bottom: 11rem;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -215,5 +241,9 @@ footer {
 
     #carouselIndicators, #slides {
         width:800px;
+    }
+
+    #contactArea {
+        width: 30%;
     }
 }

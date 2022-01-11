@@ -35,7 +35,7 @@
         <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-light" id="nav">
             <div class="container">
                 <!-- APPNA Logo-->
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="#body">
                     <img src="img/logo.png" alt="APPNA Logo" />
                 </a>
                 <!-- Collapsible Navbar-->
@@ -46,23 +46,18 @@
                 </button>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="navbar-nav px-3 mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Events</a>
-                            <div class="dropdown-menu">
-                                <a class="nav-link dropdown-item" href="https://appnafreeclinicca.org/" target="_blank">Free Health Clinic</a>
-                                <a class="nav-link dropdown-item" href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" target="_blank">Covid Webinar (03/21/21)</a>
-                                <a class="nav-link dropdown-item" href="https://www.facebook.com/paccbayarea/videos/234234834764052/" target="_blank">Debunking Covid Myths</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="https://portal.ideasregistration.com//Donation/Index?client=13" target="_blank">Donate</a></li>  
+                        <li class="nav-item"><a class="nav-link" href="#body">Home</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">About</a>
                             <div class="dropdown-menu">
+                                <a class="nav-link dropdown-item" href="https://appnafreeclinicca.org/" target="_blank">Free Health Clinic</a>
+                                <a class="nav-link dropdown-item" href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" target="_blank">Covid Webinar</a>
+                                <a class="nav-link dropdown-item" href="https://www.facebook.com/paccbayarea/videos/234234834764052/" target="_blank">Debunking Covid Myths</a>
                                 <a class="nav-link dropdown-item" href="https://appna.org/">National APPNA</a>
                                 <a class="nav-link dropdown-item" href="bylaws.pdf" target="_blank">Bylaws</a>
                             </div>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="https://portal.ideasregistration.com//Donation/Index?client=13" target="_blank">Donate</a></li>  
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>  
                     </ul>
                 </div>
@@ -70,6 +65,8 @@
         </nav>
        
         <!-- Contact Us Form -->
+        <div id='map-canvas'></div>
+        <div id="googlemaps"></div>
         <div class="container-fluid" id="contactArea">
             <div class="container text-center" id="contactForm">
                 <h3 class="section-header" id="contactHeader">CONTACT US</h3>
@@ -93,5 +90,41 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- Custom script -->
         <script src="script.js"></script>
+
+        <!-- Google maps background  -->
+        <!-- Include the Google Maps API library - required for embedding maps -->
+                <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+                <script type="text/javascript">
+
+                // The latitude and longitude of your business / place
+                var position = [37.340189308837125, -121.78545141524924];
+
+                function showGoogleMaps() {
+
+                    var latLng = new google.maps.LatLng(position[0], position[1]);
+
+                    var mapOptions = {
+                        zoom: 10, // initialize zoom level - the max value is 21
+                        streetViewControl: false, // hide the yellow Street View pegman
+                        scaleControl: true, // allow users to zoom the Google Map
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        center: latLng
+                    };
+
+                    map = new google.maps.Map(document.getElementById('googlemaps'),
+                        mapOptions);
+
+                    // Show the default red marker at the location
+                    marker = new google.maps.Marker({
+                        position: latLng,
+                        map: map,
+                        draggable: false,
+                        animation: google.maps.Animation.DROP
+                    });
+                }
+
+                google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+                </script>
     </body>
 </html>
