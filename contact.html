@@ -85,6 +85,7 @@
         <footer>
             <div class="footer-copyright text-light text-center">Copyright © 2021. All rights reserved by APPNA.</div>
         </footer>
+        
         <!-- Bootstrap 4 -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -94,38 +95,42 @@
 
         <!-- Google maps background  -->
         <!-- Include the Google Maps API library - required for embedding maps -->
-                <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-                <script type="text/javascript">
+        <script type="text/javascript">
 
-                // The latitude and longitude of your business / place
-                var position = [37.340189308837125, -121.78545141524924];
+        // The latitude and longitude of your business / place
+        var position = [37.340189308837125, -121.78545141524924];
 
-                function showGoogleMaps() {
+        function showGoogleMaps() {
 
-                    var latLng = new google.maps.LatLng(position[0], position[1]);
+            var latLng = new google.maps.LatLng(position[0], position[1]);
 
-                    var mapOptions = {
-                        zoom: 10, // initialize zoom level - the max value is 21
-                        streetViewControl: false, // hide the yellow Street View pegman
-                        scaleControl: true, // allow users to zoom the Google Map
-                        mapTypeId: google.maps.MapTypeId.ROADMAP,
-                        center: latLng
-                    };
+            var mapOptions = {
+                zoom: 10, // initialize zoom level - the max value is 21
+                streetViewControl: false, // hide the yellow Street View pegman
+                scaleControl: true, // allow users to zoom the Google Map
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                center: latLng
+            };
 
-                    map = new google.maps.Map(document.getElementById('googlemaps'),
-                        mapOptions);
+            map = new google.maps.Map(document.getElementById('googlemaps'),
+                mapOptions);
 
-                    // Show the default red marker at the location
-                    marker = new google.maps.Marker({
-                        position: latLng,
-                        map: map,
-                        draggable: false,
-                        animation: google.maps.Animation.DROP
-                    });
-                }
+            // Show the default red marker at the location
+            marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                draggable: false,
+                animation: google.maps.Animation.DROP
+            });
+        }
 
-                google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-                </script>
+        google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+        </script>
+        <!-- Google Maps API Key  -->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
     </body>
 </html>
