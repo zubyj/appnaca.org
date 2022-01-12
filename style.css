@@ -16,13 +16,12 @@ html {
 }
 
 .nav-link {
-    color:#660000;
+    color:#660000 !important;
 }
 
 .nav-link:hover {
     text-decoration: none;
     font-weight: bolder;
-    color:#660000;
 }
 
 /* Carousel */
