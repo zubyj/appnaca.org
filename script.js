@@ -7,7 +7,4 @@ $(function(){
     else {
         $('nav').addClass('sticky-top')
     }
-
-
-
 });
