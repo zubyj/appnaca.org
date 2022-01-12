@@ -22,6 +22,21 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="img/flag.png" rel="icon" type="image/x-icon" />
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                const norcal = { lat: 37.34017224895144, lng: -121.78553724593377 };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 8,
+                    center: norcal,
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                    position: norcal,
+                    map: map,
+                });
+                }
+        </script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body id="body">
