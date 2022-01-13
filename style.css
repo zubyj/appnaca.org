@@ -2,6 +2,13 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Header at the top of page */
+#main-header {
+    position: relative;
+    z-index: 1;
+    background-color: #006600;
+}
+
 .section-header {
     font-size: 1.5rem;
     color: #222;
@@ -10,7 +17,6 @@ html {
 }
 
 /* Navigation Bar */
-
 .navbar-brand {
     width: 50%;
 }
@@ -25,12 +31,24 @@ html {
 }
 
 /* Carousel */
+
+#map {
+    height: 100% !important;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: none;
+}
+
 #slides-bg {
+    position: relative;
+    z-index: 1;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    padding-bottom: 3rem;
  }
 
- .slides-header {
+.slides-header {
     font-size:2.1rem !important;
     color: #222;
 }
@@ -44,12 +62,12 @@ html {
 }
 
 .carousel-item img {
-    height:30rem;
+    height:35rem;
     margin:auto;
 }
 
 #backArrow, #forwardArrow {
-    color: #660000;
+    color: #006600;
     font-size:2rem;
 }
 
@@ -143,24 +161,15 @@ footer {
 }
 
 /* Contact Page */
-
-#map {
-    height: 100% !important;
-    width: 100%;
+#contactArea {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
-#contactArea {
-    position: relative;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    width: 80%;
-    z-index: 1;
-    border: 3px solid #006600;
-    background: #f8f8ff;
+#contactForm {
+    margin-top:7rem;
+    background-color: #fdfcfb;
 }
 
 .form-control {
@@ -172,26 +181,37 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #660000;
+    font-weight: bold;
 }
 
 #contactSubmitBtn:hover {
     font-weight: bold;
 }
 
+@media (min-width: 768px) and (min-height: 500px) {
+    #map {
+        display: block;
+    }
+}
 
 @media (min-width: 768px) {
-    
-    #carouselIndicators, #slides {
-        width: auto;
-    }
+
+    #slides-bg {
+        margin-top: 2rem;
+        position: relative;
+        z-index: 1;
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        border: 2px solid #660000;
+        height: 100%;
+     }
 
     .carousel-item img {
-        width: auto !important;
         height:45rem;
+        width: auto !important;
     }
 
-    #slides {
-        padding-bottom: 5rem;
+    #slides-bg {
+        width: 50rem;
     }
 
     .slides-header {
@@ -218,10 +238,9 @@ footer {
         margin-bottom: 3rem;
     }
 
-    #contactArea {
-        width: 50% !important;
-        margin-top: 11rem;
-        margin-bottom: 11rem;
+    #contactForm {
+        margin-top:7rem;
+        width: 40%;
     }
 
 }
@@ -234,9 +253,5 @@ footer {
 
     #carouselIndicators, #slides {
         width:800px;
-    }
-
-    #contactArea {
-        width: 20%;
     }
 }

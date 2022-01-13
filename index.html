@@ -1,6 +1,5 @@
 <!--
 Website for APPNA's Northern California Chapter.
-
 Created by Zuby Javed
 --> 
 
@@ -24,6 +23,21 @@ Created by Zuby Javed
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="img/flag.png" rel="icon" type="image/x-icon" />
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                const norcal = { lat: 37.34017224895144, lng: -121.78553724593377 };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 8,
+                    center: norcal,
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                    position: norcal,
+                    map: map,
+                });
+                }
+        </script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body id="body">
@@ -32,8 +46,12 @@ Created by Zuby Javed
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="LNKPY0pv"></script>
         
         <footer>
-            <div class="footer-copyright text-light text-center">We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.</div>
+            <div id="main-header"class="footer-copyright text-light text-center">We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.</div>
         </footer>
+
+        <!-- Google map background -->
+        <div id="map"></div>
+
         <!-- Navigation Bar-->
         <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-light" id="nav">
             <div class="container">
@@ -41,14 +59,14 @@ Created by Zuby Javed
                 <a class="navbar-brand" href="#body">
                     <img src="img/logo.png" alt="APPNA Logo" />
                 </a>
-                <!-- Collapsible Navbar-->
+                <!-- Toggle navbar for small screens -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation bar">
                     <span class="navbar-toggler-icon">
                         <i class="fas fa-bars" style="color:#006600; font-size:35px;"></i>
                     </span>
                 </button>
                 <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="navbar-nav px-3 mr-auto">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" href="#body">Home</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">About</a>
@@ -67,9 +85,9 @@ Created by Zuby Javed
             </div>
         </nav>
         <!-- Slideshow -->
-        <div id="slides-bg" >
-            <div id="slides" class="container-fluid">
-                <div id="carouselIndicators" class="carousel slide text-center" data-ride="carousel" id="textCarousel">
+        <div id="slides-bg" class="container">
+            <div id="slides">
+                <div id="carouselIndicators" class="carousel slide" data-ride="carousel" id="textCarousel">
                     <div class="carousel-inner text-center">
                         <div class="carousel-item">
                             <h1 class="py-3 slides-header">WELCOME TO APPNA</h1>
@@ -172,7 +190,7 @@ Created by Zuby Javed
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-md-12 col-lg-4">
                         <div class="card mx-auto">
                             <div class="card-header">
                                 <button class="btn btn-link" data-toggle="collapse" data-target="#boardCollapse" aria-expanded="true" aria-controls="boardCollapse">
@@ -231,6 +249,11 @@ Created by Zuby Javed
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgfUqw58cEoWzdnNjw0kXJuoLVWSWADSo&callback=initMap">
+        </script>
+
         <!-- Custom script -->
         <script src="script.js"></script>
     </body>
