@@ -12,7 +12,7 @@ html {
 .section-header {
     font-size: 1.5rem;
     color: #222;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -31,9 +31,6 @@ html {
 }
 
 /* Carousel */
-
-
-
 #slides-bg {
     position: relative;
     z-index: 1;
@@ -45,11 +42,6 @@ html {
 
 #slides {
     padding-bottom: 3rem;
-}
-
-.slides-header {
-    font-size:2.1rem !important;
-    color: #222;
 }
 
 .carousel-item, .carousel-item a{
@@ -81,8 +73,6 @@ html {
     width: 20rem;
     margin-bottom: 2rem;
 }
-
-
 
 .card-header h3{
     font-size:1.1rem;
@@ -160,20 +150,40 @@ footer {
 }
 
 /* Contact Page */
+
 #contactArea {
     position: absolute;
     height: 100vh;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-image: url('/img/empty-brown-canvas.jpg')
 }
 
 #contactForm {
     margin-top:7rem;
     background-color: #fdfcfb;
+    border-radius: 25px;
+    border: 2px solid #006600;
+}
+
+#contactHeader {
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .form-control {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#inputName, #inputEmail {
+    width: 15rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#inputMessage {
+    width: 90%;
 }
 
 #contactSubmitBtn {
@@ -181,10 +191,16 @@ footer {
     margin-bottom: 1rem;
     color: #660000;
     font-weight: bold;
+    border-radius: 40px;
+    background: #2f2f2f;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    color: #fff;
+    opacity: 1;
 }
 
 #contactSubmitBtn:hover {
     font-weight: bold;
+    opacity: .8;
 }
 
 @media (min-width: 768px) and (min-height: 500px) {
@@ -213,18 +229,13 @@ footer {
         width: 50rem;
     }
 
-    .slides-header {
-        font-size: 3.5rem !important;
-    }
-
     .slides-text {
         font-size: 2rem !important;
     }
 
     .section-header {
+        padding-top: 5rem;
         font-size: 2rem;
-        font-weight: bold;
-        padding-top: 3rem;
         padding-bottom: 3rem;
     }
 
