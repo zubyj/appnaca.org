@@ -26,14 +26,13 @@ Created by Zuby Javed
         <script>
             // Initialize and add the map
             function initMap() {
-                const norcal = { lat: 37.34017224895144, lng: -125 };
                 const map = new google.maps.Map(document.getElementById("map"), {
                     zoom: 8,
-                    center: norcal,
+                    center: { lat: 37.34017224895144, lng: -125 },
                 });
-                // The marker, positioned at Uluru
+                // The marker, positioned at free health clinic location
                 const marker = new google.maps.Marker({
-                    position: norcal,
+                    position: {lat: 37.34022342849497, lng: -121.7854836016765},
                     map: map,
                 });
                 }
