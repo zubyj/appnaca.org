@@ -203,6 +203,31 @@ footer {
     opacity: .8;
 }
 
+#contact-socials {
+    margin-top: 5rem;
+}
+
+#contact-socials .card {
+    display: inline-block;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#contact-socials .card:hover {
+    background-color: #222;
+}
+
+#contact-socials a {
+    color: #006600;
+}
+
+#contact-socials a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 @media (min-width: 768px) and (min-height: 500px) {
     #map {
         height: 140%;
