@@ -161,7 +161,6 @@ footer {
     margin-top:7rem;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     border-radius: 25px;
-    border: 2px solid #006600;
 }
 
 #contactHeader {
@@ -174,7 +173,6 @@ footer {
     display: inline-block;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid black;
     border-radius: 25px;
 }
 
@@ -188,7 +186,7 @@ footer {
     width: 90%;
 }
 
-#contactSubmitBtn {
+#submitBtn {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #660000;
