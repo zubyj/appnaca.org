@@ -18,7 +18,7 @@ $(function(){
         };
         $.ajax({
             type: "POST",
-            url: "appnaca.org:1000",
+            url: "appnaca.org/contact",
             data: formData,
             dataType: "json",
             encode: true,
