@@ -15,7 +15,7 @@ $(function(){
             message: $("#inputMessage").val(),
         };
 
-
+        event.preventDefault();
         $.ajax({
             type: "POST",
             url: "https://appnaca.org:1000",
@@ -32,6 +32,5 @@ $(function(){
             .fail(function (data) {
                 $("#contactSubmitMsg").html('<span style="color:red">Sorry cant connect to the server. Please try again later.</span');
             })
-         event.preventDefault();
     });
 });
