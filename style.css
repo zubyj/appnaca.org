@@ -65,6 +65,8 @@ html {
 /* Cards */
 #cards {
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
 .card {
@@ -79,12 +81,12 @@ html {
     font-size:1.1rem;
 }
 
-.card-header button {
+.card-header {
     color: #006600;
     width: 100%;
 }
 
-.card-header button:hover {
+.card-header:hover {
     color:white;
 }
 
@@ -151,22 +153,28 @@ footer {
 
 /* Contact Page */
 
+#contactBody {
+    background-image: url('/img/empty-brown-canvas.jpg')
+}
+
 #contactArea {
     position: absolute;
     height: 100vh;
-    background-image: url('/img/empty-brown-canvas.jpg')
 }
 
 #contactForm {
     margin-top:7rem;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     border-radius: 25px;
+    border: 2px solid #006600;
+
 }
 
 #contactHeader {
     font-size: 2rem;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+    color: #006600;
 }
 
 .form-control {
@@ -174,6 +182,7 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 25px;
+    border: 1px solid #006600;
 }
 
 #inputName, #inputEmail {
@@ -189,44 +198,37 @@ footer {
 #submitBtn {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: #660000;
-    font-weight: bold;
     border-radius: 40px;
-    background: #2f2f2f;
+    background: #222;
     box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
     color: #fff;
     opacity: 1;
+    width: 10rem;
 }
 
-#contactSubmitBtn:hover {
-    font-weight: bold;
-    opacity: .8;
+#submitBtn:hover {
+    background: #006600;
+    font-weight: bolder;
+}
+#contactSocialsArea {
+    margin-top: 4rem;
 }
 
-#contact-socials {
-    margin-top: 5rem;
-}
-
-#contact-socials .card {
+.contact-socials{
+    width: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: inline-block;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 20px;
-}
-
-#contact-socials .card:hover {
-    background-color: #222;
-}
-
-#contact-socials a {
-    color: #006600;
-}
-
-#contact-socials a:hover {
+    background-color: #006600;
     color: #fff;
-    text-decoration: none;
+    border-radius: 20rem;
 }
 
+.contact-socials:hover {
+    font-weight: bold;
+    opacity: .95;
+    background: #222;
+}
 
 @media (min-width: 768px) and (min-height: 500px) {
     #map {
@@ -262,22 +264,20 @@ footer {
         padding-bottom: 5rem;
     }
 
-    .card {
-        margin-bottom: 4rem;
-        width: 15rem;
+    #cards {
+        margin-top: 10rem;
+        padding-bottom: 5rem;
     }
 
     #fb-header {
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
 
     #contactForm {
-        margin-top:7rem;
         width: 40%;
     }
 
     .form-control {
-        margin-top: 3rem;
         margin-bottom: 3rem;
     }
 }
