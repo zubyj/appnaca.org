@@ -31,7 +31,6 @@ $(function(){
             })
             .fail(function (data) {
                 $("#contactSubmitMsg").html('<span style="color:red">Sorry cant connect to the server. Please try again later.</span');
-                // $("#contactSubmitMsg").text("Sorry can't connect to the server. Please try again later.");
             })
          event.preventDefault();
     });
