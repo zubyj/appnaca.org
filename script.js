@@ -9,6 +9,7 @@ $(function(){
     }
 
     $("form").on("submit", function(event) {
+
         var formData = {
             name: $("#inputName").val(),
             email: $("#inputEmail").val(),
@@ -16,6 +17,7 @@ $(function(){
         };
 
         event.preventDefault();
+
         $.ajax({
             type: "POST",
             url: "https://appnaca.org:1000",
@@ -25,7 +27,7 @@ $(function(){
             timeout: 5000,
         })
             .done(function(data) {
-                $("#contactSubmitMsg").text('Succesfully connected to server')
+                $("#contactSubmitMsg").html('<span style="color:green">' + data.message + '</span');
                 console.log('dis da message')
                 console.log(data.message);
             })
