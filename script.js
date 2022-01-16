@@ -22,12 +22,16 @@ $(function(){
             data: formData,
             dataType: "json",
             encode: true,
+            timeout: 5000,
         })
             .done(function(data) {
-                console.log(data);
+                $("#contactSubmitMsg").text('Succesfully connected to server')
+                console.log('dis da message')
+                console.log(data.message);
             })
             .fail(function (data) {
-                console.log('failed bro')
+                $("#contactSubmitMsg").html('<span style="color:red">Sorry cant connect to the server. Please try again later.</span');
+                // $("#contactSubmitMsg").text("Sorry can't connect to the server. Please try again later.");
             })
          event.preventDefault();
     });
