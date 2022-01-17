@@ -22,8 +22,8 @@ html {
 }
 
 .nav-link {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #006600;
-    font-family: 'Lato'
 }
 
 .nav-link:hover {
@@ -175,7 +175,8 @@ footer {
 
 .form-group label {
     font-weight: bold !important;
-    font-size: 1.2rem;
+    font-family: 'Lato', 'sans-serif';
+    font-size: 1.1rem;
 }
 
 .form-control {
@@ -197,6 +198,7 @@ footer {
 }
 
 #submitBtn {
+    font-family: 'Lato', 'sans-serif';
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #fff;
@@ -246,7 +248,7 @@ footer {
 @media (min-width: 768px) {
 
     .nav-link {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     #slides-bg {
