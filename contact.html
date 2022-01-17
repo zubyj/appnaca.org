@@ -63,13 +63,19 @@
             <div id="contactForm" class="container text-center">
                 <h3 id="contactHeader" class="display-5">CONTACT US</h3>
                 <form>
+                    <!-- Contact submit message pdated when user submits form using ajax.-->
+                    <div id="contactSubmitMsg"></div>
                     <div class="form-group">
-                        <div id="contactSubmitMsg"></div>
-                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Name" >
-                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" >
-                        <textarea class="form-control" id="inputMessage" rows="4" name="message" placeholder="Enter your message"></textarea>
-                        <button type="submit" class="btn" id="submitBtn">Submit</button>
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Enter name" >
                     </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Enter email" >
+                        <textarea class="form-control" id="inputMessage" rows="4" name="message" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="submitBtn">Submit</button>
+                </div>
                 </form>
             </div>
 

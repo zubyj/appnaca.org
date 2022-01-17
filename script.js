@@ -16,6 +16,7 @@ $(function(){
             message: $("#inputMessage").val(),
         };
 
+        // stop page from refreshing on submit click.
         event.preventDefault();
 
         $.ajax({
@@ -28,8 +29,6 @@ $(function(){
         })
             .done(function(data) {
                 $("#contactSubmitMsg").html('<span style="color:green">' + data.message + '</span');
-                console.log('dis da message')
-                console.log(data.message);
             })
             .fail(function (data) {
                 $("#contactSubmitMsg").html('<span style="color:red">Sorry cant connect to the server. Please try again later.</span');
