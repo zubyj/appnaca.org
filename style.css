@@ -2,13 +2,55 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header at the top of page */
+/* Top header */
 #main-header {
     position: relative;
     z-index: 1;
     background-color: #006600;
 }
 
+div.slide-right {
+    width:100%;
+    overflow:hidden;
+  }
+  div.slide-right p {
+    animation: 10s slide-right;
+  }
+  
+  @keyframes slide-right {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* Navigation Bar */
+#navbar {
+    margin-left: 10rem;
+}
+
+.nav-link {
+    color: #006600 !important;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #006600;
+    border-radius: 10px;
+    background: white;
+}
+
+.nav-name {
+    margin-left: 1rem !important;
+}
+
+
+
+/* Carousel */
 .section-header {
     font-size: 1.5rem;
     color: #222;
@@ -16,33 +58,12 @@ html {
     padding-top: 3rem !important;
 }
 
-/* Navigation Bar */
-.navbar-brand {
-    width: 50%;
-}
-
-.nav-link {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #006600 !important;
-}
-
-.nav-link:hover {
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-/* Carousel */
 #slides-bg {
     position: relative;
-    z-index: 1;
-    border: 2px solid green;
-    border-radius: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
  }
-
-#slides {
-    padding-bottom: 3rem;
-}
 
 .carousel-item, .carousel-item a{
     color:#006600 !important;
@@ -239,7 +260,7 @@ footer {
 
 @media (min-width: 768px) and (min-height: 500px) {
     #map {
-        height: 140%;
+        height: 140vh;
         width: 100%;
         position: absolute;
         z-index: 0;
@@ -248,17 +269,13 @@ footer {
 
 @media (min-width: 768px) {
 
-    .nav-link {
-        font-size: 1.1rem;
-    }
-
     #slides-bg {
         margin-top: 8rem;
      }
 
     .carousel-item img {
         width: auto !important;
-        height: 45rem;
+        height: 35rem;
     }
 
     #slides-bg {
@@ -294,6 +311,10 @@ footer {
 }
 
 @media (min-width: 992px) {
+
+    .navbar {
+        height: 8rem;
+    }
     
     .nav-item {
         margin-left: 20px;
@@ -303,3 +324,4 @@ footer {
         width: 100%;
     }
 }
+

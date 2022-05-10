@@ -22,7 +22,7 @@ Created by Zuby Javed
         <title>APPNA Northern California</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="img/flag.png" rel="icon" type="image/x-icon" />
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <script>
             // Initialize and add the map
             function initMap() {
@@ -31,32 +31,36 @@ Created by Zuby Javed
                     center: { lat: 37.34017224895144, lng: -125 },
                 });
                 // The marker, positioned at free health clinic location
-                const marker = new google.maps.Marker({
-                    position: {lat: 37.34022342849497, lng: -121.7854836016765},
-                    map: map,
-                });
+                // const marker = new google.maps.Marker({
+                //     position: {lat: 37.34022342849497, lng: -121.7854836016765},
+                //     map: map,
+                // });
                 }
         </script>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body id="body">
+    <body>
         <!-- Facebook Plugin -->
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="LNKPY0pv"></script>
-        
         <footer>
-            <div id="main-header"class="footer-copyright text-light text-center">We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.</div>
-        </footer>
+            <div id="main-header"class="slide-right footer-copyright text-light text-center">
+                <p>
+                We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.
 
+                </p>
+            </div>
+
+        </footer>
         <!-- Google map background -->
         <div id="map"></div>
-
         <!-- Navigation Bar-->
         <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-light" id="nav">
             <div class="container">
                 <!-- APPNA Logo-->
                 <a class="navbar-brand" href="/">
-                    <img src="img/logo.png" alt="APPNA Logo" />
+                    <img src="img/rotating-icon.gif" alt="APPNA Logo" />
+                    <img src="img/appna.png" alt="APPNA Logo" />
                 </a>
                 <!-- Toggle navbar for small screens -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation bar">
@@ -66,9 +70,17 @@ Created by Zuby Javed
                 </button>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                <i class="fa fa-home"></i>
+                                <span class="nav-name">Home</span>
+                            </a>
+                        </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">About</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                <i class="fa fa-info"></i>
+                                <span class="nav-name">About</span>
+                            </a>
                             <div class="dropdown-menu">
                                 <a class="nav-link dropdown-item" href="https://appnafreeclinicca.org/" target="_blank">Free Health Clinic</a>
                                 <a class="nav-link dropdown-item" href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" target="_blank">Covid Webinar</a>
@@ -77,46 +89,54 @@ Created by Zuby Javed
                                 <a class="nav-link dropdown-item" href="bylaws.pdf" target="_blank">Bylaws</a>
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="https://portal.ideasregistration.com//Donation/Index?client=13" target="_blank">Donate</a></li>  
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>  
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://portal.ideasregistration.com//Donation/Index?client=13" target="_blank">
+                                <i class="fa fa-hand-holding-medical"></i>
+                                <span class="nav-name">Donate</span>
+                            </a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <i class="fa fa-address-book"></i>
+                                <span class="nav-name">Contact</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Slideshow -->
         <div id="slides-bg" class="container">
-            <div id="slides">
-                <div id="carouselIndicators" class="carousel slide" data-ride="carousel" id="textCarousel">
-                    <div class="carousel-inner text-center">
-                        <div class="carousel-item">
-                            <h3 class="py-3 section-header">WELCOME TO APPNA</h3>
-                            <h2 class="py-3 display-5 slides-text">NORTHERN CALIFORNIA</h2>
-                            <img class="d-block w-100" src="img/goldengate.jpg" alt="Golden Gate Bridge" />
-                        </div>
-                        <div class="carousel-item active">
-                            <h3 class="py-3 section-header">EVENTS</h3>
-                            <a href="https://appnafreeclinicca.org/" target="_blank">
-                                <h2 class="py-3 display-5  slides-text">WEEKLY HEALTH CLINIC</h2>
-                                <img class="d-block w-100" src="img/free_clinic_2.png" alt="Free Health Clinic Flyer" />
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <h3 class="py-3 section-header">EVENTS</h3>
-                            <a href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905" target="_blank">
-                                <h2 class="py-3 display-5 slides-text">WATCH OUR LIVE WEBINAR</h2>
-                                <img class="d-block w-100" src="img/mar_21_webinar.png" alt="Covid Webinar Flyer" />
-                            </a>
-                        </div>
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel" id="textCarousel">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item">
+                        <h3 class="py-3 section-header">WELCOME TO APPNA</h3>
+                        <h2 class="py-3 display-5 slides-text">NORTHERN CALIFORNIA</h2>
+                        <img class="d-block w-100" src="img/goldengate.jpg" alt="Golden Gate Bridge" />
                     </div>
-                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                        <i id="backArrow" class="fas fa-arrow-left"></i>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                        <i id="forwardArrow" class="fas fa-arrow-right"></i>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="carousel-item active">
+                        <h3 class="py-3 section-header">EVENTS</h3>
+                        <a href="https://appnafreeclinicca.org/" target="_blank">
+                            <h2 class="py-3 display-5  slides-text">WEEKLY HEALTH CLINIC</h2>
+                            <img class="d-block w-100" src="img/free_clinic_2.png" alt="Free Health Clinic Flyer" />
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <h3 class="py-3 section-header">EVENTS</h3>
+                        <a href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905" target="_blank">
+                            <h2 class="py-3 display-5 slides-text">WATCH OUR LIVE WEBINAR</h2>
+                            <img class="d-block w-100" src="img/mar_21_webinar.png" alt="Covid Webinar Flyer" />
+                        </a>
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <i id="backArrow" class="fas fa-arrow-left"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <i id="forwardArrow" class="fas fa-arrow-right"></i>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
 
