@@ -57,30 +57,10 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Contact Us Form -->
-        <div id="contactArea" class="container-fluid">
-            <div id="contactForm" class="container text-center">
-                <h3 id="contactHeader">CONTACT US</h3>
-                <form>
-                    <!-- Contact submit message pdated when user submits form using ajax.-->
-                    <div id="contactSubmitMsg"></div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Enter name" >
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Enter email" >
-                        <textarea class="form-control" id="inputMessage" rows="4" name="message" placeholder="Enter your message"></textarea>
-                    </div>
-                    <button type="submit" class="btn" id="submitBtn">Submit</button>
-                </div>
-                </form>
-            </div>
-
+        <div id="contactBody" class="container-fluid text-center">
             <!-- Socials -->
-            <div id="contactSocialsArea" class="container text-center">
+            <div id="contactSocials" class="container">
+                <h3 id="contactHeader">Socials</h3>
                 <a target="_blank" href="https://www.facebook.com/pages/category/Nonprofit-organization/APPNA-Northern-California-Chapter-135955409917905/">
                     <div class = "card contact-socials">
                         <i class="fab fa-facebook"></i>
@@ -99,6 +79,26 @@
                             National APPNA
                     </div>
                 </a>
+        </div>
+        <!-- Contact Us Form -->
+        <div id="contactArea" class="container-fluid">
+            <div id="contactForm" class="container text-center">
+                <h3 id="contactHeader">Contact us</h3>
+                <form>
+                    <!-- Contact submit message pdated when user submits form using ajax.-->
+                    <div id="contactSubmitMsg"></div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Enter name" >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Enter email" >
+                        <textarea class="form-control" id="inputMessage" rows="4" name="message" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="submitBtn">Submit</button>
+                </div>
+                </form>
             </div>
         </div>
 

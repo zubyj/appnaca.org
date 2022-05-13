@@ -168,36 +168,34 @@ div.slide-right {
     margin-bottom: 1rem;
 }
 
-
 footer {
     background-color:#006600;
     font-size: 1rem;
 }
 
 /* Contact Page */
-
 #contactBody {
-    background-image: url('/img/empty-brown-canvas.jpg')
+    background: #e2d1c3;
+}
+
+#contactArea {
+    background: #cfd9df;
 }
 
 #contactForm {
-    margin-top:7rem;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    border-radius: 25px;
-    border: 2px solid #006600;
-
+    border-radius: 10px;
+    background: #cfd9df;
 }
 
 #contactHeader {
+    text-transform: uppercase;
     font-size: 2rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
-    color: #222;
 }
 
 .form-group label {
     font-weight: bold !important;
-    font-family: 'Lato', 'sans-serif';
     font-size: 1.1rem;
 }
 
@@ -206,7 +204,6 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 25px;
-    border: 1px solid #006600;
 }
 
 #inputName, #inputEmail {
@@ -237,30 +234,28 @@ footer {
     font-weight: bolder;
 }
 
-#contactSocialsArea {
-    margin-top: 4rem;
+#contactSocials {
+    background-color: #e2d1c3;
+    padding: 5rem;
 }
 
 .contact-socials{
-    width: 15rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     display: inline-block;
-    background-color: #006600;
+    background-color: #660000;
+    width: 15rem;
+    padding: 1rem;
     color: #fff;
-    border-radius: 20px;
     border: 1px solid #e2d1c3;
 }
 
 .contact-socials:hover {
-    font-weight: bold;
     opacity: .95;
     background: #222;
 }
 
 @media (min-width: 768px) and (min-height: 500px) {
     #map {
-        height: 140vh;
+        height: 130vh;
         width: 100%;
         position: absolute;
         z-index: 0;
