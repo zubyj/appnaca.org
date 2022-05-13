@@ -84,7 +84,53 @@ div.slide-right {
     font-size:2rem;
 }
 
-/* Cards */
+
+/* Socials */
+#socials {
+    background: whitesmoke;
+}
+
+.socials-btns {
+    justify-content: center;
+}
+
+.social-btn {
+    padding: 1rem;
+}
+
+.socials-text {
+    padding: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid black; 
+    text-transform: uppercase;
+}
+
+.contact-socials{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-socials:hover {
+    opacity: 50%;
+}
+
+#fb-icon {
+    color: #4267B2;
+}
+
+#clinic-icon {
+    color: #660000;
+}
+
+#national-appna-icon {
+    color: #006600;
+}
+
+/* About / Cards */
 #cards {
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     padding-top: 2rem;
@@ -93,6 +139,7 @@ div.slide-right {
 
 .card {
     margin-bottom: 2rem;
+    border-radius: 10px;
 }
 
 .card button:hover {
@@ -105,7 +152,6 @@ div.slide-right {
 
 .card-header {
     color: #006600;
-    width: 100%;
 }
 
 .card-header:hover {
@@ -115,7 +161,6 @@ div.slide-right {
 .card-body th {
     color: black;
 }
-
 
 .card-body a {
     color: #006600;
@@ -167,63 +212,12 @@ div.slide-right {
     margin-bottom: 1rem;
 }
 
-footer {
-    background-color:#006600;
-    font-size: 1rem;
-}
 
-/* Contact Page */
-#socials {
-    background: whitesmoke;
-}
 
-#socials-header {
-    margin-top: 15rem;
-}
-
-.socials-btns {
-    justify-content: center;
-}
-
-.social-btn {
-    padding: 5rem;
-}
-
-.socials-text {
-    padding: 2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-bottom: 1px solid black; 
-    text-transform: uppercase;
-}
-
-.contact-socials{
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    font-size: 12px;
-    text-align: center;
-    justify-content: center;
-}
-
-.contact-socials:hover {
-    opacity: 50%;
-}
-
-#fb-icon {
-    color: #4267B2;
-}
-
-#clinic-icon {
-    color: #660000;
-}
-
-#national-appna-icon {
-    color: #006600;
-}
-
+/* Contact Us Form */
 #contactForm {
-    border-radius: 10px;
-    background: #cfd9df;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .form-group label {
@@ -249,15 +243,10 @@ footer {
 }
 
 #submitBtn {
-    font-family: 'Lato', 'sans-serif';
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #fff;
-    border-radius: 40px;
     background: #222;
     box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
     color: #fff;
-    opacity: 1;
+    padding: .5rem;
     width: 10rem;
 }
 
@@ -266,12 +255,36 @@ footer {
     font-weight: bolder;
 }
 
+footer {
+    background-color:#006600;
+    font-size: 1rem;
+}
+
+
+/*
+    Responsive
+    Website is designed for mobile 
+    so these changes are for larger screens 
+*/
+
 @media (min-width: 768px) and (min-height: 500px) {
     #map {
         height: 130vh;
         width: 100%;
         position: absolute;
         z-index: 0;
+    }
+
+    #socials-header {
+        margin-top: 15rem;
+    }
+
+    .social-btn {
+        padding: 5rem;
+    }
+
+    #contactForm {
+        padding: 5rem;
     }
 }
 
@@ -301,7 +314,6 @@ footer {
     }
 
     #cards {
-        margin-top: 10rem;
         padding-bottom: 5rem;
     }
 
@@ -332,4 +344,3 @@ footer {
         width: 100%;
     }
 }
-
