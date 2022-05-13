@@ -181,13 +181,28 @@ footer {
     margin-top: 15rem;
 }
 
+.socials-btns {
+    justify-content: center;
+}
+
+.social-btn {
+    padding: 5rem;
+}
+
+.socials-text {
+    padding: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid black; 
+    text-transform: uppercase;
+}
+
 .contact-socials{
     width: 70px;
     height: 70px;
     border-radius: 35px;
     font-size: 12px;
     text-align: center;
-    display: inline-block;
+    justify-content: center;
 }
 
 .contact-socials:hover {
