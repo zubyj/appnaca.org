@@ -2,36 +2,20 @@ html {
     scroll-behavior: smooth;
 }
 
+#appna-icon {
+    display: none;
+    margin-right: 1rem;
+}
+
 /* Top header */
 #main-header {
     position: relative;
-    z-index: 1;
-    background-color: #006600;
+    background-color: #222;
 }
-
-div.slide-right {
-    width:100%;
-    overflow:hidden;
-  }
-  div.slide-right p {
-    animation: 10s slide-right;
-  }
-  
-  @keyframes slide-right {
-    from {
-      margin-left: -100%;
-      width: 300%; 
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 
 /* Navigation Bar */
 #navbar {
-    margin-left: 10rem;
+    text-align: left;
 }
 
 .nav-link {
@@ -148,6 +132,7 @@ div.slide-right {
 
 .card-header h3{
     font-size:1.1rem;
+    font-weight: normal;
 }
 
 .card-header {
@@ -156,6 +141,7 @@ div.slide-right {
 
 .card-header:hover {
     color:white;
+    text-decoration: none;
 }
 
 .card-body th {
@@ -260,7 +246,6 @@ footer {
     font-size: 1rem;
 }
 
-
 /*
     Responsive
     Website is designed for mobile 
@@ -268,6 +253,10 @@ footer {
 */
 
 @media (min-width: 768px) and (min-height: 500px) {
+    #appna-icon {
+        display: inline;
+    }
+
     #map {
         height: 130vh;
         width: 100%;
