@@ -48,10 +48,9 @@ div.slide-right {
     margin-left: 1rem !important;
 }
 
-
-
 /* Carousel */
 .section-header {
+    text-transform: uppercase;
     font-size: 1.5rem;
     color: #222;
     padding-bottom: 5rem;
@@ -174,24 +173,42 @@ footer {
 }
 
 /* Contact Page */
-#contactBody {
-    background: #e2d1c3;
+#socials {
+    background: whitesmoke;
 }
 
-#contactArea {
-    background: #cfd9df;
+#socials-header {
+    margin-top: 15rem;
+}
+
+.contact-socials{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+.contact-socials:hover {
+    opacity: 50%;
+}
+
+#fb-icon {
+    color: #4267B2;
+}
+
+#clinic-icon {
+    color: #660000;
+}
+
+#national-appna-icon {
+    color: #006600;
 }
 
 #contactForm {
     border-radius: 10px;
     background: #cfd9df;
-}
-
-#contactHeader {
-    text-transform: uppercase;
-    font-size: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 .form-group label {
@@ -232,25 +249,6 @@ footer {
 #submitBtn:hover {
     background: #006600;
     font-weight: bolder;
-}
-
-#contactSocials {
-    background-color: #e2d1c3;
-    padding: 5rem;
-}
-
-.contact-socials{
-    display: inline-block;
-    background-color: #660000;
-    width: 15rem;
-    padding: 1rem;
-    color: #fff;
-    border: 1px solid #e2d1c3;
-}
-
-.contact-socials:hover {
-    opacity: .95;
-    background: #222;
 }
 
 @media (min-width: 768px) and (min-height: 500px) {
