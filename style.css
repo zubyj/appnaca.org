@@ -48,6 +48,7 @@ html {
     padding-bottom: 5rem;
     padding-top: 3rem !important;
     /*
+    Text Colour Animation Effect
     https://codepen.io/alvarotrigo/pen/PoKMyNO
     */
     background-image: linear-gradient(
@@ -57,9 +58,16 @@ html {
       #ff1361 67%,
       #fff800 100%
     );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
+    display: inline-block;
 }
 @keyframes textclip {
     to {
@@ -185,9 +193,7 @@ html {
 }
 
 #pres-message {
-    color: black;
-    font-size: 1.2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    color: #222;
 }
 
 .fa-virus, .fa-quote-right, .fa-handshake, .fa-envelope {
@@ -224,8 +230,6 @@ html {
     margin-bottom: 1rem;
 }
 
-
-
 /* Contact Us Form */
 #contactForm {
     padding-top: 2rem;
@@ -235,6 +239,8 @@ html {
 #contactForm .form-control {
     justify-content: center !important;
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .form-control {
