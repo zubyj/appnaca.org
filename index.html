@@ -45,24 +45,24 @@ Created by Zuby Javed
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="LNKPY0pv"></script>
         <!-- Top text header-->
         <footer>
-            <div id="main-header"class="slide-right footer-copyright text-light text-center">
-                <div class="slide-right">
-                    <p>
+            <div id="mainmodal">
+                <div class="modalcontent">
+                    <marquee class = "marquee" behavior="scroll" direction="left">
                     We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.
-                    </p>
+                    Check out our free health clinic led by licensed physicians, every Sunday in San Jose, CA.
+                </marquee>
                 </div>
             </div>
         </footer>
         <!-- Google map background -->
         <div id="map"></div>
         <!-- Navigation Bar-->
-        <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-light" id="nav">
+        <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-light" id="navbar">
             <div class="container">
-
                 <!-- APPNA Logo-->
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="#">
                     <span>
-                        <img id="appna-icon" src="img/appna-icon-transparent.png" width="90">
+                        <img id="appna-icon" src="img/appna-icon-transparent.png">
                         <img src="img/appna.png" alt="APPNA Logo" />
                     </span>
                 </a>
@@ -72,18 +72,18 @@ Created by Zuby Javed
                         <i class="fas fa-bars" style="color:#006600; font-size:35px;"></i>
                     </span>
                 </button>
-                <div id="navbar" class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <i class="fa fa-home"></i>
-                                <span class="nav-name">Home</span>
+                                <span class="nav-link-name">Home</span>
                             </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                                 <i class="fa fa-info"></i>
-                                <span class="nav-name">About</span>
+                                <span class="nav-link-name">About</span>
                             </a>
                             <div class="dropdown-menu">
                                 <a class="nav-link dropdown-item" href="https://appnafreeclinicca.org/" target="_blank">Free Health Clinic</a>
@@ -96,13 +96,13 @@ Created by Zuby Javed
                         <li class="nav-item">
                             <a class="nav-link" href="https://portal.ideasregistration.com//Donation/Index?client=13" target="_blank">
                                 <i class="fa fa-hand-holding-medical"></i>
-                                <span class="nav-name">Donate</span>
+                                <span class="nav-link-name">Donate</span>
                             </a>
                         </li>  
                         <li class="nav-item">
                             <a class="nav-link" href="#contactForm">
                                 <i class="fa fa-address-book"></i>
-                                <span class="nav-name">Contact</span>
+                                <span class="nav-link-name">Contact</span>
                             </a>
                         </li>
                     </ul>
@@ -147,7 +147,7 @@ Created by Zuby Javed
         <!-- Socials -->
         <div id="socials" class="container-fluid text-center">
             <div class="container">
-                <h3 id="socials-header" class="section-header">Socials</h3>
+                <h3 id="socials-header" class="section-header animate-character">Socials</h3>
                 <div class="row socials-btns">
                     <div class="social-btn">
                         <a class="contact-socials" target="_blank" href="https://www.facebook.com/pages/category/Nonprofit-organization/APPNA-Northern-California-Chapter-135955409917905/">
@@ -288,11 +288,9 @@ Created by Zuby Javed
                     <!-- Contact submit message pdated when user submits form using ajax.-->
                     <div id="contactSubmitMsg"></div>
                     <div class="form-group">
-                        <label for="name">Name</label>
                         <input type="text" class="form-control" id="inputName" name="name" placeholder="Enter name" >
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
                         <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Enter email" >
                         <textarea class="form-control" id="inputMessage" rows="4" name="message" placeholder="Enter your message"></textarea>
                     </div>

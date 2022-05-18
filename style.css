@@ -1,44 +1,70 @@
+
+
 html {
     scroll-behavior: smooth;
 }
 
-#appna-icon {
-    display: none;
-    margin-right: 1rem;
+/* Top header */
+#mainmodal {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    width: 100%;
 }
 
-/* Top header */
-#main-header {
-    position: relative;
-    background-color: #222;
+.modalcontent {
+    background: #222;
+    width: 100%;
+    padding: 0;
+}
+
+.marquee {
+	color: whitesmoke;
+	letter-spacing: 2px;
 }
 
 /* Navigation Bar */
-#navbar {
-    text-align: left;
+#appna-icon {
+    display: none;
+    width: 90px;
+    margin-right: 1rem;
 }
 
 .nav-link {
-    color: #006600 !important;
+    color: #006600;
 }
 
 .nav-link:hover {
-    border-bottom: 1px solid #006600;
-    border-radius: 10px;
-    background: white;
+    border-bottom: 2px solid #006600;
 }
 
-.nav-name {
-    margin-left: 1rem !important;
+.nav-link-name {
+    margin-left: 1rem;
 }
 
 /* Carousel */
 .section-header {
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #222;
     padding-bottom: 5rem;
     padding-top: 3rem !important;
+    /*
+    https://codepen.io/alvarotrigo/pen/PoKMyNO
+    */
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 #slides-bg {
@@ -46,7 +72,7 @@ html {
     border: 1px solid green;
     border-radius: 5px;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
- }
+}
 
 .carousel-item, .carousel-item a{
     color:#006600 !important;
@@ -206,15 +232,13 @@ html {
     padding-bottom: 3rem;
 }
 
-.form-group label {
-    font-weight: bold !important;
-    font-size: 1.1rem;
+#contactForm .form-control {
+    justify-content: center !important;
+    text-align: center;
 }
 
 .form-control {
     display: inline-block;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     border-radius: 25px;
 }
 
@@ -274,6 +298,11 @@ footer {
 
     #contactForm {
         padding: 5rem;
+    }
+
+    #contactForm .form-control {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
     }
 }
 
