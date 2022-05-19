@@ -258,9 +258,10 @@ footer {
 }
 
 /*
-    Responsive
+    Media Queries
+
     Website is designed for mobile 
-    so these changes are for larger screens 
+    so update for larger screens
 */
 
 @media (min-width: 768px) and (min-height: 500px) {
@@ -353,6 +354,11 @@ footer {
     
     .nav-item {
         margin-left: 20px;
+    }
+
+    .socials-btn {
+        margin: 5rem;
+        width: 10rem;
     }
 
     #carouselIndicators {
