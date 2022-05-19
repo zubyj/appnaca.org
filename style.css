@@ -4,14 +4,28 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Navigation Bar */
+/* Top header */
+#mainmodal {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    width: 100%;
+}
+
+.modalcontent {
+    background: #222;
+    width: 100%;
+    padding: 0;
+}
+
 .marquee {
+	color: whitesmoke;
 	letter-spacing: 2px;
 }
 
+/* Navigation Bar */
 #appna-icon {
     display: none;
-    width: 90px;
+    width: 90px !important;
     margin-right: 1rem;
 }
 
@@ -24,7 +38,7 @@ html {
 }
 
 .nav-link-name {
-    margin-left: 1rem !important;
+    margin-left: 1rem;
 }
 
 /* Carousel */
@@ -43,17 +57,17 @@ html {
       #44107a 29%,
       #ff1361 67%,
       #fff800 100%
-    ) !important;
-    background-size: auto auto !important;
-    background-clip: border-box !important;
-    background-size: 200% auto !important;
-    color: #fff !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    animation: textclip 2s linear infinite !important;
-    display: inline-block ;
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
 }
 @keyframes textclip {
     to {
@@ -91,11 +105,11 @@ html {
 /* Socials */
 #socials {
     margin-top: 7rem;
-    text-align: center !important;
+    text-align: center;
 }
 
 #socials-btns {
-    justify-content: center !important;
+    justify-content: center;
 }
 
 .socials-btn {
@@ -261,7 +275,7 @@ footer {
     }
 
     .socials-btn {
-        padding: 3rem;
+        padding: 6rem;
     }
 
     #contactForm {

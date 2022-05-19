@@ -2,6 +2,7 @@
 Website for APPNA's Northern California Chapter.
 Created by Zuby Javed
 --> 
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -16,7 +17,7 @@ Created by Zuby Javed
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="author" content="Zuby J">
+        <meta name="author" content="Zuby Javed">
         <meta name="description" content="Main Website for APPNA's Northern California Chapter">
         <title>APPNA Northern California</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -29,7 +30,12 @@ Created by Zuby Javed
                     zoom: 8,
                     center: { lat: 37.34017224895144, lng: -125 },
                 });
-            }
+                // The marker, positioned at free health clinic location
+                // const marker = new google.maps.Marker({
+                //     position: {lat: 37.34022342849497, lng: -121.7854836016765},
+                //     map: map,
+                // });
+                }
         </script>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -37,70 +43,72 @@ Created by Zuby Javed
         <!-- Facebook Plugin -->
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="LNKPY0pv"></script>
-        <!-- Sliding text header-->
-        <footer class="bg-dark">
-            <marquee class = "marquee text-light" direction="left">
-                We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.
-                Check out our free health clinic led by licensed physicians, every Sunday in San Jose, CA.
-            </marquee>
+        <!-- Top text header-->
+        <footer>
+            <div id="mainmodal">
+                <div class="modalcontent">
+                    <marquee class = "marquee" behavior="scroll" direction="left">
+                    We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.
+                    Check out our free health clinic led by licensed physicians, every Sunday in San Jose, CA.
+                </marquee>
+                </div>
+            </div>
         </footer>
         <!-- Google map background -->
         <div id="map"></div>
-
         <!-- Navigation Bar-->
-        <nav class="navbar container-fluid navbar-expand-md navbar-expand-lg sticky-top bg-light"> 
+        <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-light" id="navbar">
             <div class="container">
-            <!-- APPNA Logo-->
-            <a class="navbar-brand" href="#">
-                <span>
-                    <img id="appna-icon" src="img/appna-icon-transparent.png" width="90">
-                    <img src="img/appna.png" alt="APPNA Logo" />
-                </span>
-            </a>
-            <!-- Toggle navbar for small screens -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation bar">
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars" style="color:#006600; font-size:35px;"></i>
-                </span>
-            </button>
-            <div id="nav-links" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa fa-home"></i>
-                            <span class="nav-link-name">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                            <i class="fa fa-info"></i>
-                            <span class="nav-link-name">About</span>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="nav-link dropdown-item" href="https://appnafreeclinicca.org/" target="_blank">Free Health Clinic</a>
-                            <a class="nav-link dropdown-item" href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" target="_blank">Covid Webinar</a>
-                            <a class="nav-link dropdown-item" href="https://www.facebook.com/paccbayarea/videos/234234834764052/" target="_blank">Debunking Covid Myths</a>
-                            <a class="nav-link dropdown-item" href="https://appna.org/">National APPNA</a>
-                            <a class="nav-link dropdown-item" href="bylaws.pdf" target="_blank">Bylaws</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://portal.ideasregistration.com//Donation/Index?client=13" target="_blank">
-                            <i class="fa fa-hand-holding-medical"></i>
-                            <span class="nav-link-name">Donate</span>
-                        </a>
-                    </li>  
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactForm">
-                            <i class="fa fa-address-book"></i>
-                            <span class="nav-link-name">Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <!-- APPNA Logo-->
+                <a class="navbar-brand" href="#">
+                    <span>
+                        <img id="appna-icon" src="img/appna-icon-transparent.png">
+                        <img src="img/appna.png" alt="APPNA Logo" />
+                    </span>
+                </a>
+                <!-- Toggle navbar for small screens -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation bar">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style="color:#006600; font-size:35px;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-home"></i>
+                                <span class="nav-link-name">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                <i class="fa fa-info"></i>
+                                <span class="nav-link-name">About</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="nav-link dropdown-item" href="https://appnafreeclinicca.org/" target="_blank">Free Health Clinic</a>
+                                <a class="nav-link dropdown-item" href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" target="_blank">Covid Webinar</a>
+                                <a class="nav-link dropdown-item" href="https://www.facebook.com/paccbayarea/videos/234234834764052/" target="_blank">Debunking Covid Myths</a>
+                                <a class="nav-link dropdown-item" href="https://appna.org/">National APPNA</a>
+                                <a class="nav-link dropdown-item" href="bylaws.pdf" target="_blank">Bylaws</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://portal.ideasregistration.com//Donation/Index?client=13" target="_blank">
+                                <i class="fa fa-hand-holding-medical"></i>
+                                <span class="nav-link-name">Donate</span>
+                            </a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactForm">
+                                <i class="fa fa-address-book"></i>
+                                <span class="nav-link-name">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-
         <!-- Slideshow -->
         <div id="slides-bg" class="container">
             <div id="carouselIndicators" class="carousel slide" data-ride="carousel" id="textCarousel">
