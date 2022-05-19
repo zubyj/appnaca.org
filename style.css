@@ -17,14 +17,14 @@ html {
 }
 
 .marquee {
-	color: whitesmoke;
-	letter-spacing: 2px;
+	color: whitesmoke !important;
+	letter-spacing: 2px !important;
 }
 
 /* Navigation Bar */
 #appna-icon {
     display: none;
-    margin-right: 1rem;
+    margin-right: 1rem !important;
 }
 
 .nav-link {
@@ -36,7 +36,7 @@ html {
 }
 
 .nav-link-name {
-    margin-left: 1rem;
+    margin-left: 1rem !important;
 }
 
 /* Carousel */
@@ -103,11 +103,11 @@ html {
 /* Socials */
 #socials {
     margin-top: 7rem;
-    text-align: center;
+    text-align: center !important;
 }
 
 #socials-btns {
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .socials-btn {
