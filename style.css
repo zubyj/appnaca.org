@@ -17,6 +17,7 @@ html {
 
 .marquee {
 	letter-spacing: 2px !important;
+    letter-spacing: 2px !important;
 }
 
 /* Navigation Bar */
@@ -53,7 +54,7 @@ html {
       #44107a 29%,
       #ff1361 67%,
       #fff800 100%
-    );
+    ) !important;
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
