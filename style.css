@@ -11,12 +11,8 @@ html {
 
 #appna-icon {
     display: none;
-<<<<<<< HEAD
-    margin-right: 1rem !important;
-=======
     width: 90px;
     margin-right: 1rem;
->>>>>>> parent of 275c589 (add important tag on appna icon)
 }
 
 .nav-link {
