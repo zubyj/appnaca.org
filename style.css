@@ -55,16 +55,16 @@ html {
       #ff1361 67%,
       #fff800 100%
     ) !important;
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
+    background-size: auto auto !important;
+    background-clip: border-box !important;
+    background-size: 200% auto !important;
+    color: #fff !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    animation: textclip 2s linear infinite !important;
+    display: inline-block !important;
 }
 @keyframes textclip {
     to {
