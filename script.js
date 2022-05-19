@@ -9,7 +9,6 @@ $(function(){
     }
 
     $("form").on("submit", function(event) {
-
         var formData = {
             name: $("#inputName").val(),
             email: $("#inputEmail").val(),

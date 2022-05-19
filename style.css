@@ -4,23 +4,11 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Top header */
-#mainmodal {
-    z-index: 99999;
-    width: 100%;
-}
-
-.modalcontent {
-    width: 100%;
-    padding: 0;
-}
-
-.marquee {
-	letter-spacing: 2px !important;
-    letter-spacing: 2px !important;
-}
-
 /* Navigation Bar */
+.marquee {
+	letter-spacing: 2px;
+}
+
 #appna-icon {
     display: none;
     margin-right: 1rem !important;
@@ -64,7 +52,7 @@ html {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     animation: textclip 2s linear infinite !important;
-    display: inline-block !important;
+    display: inline-block ;
 }
 @keyframes textclip {
     to {
@@ -272,7 +260,7 @@ footer {
     }
 
     .socials-btn {
-        padding: 6rem;
+        padding: 3rem;
     }
 
     #contactForm {
