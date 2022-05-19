@@ -4,25 +4,11 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Top header */
-#mainmodal {
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    width: 100%;
-}
-
-.modalcontent {
-    background: #222;
-    width: 100%;
-    padding: 0;
-}
-
+/* Navigation Bar */
 .marquee {
-	color: whitesmoke;
 	letter-spacing: 2px;
 }
 
-/* Navigation Bar */
 #appna-icon {
     display: none;
     width: 90px !important;
