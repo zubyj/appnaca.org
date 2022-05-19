@@ -40,19 +40,14 @@ Created by Zuby Javed
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- Facebook Plugin -->
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="LNKPY0pv"></script>
-        <footer>
-            <marquee class="marquee bg-dark text-light" behavior="scroll" direction="left">
-                We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.
-                Check out our free health clinic led by licensed physicians, every Sunday in San Jose, CA.
-            </marquee>
-        </footer>
-        <!-- Google map background -->
-        <div id="map"></div>
-        <!-- Navigation Bar-->
-        <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-light" id="navbar">
+        <!-- Scrolling text header -->
+        <marquee class="marquee bg-dark text-light" behavior="scroll" direction="left">
+            We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender.
+            Check out our free health clinic led by licensed physicians, every Sunday in San Jose, CA.
+        </marquee>
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-expand-lg sticky-top bg-light">
             <div class="container">
                 <!-- APPNA Logo-->
                 <a class="navbar-brand" href="#">
@@ -67,7 +62,7 @@ Created by Zuby Javed
                         <i class="fas fa-bars" style="color:#006600; font-size:35px;"></i>
                     </span>
                 </button>
-                <div class="collapse navbar-collapse">
+                <div class="container collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
@@ -104,6 +99,9 @@ Created by Zuby Javed
                 </div>
             </div>
         </nav>
+
+        <!-- Google map background -->
+        <div id="map"></div>
         <!-- Slideshow -->
         <div id="slides-bg" class="container">
             <div id="carouselIndicators" class="carousel slide" data-ride="carousel" id="textCarousel">
@@ -290,6 +288,9 @@ Created by Zuby Javed
         </div>
 
         <!-- Facebook Plugin-->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="LNKPY0pv"></script>
+        
         <div class="container-fluid text-center py-3" id="fb-container">
             <h3 class="section-header">Connect</h3>
             <div id="fb-plugin bg-light">
