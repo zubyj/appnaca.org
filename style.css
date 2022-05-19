@@ -48,7 +48,7 @@ html {
 }
 
 .nav-link {
-    color: #006600;
+    color: #4b4b4b;
 }
 
 .nav-link:hover {
@@ -93,12 +93,14 @@ html {
     text-align: center;
 }
 
-#socials-btns {
-    justify-content: center;
-}
-
 .socials-btn {
+    justify-content: center;
     padding: 1rem;
+    margin: 3rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15px;
+    background: whitesmoke;
 }
 
 .socials-btn:hover {
@@ -125,7 +127,6 @@ html {
 
 /* About / Cards */
 #cards {
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     padding-top: 2rem;
     padding-bottom: 5rem;
 }
@@ -197,26 +198,32 @@ html {
     font-weight: bold;
 }
 
-#fb-container {
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-}
-
 #fb-plugin {
     margin-bottom: 1rem;
 }
 
 /* Contact Us Form */
+#contactBg {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+#contactForm {
+    border-radius: 5px;
+    border: 1px solid #006600;
+    width: 90%;
+}
+
 #contactForm .form-control {
-    text-align: center;
     display: inline-block;
-    border-radius: 10px;
-    width: 15rem;
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
+    border-radius: 20px;
+    padding-left: 3rem;
 }
 
 #inputMessage {
-    width: 20rem !important;
+    margin-top: 1rem;
+    height: 10rem;
 }
 
 #submitBtn {
@@ -256,9 +263,8 @@ footer {
         z-index: 0;
     }
 
-    #socials-header {
+    #socials {
         margin-top: 20rem;
-        padding-top: 4rem;
     }
 
     .socials-btn {
@@ -320,9 +326,5 @@ footer {
 
     #carouselIndicators {
         width: 100%;
-    }
-
-    #socials-header {
-        margin-top: 13rem;
     }
 }
