@@ -6,7 +6,7 @@ html {
 
 /* Top header */
 #mainmodal {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8) !important;
     z-index: 99999;
     width: 100%;
 }
@@ -24,7 +24,6 @@ html {
 /* Navigation Bar */
 #appna-icon {
     display: none;
-    width: 90px !important;
     margin-right: 1rem;
 }
 
