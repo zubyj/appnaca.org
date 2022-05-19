@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* General reused components */
 .section-header {
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -48,7 +49,7 @@ html {
 }
 
 .nav-link {
-    color: #4b4b4b;
+    color: #006600;
 }
 
 .nav-link:hover {
@@ -65,10 +66,12 @@ html {
 /* Image Slider */
 #slides-bg {
     position: relative;
-    border: 1px solid green;
-    border-radius: 5px;
     height: 50rem;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    border: 1px solid green;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+
 }
 
 .carousel-item, .carousel-item a {
@@ -89,28 +92,60 @@ html {
 }
 
 /* Socials */
-#socials {
+#socialsBg {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    padding-top: 3rem;
     text-align: center;
+    
+}
+
+#socials {
+    justify-content: center;
+    text-align: center;
+    
 }
 
 .socials-btn {
-    justify-content: center;
-    padding: 1rem;
-    margin: 3rem;
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 15px;
+    justify-content: center;
+    padding-top: 1rem;
+    margin: 1rem;
     background: whitesmoke;
+    cursor: pointer;
+}
+
+.socials-btn {
+	transition: all 0.4s ease-in-out;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 .socials-btn:hover {
     background: lightgoldenrodyellow;
+    text-decoration: none;
 }
 
 .socials-text {
-    padding: 2rem;
-    color: #222;
-    font-weight: 500;
+    margin: 2rem;
 }
 
 #fb-icon {
@@ -125,24 +160,19 @@ html {
     color: #006600;
 }
 
-/* About / Cards */
+/* About Cards */
 #cards {
     padding-top: 2rem;
     padding-bottom: 5rem;
+    background: #EFEFEF;
+    font-weight: 500;
+    font-weight: 500;
 }
 
 .card {
     margin-bottom: 2rem;
     border-radius: 10px;
-}
-
-.card button:hover {
-    background-color:#660000;
-}
-
-.card-header h3{
-    font-size:1.1rem;
-    font-weight: normal;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
 .card-header {
@@ -150,12 +180,21 @@ html {
 }
 
 .card-header:hover {
+    background-color:#660000;
     color:white;
     text-decoration: none;
 }
 
-.card-body th {
-    color: black;
+.card-header h3{
+    font-size:1.1rem;
+}
+
+.fa-virus, .fa-quote-right, .fa-handshake, .fa-envelope {
+    font-size:2rem;
+}
+
+.card-body {
+    color: #222;
 }
 
 .card-body a {
@@ -165,59 +204,29 @@ html {
 .card-body a:hover {
     text-decoration: none;
     color: #660000;
-    font-weight: bolder !important;
-}
-
-#pres-message {
-    color: #222;
-}
-
-.fa-virus, .fa-quote-right, .fa-handshake, .fa-envelope {
-    font-size:2rem;
 }
 
 #covidCollapse {
     color:#006600 !important;
 }
 
-#covidCollapse a {
-    font-weight:normal;
-}
-
-#email .btn{
-    background-color: #006600;
-    color: white !important;
-}
-
-#email .btn:hover {
-    text-decoration: none;
-    background-color: #660000;
-}
-
-#email {
-    font-weight: bold;
-}
-
-#fb-plugin {
-    margin-bottom: 1rem;
-}
-
 /* Contact Us Form */
 #contactBg {
     padding-top: 3rem;
     padding-bottom: 3rem;
-
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 #contactForm {
     border-radius: 5px;
     border: 1px solid #006600;
     width: 90%;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
 #contactForm .form-control {
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-left: 3rem;
 }
 
@@ -236,7 +245,11 @@ html {
 
 #submitBtn:hover {
     background: #006600;
-    font-weight: bolder;
+}
+
+/* Facebook Plugin */
+#facebookBg {
+    background: #EFEFEF;
 }
 
 footer {
@@ -263,20 +276,46 @@ footer {
         z-index: 0;
     }
 
-    #socials {
-        margin-top: 20rem;
+    #socialsBg {
+        padding-top: 20rem;
+        padding-bottom: 5rem;
     }
 
     .socials-btn {
-        padding: 3rem;
+        width: 20rem;
+        height: 12rem;
     }
 
+    #cards {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    #contactBg {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    
     #contactForm {
-        padding: 2rem;
+        padding: 4rem;
+    }
+
+    #facebookBg {
+        padding-top: 6rem !important;
+        padding-bottom: 6rem !important;
+    }
+
+    .fb-page {
+        border: 2px solid black;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     }
 }
 
 @media (min-width: 768px) {
+
+    .section-header {
+        font-size: 2rem;
+    }
 
     #slides-bg {
         margin-top: 8rem;
@@ -291,14 +330,6 @@ footer {
 
     .slides-text {
         font-size: 2rem !important;
-    }
-
-    .section-header {
-        font-size: 2rem;
-    }
-
-    #cards {
-        padding-bottom: 5rem;
     }
 
     #fb-header {
