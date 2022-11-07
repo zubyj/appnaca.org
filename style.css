@@ -13,6 +13,10 @@ html {
     display: none;
 }
 
+.navbar {
+    height: 7rem;
+}
+
 .nav-link {
     color: #006600;
     padding-bottom: 2px; /* padding gets replaced with border bottom on hover */
@@ -22,7 +26,6 @@ html {
     border-bottom: 2px solid #006600;
     color: #006600;
     padding-bottom: 0px;
-    font-weight: bold;
 }
 
 /* Welcome, Social, About Headers*/
@@ -30,8 +33,8 @@ html {
     text-transform: uppercase;
     color: white;
     font-size: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
 }
 
 /* Image Slider */
@@ -65,14 +68,12 @@ html {
 /* Socials */
 #socialsBg {
     background-image: url('/img/double-bubble-dark.webp');
-    padding-top: 3rem;
     text-align: center;
 }
 
 #socials {
     justify-content: center;
     text-align: center;
-    border-radius: 15px;
     transition: all 0.4s ease-in-out;
 	overflow: hidden;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -81,11 +82,14 @@ html {
 }
 
 .socials-btn {
-    background-color: white !important;
-    width: 12rem;
-    height: 15rem;
+    background-color: whitesmoke !important;
+    border-radius: 30px;
+    margin: 1rem;
+    width: 50%;
     justify-content: center;
+    padding-top: 1rem;
     cursor: pointer;
+    color: black;
 }
 
 /* Float animation */
@@ -125,9 +129,7 @@ html {
     padding-top: 2rem;
     padding-bottom: 5rem;
     background: #EFEFEF;
-    font-weight: 500;
-    font-weight: 500;
-    background-image: url('/img/moroccan-flower-dark.webp');
+    font-weight: 500;    background-image: url('/img/moroccan-flower-dark.webp');
 }
 
 .card {
@@ -141,7 +143,7 @@ html {
 }
 
 .card-header:hover {
-    background-color:#660000;
+    background-color: #006600;
     color:white;
     text-decoration: none;
 }
@@ -173,22 +175,27 @@ html {
 
 /* Contact Us Form */
 #contactBg {
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     background-image: url('img/double-bubble-dark.webp');
 }
 
 #contactForm {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     width: 90%;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    background-image: url('/img/moroccan-flower-dark.webp')
+    background-color: white;
+}
+
+#contactForm .section-header {
+    color: black;
 }
 
 #contactForm .form-control {
     display: inline-block;
     border-radius: 10px;
-    padding-left: 3rem;
+    margin-bottom: 1rem;
 }
 
 #inputMessage {
@@ -198,7 +205,8 @@ html {
 
 #submitBtn {
     box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
-    color: black;
+    color: white;
+    background-color: #006600;
     text-transform: uppercase;
     font-weight: bold;
     padding: .5rem;
@@ -206,8 +214,7 @@ html {
 }
 
 #submitBtn:hover {
-    background: black;
-    color: white;
+    background: #4267B2;
 }
 
 /* Facebook Plugin */
@@ -245,8 +252,12 @@ footer {
         margin-left: .5rem;
     }
 
+    .section-header {
+        padding-bottom: 5rem !important;
+    }
+
     #socialsBg {
-        padding-top: 30rem;
+        padding-top: 15rem;
         padding-bottom: 5rem;
     }
 
@@ -258,13 +269,17 @@ footer {
     }
 
     .socials-btn:hover {
-        background-color: yellow !important;
+        background-color: #90ee90 !important;
         text-decoration: none;
     }
 
     #cards {
         padding-top: 6rem;
         padding-bottom: 6rem;
+    }
+
+    #cards .section-header {
+        padding-bottom: 5rem !important;
     }
 
     #contactBg {
@@ -274,6 +289,7 @@ footer {
     
     #contactForm {
         padding: 4rem;
+        margin-top: 7rem;
     }
 
     #facebookBg {
@@ -285,8 +301,6 @@ footer {
 @media (min-width: 768px) {
     .section-header {
         font-size: 2.5rem;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
     }
 
     #slides-bg {
@@ -308,10 +322,6 @@ footer {
         margin-bottom: 5rem;
     }
 
-    #contactForm {
-        width: 30%;
-    }
-
     .form-control {
         margin-bottom: 2rem;
     }
@@ -327,7 +337,9 @@ footer {
         margin-left: 20px;
     }
 
-    
+    .section-header {
+        padding-top: 1rem;
+    }
 
     .socials-btn {
         margin: 5rem;
@@ -336,5 +348,9 @@ footer {
 
     #carouselIndicators {
         width: 100%;
+    }
+
+    #contactForm {
+        width: 50rem;
     }
 }
