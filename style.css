@@ -82,14 +82,13 @@ html {
 }
 
 .socials-btn {
-    background-color: whitesmoke !important;
-    border-radius: 30px;
+    background-color: whitesmoke;
     margin: 1rem;
-    width: 50%;
-    justify-content: center;
-    padding-top: 1rem;
+    width: 15rem;
     cursor: pointer;
     color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 100px;
 }
 
 /* Float animation */
@@ -129,13 +128,16 @@ html {
     padding-top: 2rem;
     padding-bottom: 5rem;
     background: #EFEFEF;
-    font-weight: 500;    background-image: url('/img/moroccan-flower-dark.webp');
+    background-image: url('/img/moroccan-flower-dark.webp');
+    align-items: center;
+    width: 100%;
 }
 
 .card {
     margin-bottom: 2rem;
     border-radius: 10px;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    width: 15rem;
 }
 
 .card-header {
@@ -152,7 +154,7 @@ html {
     font-size:1.1rem;
 }
 
-.fa-virus, .fa-quote-right, .fa-handshake, .fa-envelope {
+.fa-virus, .fa-quote-right, .fa-handshake, a-envelope {
     font-size:2rem;
 }
 
@@ -247,10 +249,6 @@ footer {
         position: absolute;
         z-index: 0;
     }
-    
-    .nav-link-name {
-        margin-left: .5rem;
-    }
 
     .section-header {
         padding-bottom: 5rem !important;
@@ -265,7 +263,6 @@ footer {
         padding-top: 1rem;
         width: 20rem;
         height: 12rem;
-        border-radius: 10px;
     }
 
     .socials-btn:hover {
@@ -322,6 +319,10 @@ footer {
         margin-bottom: 5rem;
     }
 
+    .card {
+        width: 20rem;
+    }
+
     .form-control {
         margin-bottom: 2rem;
     }
@@ -335,6 +336,10 @@ footer {
     
     .nav-item {
         margin-left: 20px;
+    }
+
+    .nav-link-name {
+        padding-left: .5rem;
     }
 
     .section-header {
