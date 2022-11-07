@@ -28,7 +28,7 @@ html {
 /* Welcome, Social, About Headers*/
 .section-header {
     text-transform: uppercase;
-    color: black;
+    color: white;
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -39,13 +39,14 @@ html {
     position: relative;
     height: 45rem;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    border: 1px solid green;
+    background-image: url('/img/moroccan-flower-dark.webp');
     border-radius: 5px;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
 .carousel-item, .carousel-item a {
     color:#006600;
+    color: #90ee90;
 }
 
 .slides-text {
@@ -57,13 +58,13 @@ html {
 }
 
 #backArrow, #forwardArrow {
-    color:#222;
+    color:white;
     font-size:2rem;
 }
 
 /* Socials */
 #socialsBg {
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-image: url('/img/double-bubble-dark.webp');
     padding-top: 3rem;
     text-align: center;
 }
@@ -71,8 +72,6 @@ html {
 #socials {
     justify-content: center;
     text-align: center;
-    background-color: white;
-
     border-radius: 15px;
     transition: all 0.4s ease-in-out;
 	overflow: hidden;
@@ -82,25 +81,14 @@ html {
 }
 
 .socials-btn {
+    background-color: white !important;
     width: 12rem;
-    height: 12rem;
+    height: 15rem;
     justify-content: center;
-    padding-top: 1rem;
-    margin: 1rem;
     cursor: pointer;
-    background-image: none;
-    background: linear-gradient(#1095c1 0 0) var(--p, 0) / var(--p, 0) no-repeat;
-    transition: .4s, background-position 0s;
 }
 
-.social-btns:hover {
-    --p: 100%;
-    color: #fff;
-}
-
-    /* Float animation */
-
-
+/* Float animation */
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -139,6 +127,7 @@ html {
     background: #EFEFEF;
     font-weight: 500;
     font-weight: 500;
+    background-image: url('/img/moroccan-flower-dark.webp');
 }
 
 .card {
@@ -187,11 +176,13 @@ html {
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-image: url('img/double-bubble-dark.webp');
 }
 
 #contactForm {
     width: 90%;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    background-image: url('/img/moroccan-flower-dark.webp')
 }
 
 #contactForm .form-control {
@@ -206,24 +197,27 @@ html {
 }
 
 #submitBtn {
-    background: #222;
     box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
-    color: #fff;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
     padding: .5rem;
     width: 10rem;
 }
 
 #submitBtn:hover {
-    background: #006600;
+    background: black;
+    color: white;
 }
 
 /* Facebook Plugin */
 #facebookBg {
     background: #EFEFEF;
+    background-image: url('/img/moroccan-flower-dark.webp')
 }
 
 footer {
-    background-color:#006600;
+    background-color: black;
     font-size: 1rem;
 }
 
@@ -257,8 +251,15 @@ footer {
     }
 
     .socials-btn {
+        padding-top: 1rem;
         width: 20rem;
         height: 12rem;
+        border-radius: 10px;
+    }
+
+    .socials-btn:hover {
+        background-color: yellow !important;
+        text-decoration: none;
     }
 
     #cards {
