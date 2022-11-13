@@ -1,34 +1,8 @@
-
-
 html {
     scroll-behavior: smooth;
 }
 
-/* Navigation Bar */
-.marquee {
-	letter-spacing: 1px;
-}
-
-#appna-icon {
-    display: none;
-}
-
-.navbar {
-    height: 7rem;
-}
-
-.nav-link {
-    color: #006600;
-    padding-bottom: 2px; /* padding gets replaced with border bottom on hover */
-}
-
-.nav-link:hover {
-    border-bottom: 2px solid #006600;
-    color: #006600;
-    padding-bottom: 0px;
-}
-
-/* Welcome, Social, About Headers*/
+/* Reused components */
 .section-header {
     text-transform: uppercase;
     color: white;
@@ -37,12 +11,33 @@ html {
     padding-bottom: 3rem !important;
 }
 
+/* Navigation Bar */
+.marquee {
+	letter-spacing: .5px;
+}
+
+/* Hide appna icon on mobile */
+#appna-icon {
+    display: none;
+}
+
+.nav-link {
+    color: #006600;
+    padding-bottom: 2px; /* on hover, padding replaced with border */
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #006600;
+    color: #006600;
+    padding-bottom: 0px;
+}
+
 /* Image Slider */
 #slides-bg {
     position: relative;
-    height: 45rem;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    height: 50rem;
     background-image: url('/img/moroccan-flower-dark.webp');
+    background-image: url('img/double-bubble-dark.webp');
     border-radius: 5px;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
@@ -61,13 +56,14 @@ html {
 }
 
 #backArrow, #forwardArrow {
-    color:white;
+    color: #90ee90;
     font-size:2rem;
 }
 
 /* Socials */
 #socialsBg {
     background-image: url('/img/double-bubble-dark.webp');
+    background-image: url('/img/circles-blue.webp');
     text-align: center;
 }
 
@@ -83,12 +79,15 @@ html {
 
 .socials-btn {
     background-color: whitesmoke;
+    padding-top: 2rem;
     margin: 1rem;
-    width: 15rem;
+    width: 12rem;
     cursor: pointer;
     color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 100px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #006600;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 /* Float animation */
@@ -129,6 +128,7 @@ html {
     padding-bottom: 5rem;
     background: #EFEFEF;
     background-image: url('/img/moroccan-flower-dark.webp');
+    background-image: url('img/double-bubble-dark.webp');
     align-items: center;
     width: 100%;
 }
