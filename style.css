@@ -39,7 +39,7 @@ html {
 /* Image Slider */
 #slides-bg {
     position: relative;
-    background-image: url('img/double-bubble-dark.webp');
+    background-image: url('img/wallpaper/double-bubble-dark.webp');
     border-radius: 5px;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
@@ -79,6 +79,7 @@ html {
 #socialsBg {
     text-align: center;
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-image: url('img/wallpaper/old-wall.webp')
 }
 
 #socialsBg .section-header {
@@ -87,7 +88,6 @@ html {
 
 #socials {
     border-radius: 10px;
-    background-image: url('/img/double-bubble-dark.webp');
     justify-content: center;
     text-align: center;
     transition: all 0.4s ease-in-out;
@@ -95,6 +95,7 @@ html {
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
+    background-image: url('img/wallpaper/double-bubble-dark.webp');
 }
 
 .socials-btn {
@@ -150,9 +151,7 @@ html {
 #cards {
     padding-top: 2rem;
     padding-bottom: 5rem;
-    background: #EFEFEF;
-    background-image: url('/img/moroccan-flower-dark.webp');
-    background-image: url('img/double-bubble-dark.webp');
+    background-image: url('img/wallpaper/double-bubble-dark.webp');
     align-items: center;
     width: 100%;
 }
@@ -202,14 +201,14 @@ html {
 #contactBg {
     padding-top: 5rem;
     padding-bottom: 3rem;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-image: url('img/wallpaper/old-wall.webp'); 
 }
 
 #contactForm {
     padding-top: 3rem;
     padding-bottom: 3rem;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    background-image: url('img/double-bubble-dark.webp');
+    background-image: url('img/wallpaper/double-bubble-dark.webp');
 }
 
 #contactForm .form-control {
@@ -240,7 +239,7 @@ html {
 /* Facebook Plugin */
 #facebookBg {
     background: #EFEFEF;
-    background-image: url('/img/double-bubble-dark.webp');
+    background-image: url('/img/wallpaper/double-bubble-dark.webp');
 }
 
 footer {
