@@ -26,10 +26,14 @@ html {
     padding-bottom: 2px; /* on hover, padding replaced with border */
 }
 
-.nav-link:hover {
-    border-bottom: 2px solid #006600;
-    color: #006600;
+.nav-item:hover {
+    border-bottom: 1px solid #006600;
     padding-bottom: 0px;
+    color: #006600;
+}
+
+.nav-link:hover {
+    color: #006600;
 }
 
 /* Image Slider */
@@ -60,6 +64,15 @@ html {
 #backArrow, #forwardArrow {
     color: #90ee90;
     font-size:2rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+#promoVideo {
+    margin-top: 3rem;
 }
 
 /* Socials */
@@ -195,7 +208,6 @@ html {
 #contactForm {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    width: 90%;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     background-image: url('img/double-bubble-dark.webp');
 }
@@ -306,10 +318,16 @@ footer {
         height: 60rem;
      }
 
+    .carousel-control-prev, .carousel-control-next {
+        height: 5rem;
+        margin-top: 11rem;
+    }
+
     .carousel-item img {
         width: auto !important;
         height: 35rem;
     }
+
 
     .slides-text {
         font-size: 2rem !important;
