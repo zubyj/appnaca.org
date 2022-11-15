@@ -36,6 +36,21 @@ html {
     color: #006600;
 }
 
+#aboutDropdown {
+    padding-left: 6px;
+}
+
+
+.fa-info {
+    margin-right: 5px;
+}
+
+.fa-address-book {
+    margin-right: 3px;
+}
+
+
+
 /* Image Slider */
 #slides-bg {
     position: relative;
@@ -75,15 +90,77 @@ html {
     margin-top: 6rem;
 }
 
+
+/* About */
+#cards {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-image: url('img/wallpaper/double-bubble-dark.webp');
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+}
+
+.card-header {
+    color: #006600;
+}
+
+.card-header:hover {
+    background-color: #006600;
+    color:white;
+    text-decoration: none;
+}
+
+.card-header h3{
+    font-size:1.1rem;
+}
+
+.fa-virus, .fa-quote-right, .fa-handshake, a-envelope {
+    font-size:2rem;
+}
+
+.card-body {
+    color: #222;
+}
+
+.card-body a {
+    color: #006600;
+}
+
+.card-body a:hover {
+    text-decoration: none;
+    color: #660000;
+}
+
+#covidCollapse {
+    color:#006600 !important;
+}
+
+/* Facebook Plugin */
+#facebookBg .container {
+    border: 2px solid black;
+    width: 90%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#facebookBg .section-header {
+    color: black;
+}
+
 /* Socials */
 #socialsBg {
     text-align: center;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    background-image: url('img/wallpaper/old-wall.webp')
+    background-image: url('img/wallpaper/double-bubble-dark.webp');
 }
 
 #socialsBg .section-header {
-    color: black;
+    color: white;
 }
 
 #socials {
@@ -95,7 +172,6 @@ html {
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
-    background-image: url('img/wallpaper/double-bubble-dark.webp');
 }
 
 .socials-btn {
@@ -146,69 +222,17 @@ html {
 #national-appna-icon {
     color: #006600;
 }
-
-/* About Cards */
-#cards {
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-    background-image: url('img/wallpaper/double-bubble-dark.webp');
-    align-items: center;
-    width: 100%;
-}
-
-.card {
-    margin-bottom: 2rem;
-    border-radius: 10px;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-}
-
-.card-header {
-    color: #006600;
-}
-
-.card-header:hover {
-    background-color: #006600;
-    color:white;
-    text-decoration: none;
-}
-
-.card-header h3{
-    font-size:1.1rem;
-}
-
-.fa-virus, .fa-quote-right, .fa-handshake, a-envelope {
-    font-size:2rem;
-}
-
-.card-body {
-    color: #222;
-}
-
-.card-body a {
-    color: #006600;
-}
-
-.card-body a:hover {
-    text-decoration: none;
-    color: #660000;
-}
-
-#covidCollapse {
-    color:#006600 !important;
-}
-
 /* Contact Us Form */
 #contactBg {
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
-    background-image: url('img/wallpaper/old-wall.webp'); 
+    background-image: url('img/wallpaper/old-wall.webp');
 }
 
 #contactForm {
     padding-top: 3rem;
     padding-bottom: 3rem;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    background-image: url('img/wallpaper/double-bubble-dark.webp');
 }
 
 #contactForm .form-control {
@@ -234,12 +258,6 @@ html {
 
 #submitBtn:hover {
     background: #4267B2;
-}
-
-/* Facebook Plugin */
-#facebookBg {
-    background: #EFEFEF;
-    background-image: url('/img/wallpaper/double-bubble-dark.webp');
 }
 
 footer {
@@ -270,7 +288,7 @@ footer {
         padding-bottom: 5rem !important;
     }
 
-    #socialsBg {
+    #cards {
         padding-top: 15rem;
         padding-bottom: 5rem;
     }
@@ -304,6 +322,10 @@ footer {
         padding-top: 6rem !important;
         padding-bottom: 6rem !important;
     }
+
+    #facebookBg .section-header {
+        color: black;
+    }
 }
 
 @media (min-width: 768px) {
@@ -326,7 +348,6 @@ footer {
         width: auto !important;
         height: 35rem;
     }
-
 
     .slides-text {
         font-size: 2rem !important;
@@ -362,7 +383,7 @@ footer {
         padding-top: 1rem;
     }
 
-    #socialsBg {
+    #cards {
         padding-top: 25rem;
     }
 
