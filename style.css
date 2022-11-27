@@ -5,10 +5,10 @@ html {
 /* Reused components */
 .section-header {
     text-transform: uppercase;
-    color: white;
     font-size: 1.5rem;
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+    color: white;
 }
 
 /* Navigation Bar */
@@ -39,27 +39,25 @@ html {
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
 }
 @-webkit-keyframes scroll-left {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
 }
 @keyframes scroll-left {
  0%   { 
- -moz-transform: translateX(100%); /* Browser bug fix */
- -webkit-transform: translateX(100%); /* Browser bug fix */
- transform: translateX(100%); 		
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 		
  }
  100% { 
- -moz-transform: translateX(-100%); /* Browser bug fix */
- -webkit-transform: translateX(-100%); /* Browser bug fix */
- transform: translateX(-100%); 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
  }
 }
-
-
 
 /* Hide appna icon on mobile */
 #appna-icon {
@@ -96,13 +94,18 @@ html {
 /* Image Slider */
 #slides-bg {
     position: relative;
-    background-image: url('img/wallpaper/double-bubble-dark.webp');
+    background-color: #2B2E4A;
+    background-image: url('img/wallpaper/repeated-square.webp');
     border-radius: 5px;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 
+#slides-bg .section-header {
+    color: white;
+}
+
 .carousel-inner {
-    height: 45rem;
+    height: 35rem;
 }
 
 .carousel-item, .carousel-item a {
@@ -133,18 +136,19 @@ html {
 
 
 /* About */
-#cards {
+#about {
     padding-top: 2rem;
     padding-bottom: 5rem;
-    background-image: url('img/wallpaper/double-bubble-dark.webp');
     align-items: center;
     width: 100%;
+    background-color: #0B0C0D;
 }
 
 .card {
     margin-bottom: 2rem;
     border-radius: 10px;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    background-color: #D9D2D0;
 }
 
 .card-header {
@@ -182,22 +186,16 @@ html {
     color:#006600 !important;
 }
 
-/* Facebook Plugin */
-#facebookBg .container {
-    border: 2px solid black;
-    width: 90%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-#facebookBg .section-header {
-    color: black;
+/* Facebook Page */
+#facebookBg {
+    background-color: #0B0C0D;
+    background-image: url('img/wallpaper/repeated-square.webp');
 }
 
 /* Socials */
 #socialsBg {
     text-align: center;
-    background-image: url('img/wallpaper/double-bubble-dark.webp');
+    background-color: #0B0C0D;
 }
 
 #socialsBg .section-header {
@@ -218,18 +216,17 @@ html {
 .socials-btn {
     background-color: whitesmoke;
     padding-top: 2rem;
-    margin: 1rem;
     width: 12rem;
-    cursor: pointer;
     color: black;
     border-radius: 10px;
-    background-color: white;
     border: 2px solid #006600;
+    background-color: #D9D2D0;
 }
 
 .socials-btn:hover {
     background-color: #90ee90 !important;
     text-decoration: none;
+    cursor: pointer
 }
 
 /* Float animation */
@@ -267,13 +264,15 @@ html {
 #contactBg {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-image: url('img/wallpaper/old-wall.webp');
+    background-image: url('img/wallpaper/repeated-square.webp');
 }
 
 #contactForm {
     padding-top: 3rem;
     padding-bottom: 3rem;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    background-color: #0B0C0D;
+    border-radius: 10px;     
 }
 
 #contactForm .form-control {
@@ -303,12 +302,12 @@ html {
 
 footer {
     font-size: 1rem;
+    background-color: #0B0C0D;
 }
 
 /*
-    Media Queries
     Website is designed for mobile 
-    so update for larger screens
+    so changes are for larger devices
 */
 
 @media (min-width: 768px) and (min-height: 500px) {
@@ -335,23 +334,16 @@ footer {
         padding-bottom: 5rem !important;
     }
 
-    #cards {
-        padding-top: 15rem;
-        padding-bottom: 5rem;
+    .carousel-inner {
+        height: 50rem;
     }
 
-    .socials-btn {
-        padding-top: 1rem;
-        width: 20rem;
-        height: 12rem;
-    }
-
-    #cards {
+    #about {
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
 
-    #cards .section-header {
+    #about .section-header {
         padding-bottom: 5rem !important;
     }
 
@@ -368,10 +360,6 @@ footer {
     #facebookBg {
         padding-top: 6rem !important;
         padding-bottom: 6rem !important;
-    }
-
-    #facebookBg .section-header {
-        color: black;
     }
 }
 
@@ -430,12 +418,13 @@ footer {
         padding-top: 1rem;
     }
 
-    #cards {
-        padding-top: 25rem;
+    #about {
+        padding-top: 10rem;
     }
 
     .socials-btn {
-        margin: 5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
         width: 10rem;
     }
 
