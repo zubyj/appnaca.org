@@ -12,7 +12,6 @@ html {
 }
 
 /* Navigation Bar */
-
 /* Scrolling news text */
 .scroll-left {
     height: 50px;	
@@ -148,7 +147,7 @@ html {
     margin-bottom: 2rem;
     border-radius: 10px;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    background-color: #D9D2D0;
+    width: 15rem;
 }
 
 .card-header {
@@ -198,10 +197,6 @@ html {
     background-color: #0B0C0D;
 }
 
-#socialsBg .section-header {
-    color: white;
-}
-
 #socials {
     border-radius: 10px;
     justify-content: center;
@@ -216,11 +211,11 @@ html {
 .socials-btn {
     background-color: whitesmoke;
     padding-top: 2rem;
-    width: 12rem;
+    width: 10rem;
+    height: 11rem;
     color: black;
     border-radius: 10px;
     border: 2px solid #006600;
-    background-color: #D9D2D0;
 }
 
 .socials-btn:hover {
