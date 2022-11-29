@@ -17,7 +17,7 @@ html {
     height: 50px;	
     overflow: hidden;
     position: relative;
-    background: #222;
+    background: #121212;
     color: whitesmoke;
 }
 .scroll-left p {
@@ -97,14 +97,16 @@ html {
     background-image: url('img/wallpaper/repeated-square.webp');
     border-radius: 5px;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    border-bottom: 1px solid white;
 }
 
 #slides-bg .section-header {
     color: white;
 }
 
+
 .carousel-inner {
-    height: 35rem;
+    height: 45rem;
 }
 
 .carousel-item, .carousel-item a {
@@ -141,6 +143,7 @@ html {
     align-items: center;
     width: 100%;
     background-color: #0B0C0D;
+    border-bottom: 1px solid white;
 }
 
 .card {
@@ -195,6 +198,9 @@ html {
 #socialsBg {
     text-align: center;
     background-color: #0B0C0D;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
 }
 
 #socials {
@@ -215,7 +221,7 @@ html {
     height: 11rem;
     color: black;
     border-radius: 10px;
-    border: 2px solid #006600;
+    border: 4px solid #006600;
 }
 
 .socials-btn:hover {
@@ -298,6 +304,7 @@ html {
 footer {
     font-size: 1rem;
     background-color: #0B0C0D;
+    border-top: 1px solid white;
 }
 
 /*
