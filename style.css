@@ -159,7 +159,7 @@ html {
 
 .card-header:hover {
     background-color: #006600;
-    color:white;
+    color:white !important;
     text-decoration: none;
 }
 
@@ -186,6 +186,77 @@ html {
 
 #covidCollapse {
     color:#006600 !important;
+}
+
+
+/* Covid Section */
+#covidSection {
+    background-color: #00081e;
+    width: 100vw !important;
+    border: 5px solid green;
+}
+
+.about-block {
+    border: 1px solid white;
+    width: 50%
+}
+
+#covidTitle {
+    text-align: center;
+    color:  #FFD700;
+}
+
+#covidSection table {
+    border: 1px solid #CCC;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 1rem;
+}
+
+#covidSection table td {
+    border-top: none;
+    border-bottom: none;
+}
+
+#covidSection table th {
+    border-top: none;
+    border-bottom: none;
+}
+
+#covidSection table a {
+    color: #90ee90;
+}
+
+/* Presidents Message */
+#presMsgSection {
+    background-color: black;
+}
+
+#missionStatement {
+    font-size: 2rem;
+    color: #90ee90;
+}
+
+/* Executive Commitee */
+#teamSection {
+    background-color: #121212;
+}
+
+#teamSection table {
+    width: 100%;
+}
+
+#teamTitle {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+#teamIcon {
+    color: #006600 !important;
+}
+
+#teamImg {
+    background-color: aliceblue;
 }
 
 /* Facebook Page */
@@ -299,6 +370,15 @@ html {
 
 #submitBtn:hover {
     background: #4267B2;
+}
+ 
+/* spinner is hidden until submit clicked */
+.hidden {
+    display: none !important;
+}
+
+#contactSubmitMsg {
+    padding-bottom: 2rem;
 }
 
 footer {

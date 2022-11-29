@@ -26,9 +26,13 @@ $(function(){
             dataType: "json",
             encode: true,
             timeout: 5000,
+            beforeSend: function() {
+                $('#spinner').removeClass('hidden')
+            }
         })
             .done(function(data) {
                 $("#contactSubmitMsg").html('<span style="color:green">' + data.message + '</span');
+                $('#spinner').addClass('hidden')
             })
             .fail(function (data) {
                 $("#contactSubmitMsg").html('<span style="color:red">Sorry cant connect to the server. Please try again later.</span');
