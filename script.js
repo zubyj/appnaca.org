@@ -31,7 +31,7 @@ $(function(){
             }
         })
             .done(function(data) {
-                $("#contactSubmitMsg").html('<span style="color:green">' + data.message + '</span');
+                $("#contactSubmitMsg").html('<span style="color:white;background-color: #006600; padding: 0.5rem;border-radius: 10px">' + data.message + '</span');
                 $('#spinner').addClass('hidden')
             })
             .fail(function (data) {

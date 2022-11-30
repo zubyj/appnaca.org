@@ -1,0 +1,52 @@
+
+/* About */
+#about {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    width: 100%;
+    background-color: #0B0C0D;
+    border-bottom: 1px solid white;
+}
+
+.card {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    width: 15rem;
+}
+
+.card-header {
+    color: #006600;
+}
+
+.card-header:hover {
+    background-color: #006600;
+    color:white !important;
+    text-decoration: none;
+}
+
+.card-header h3{
+    font-size:1.1rem;
+}
+
+.fa-virus, .fa-quote-right, .fa-handshake, a-envelope {
+    font-size:2rem;
+}
+
+.card-body {
+    color: #222;
+}
+
+.card-body a {
+    color: #006600;
+}
+
+.card-body a:hover {
+    text-decoration: none;
+    color: #660000;
+}
+
+#covidCollapse {
+    color:#006600 !important;
+}

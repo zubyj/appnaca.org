@@ -93,11 +93,11 @@ html {
 /* Image Slider */
 #slides-bg {
     position: relative;
-    background-color: #2B2E4A;
     background-image: url('img/wallpaper/repeated-square.webp');
-    border-radius: 5px;
+    border-radius: 10px;
+    padding-top: 2rem;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    border-bottom: 1px solid white;
+    border: 1px solid whitesmoke;
 }
 
 #slides-bg .section-header {
@@ -136,78 +136,23 @@ html {
 }
 
 
-/* About */
-#about {
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-    align-items: center;
-    width: 100%;
-    background-color: #0B0C0D;
-    border-bottom: 1px solid white;
-}
-
-.card {
-    margin-bottom: 2rem;
-    border-radius: 10px;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    width: 15rem;
-}
-
-.card-header {
-    color: #006600;
-}
-
-.card-header:hover {
-    background-color: #006600;
-    color:white !important;
-    text-decoration: none;
-}
-
-.card-header h3{
-    font-size:1.1rem;
-}
-
-.fa-virus, .fa-quote-right, .fa-handshake, a-envelope {
-    font-size:2rem;
-}
-
-.card-body {
-    color: #222;
-}
-
-.card-body a {
-    color: #006600;
-}
-
-.card-body a:hover {
-    text-decoration: none;
-    color: #660000;
-}
-
-#covidCollapse {
-    color:#006600 !important;
-}
 
 
 /* Covid Section */
 #covidSection {
     background-color: #00081e;
-    width: 100vw !important;
-    border: 5px solid green;
 }
 
-.about-block {
-    border: 1px solid white;
-    width: 50%
+#covidImg {
+    justify-content: center;
+    max-width: 100%;
 }
 
-#covidTitle {
-    text-align: center;
-    color:  #FFD700;
+#covidHeader {
+    font-size: 1.5rem;
 }
 
 #covidSection table {
-    border: 1px solid #CCC;
     border-collapse: collapse;
     text-align: center;
     padding: 1rem;
@@ -227,19 +172,19 @@ html {
     color: #90ee90;
 }
 
-/* Presidents Message */
-#presMsgSection {
+/* Mission */
+#mission {
     background-color: black;
 }
 
-#missionStatement {
-    font-size: 2rem;
+#missionHeader {
+    font-size: 1.5rem;
     color: #90ee90;
 }
 
 /* Executive Commitee */
 #teamSection {
-    background-color: #121212;
+    background-color: #00081e;
 }
 
 #teamSection table {
@@ -247,16 +192,13 @@ html {
 }
 
 #teamTitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 2rem;
 }
 
-#teamIcon {
-    color: #006600 !important;
-}
-
 #teamImg {
-    background-color: aliceblue;
+    max-width: 100%;
+    background-color: whitesmoke;
 }
 
 /* Facebook Page */
@@ -420,13 +362,12 @@ footer {
         height: 50rem;
     }
 
-    #about {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-    }
-
-    #about .section-header {
-        padding-bottom: 5rem !important;
+    #teamImg {
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: black;
+        width: 70%;
     }
 
     #contactBg {
@@ -454,6 +395,7 @@ footer {
         margin-top: 8rem;
         width: 50rem;
         height: 60rem;
+        margin-bottom: 10rem;
      }
 
     .carousel-control-prev, .carousel-control-next {
@@ -485,7 +427,7 @@ footer {
 
 @media (min-width: 992px) {
     .navbar {
-        height: 8rem;
+        height: 7rem;
     }
     
     .nav-item {
@@ -498,10 +440,6 @@ footer {
 
     .section-header {
         padding-top: 1rem;
-    }
-
-    #about {
-        padding-top: 10rem;
     }
 
     .socials-btn {
