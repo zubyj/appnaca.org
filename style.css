@@ -135,9 +135,6 @@ html {
     margin-top: 6rem;
 }
 
-
-
-
 /* Covid Section */
 #covidSection {
     background-color: #00081e;
@@ -201,17 +198,8 @@ html {
     background-color: whitesmoke;
 }
 
-/* Facebook Page */
-#facebookBg {
-    background-color: #0B0C0D;
-    background-image: url('img/wallpaper/repeated-square.webp');
-}
-
 /* Socials */
 #socialsBg {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    padding-bottom: 2rem;
     background-image: url('img/wallpaper/repeated-square.webp')
 }
 
@@ -225,17 +213,20 @@ html {
 
 .socials-btn {
     background-color: whitesmoke;
-    padding-top: 2rem;
-    width: 10rem;
-    height: 11rem;
+    padding-top: 1rem;
     color: black;
-    border: 3px solid #006600;
+    border: 2px solid #006600;
+    min-width: 10rem;
 }
 
 .socials-btn:hover {
     background-color: #90ee90 !important;
     text-decoration: none;
     cursor: pointer
+}
+
+.socials-text {
+    padding-top: 2rem;
 }
 
 /* Float animation */
@@ -254,10 +245,6 @@ html {
 	}
 }
 
-.socials-text {
-    margin: 2rem;
-}
-
 #fb-icon {
     color: #4267B2;
 }
@@ -269,18 +256,19 @@ html {
 #national-appna-icon {
     color: #006600;
 }
+
 /* Contact Us Form */
 #contactBg {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-image: url('img/wallpaper/repeated-square.webp');
+    background-color: #00081e;
 }
 
 #contactForm {
     padding-top: 3rem;
     padding-bottom: 3rem;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    background-color: #0B0C0D;
+    background-image: url('img/wallpaper/repeated-square.webp');
     border-radius: 10px;     
 }
 
@@ -443,11 +431,7 @@ footer {
         width: 10rem;
     }
 
-    #carouselIndicators {
-        width: 100%;
-    }
-
     #contactForm {
-        width: 50rem;
+        width: 40rem;
     }
 }
