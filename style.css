@@ -209,17 +209,13 @@ html {
 
 /* Socials */
 #socialsBg {
-    text-align: center;
-    background-color: #0B0C0D;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     padding-bottom: 2rem;
+    background-image: url('img/wallpaper/repeated-square.webp')
 }
 
 #socials {
-    border-radius: 10px;
-    justify-content: center;
-    text-align: center;
     transition: all 0.4s ease-in-out;
 	overflow: hidden;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -233,7 +229,6 @@ html {
     width: 10rem;
     height: 11rem;
     color: black;
-    border-radius: 10px;
     border: 3px solid #006600;
 }
 
@@ -395,7 +390,7 @@ footer {
         margin-top: 8rem;
         width: 50rem;
         height: 60rem;
-        margin-bottom: 10rem;
+        margin-bottom: 8rem;
      }
 
     .carousel-control-prev, .carousel-control-next {
