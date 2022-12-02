@@ -97,7 +97,6 @@ html {
     border-radius: 10px;
     padding-top: 2rem;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    border: 1px solid whitesmoke;
 }
 
 #slides-bg .section-header {
@@ -195,7 +194,6 @@ html {
 
 #teamImg {
     max-width: 100%;
-    background-color: whitesmoke;
 }
 
 /* Socials */
@@ -209,20 +207,23 @@ html {
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
 }
 
 .socials-btn {
     background-color: whitesmoke;
     padding-top: 1rem;
     color: black;
-    border: 2px solid #006600;
+    border-radius: 10px;
     min-width: 10rem;
+    margin: 1rem;
 }
 
 .socials-btn:hover {
     background-color: #90ee90 !important;
-    text-decoration: none;
-    cursor: pointer
+    cursor: pointer;
+    color: black;
 }
 
 .socials-text {
@@ -346,10 +347,6 @@ footer {
     }
 
     #teamImg {
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        color: black;
         width: 70%;
     }
 
@@ -378,8 +375,8 @@ footer {
         margin-top: 8rem;
         width: 50rem;
         height: 60rem;
-        margin-bottom: 8rem;
-     }
+    }
+
 
     .carousel-control-prev, .carousel-control-next {
         height: 5rem;
@@ -395,12 +392,21 @@ footer {
         font-size: 2rem !important;
     }
 
-    #fb-header {
-        margin-bottom: 5rem;
+    #covidSection {
+        padding-top: 5rem;
     }
 
-    .card {
-        width: 20rem;
+    #covidTable{
+        display: flex;
+        justify-content: center;
+    }
+
+    #covidTable table {
+        width: 50%;
+    }
+
+    #fb-header {
+        margin-bottom: 5rem;
     }
 
     .form-control {
@@ -425,10 +431,13 @@ footer {
         padding-top: 1rem;
     }
 
+    #covidTable table {
+        width: 50%;
+    }
+
     .socials-btn {
         margin-left: 3rem;
         margin-right: 3rem;
-        width: 10rem;
     }
 
     #contactForm {
