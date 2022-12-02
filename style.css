@@ -175,7 +175,6 @@ html {
 
 #missionHeader {
     font-size: 1.5rem;
-    color: #90ee90;
 }
 
 /* Executive Commitee */
@@ -212,18 +211,20 @@ html {
 }
 
 .socials-btn {
-    background-color: whitesmoke;
+    background-color: lightcyan;
+    border: 3px solid #B59410;
     padding-top: 1rem;
     color: black;
     border-radius: 10px;
     min-width: 10rem;
     margin: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .socials-btn:hover {
     background-color: #90ee90 !important;
     cursor: pointer;
-    color: black;
+    text-decoration: none;
 }
 
 .socials-text {
@@ -307,6 +308,10 @@ html {
     padding-bottom: 2rem;
 }
 
+#emailInfo {
+    font-size: 1.5rem;
+}
+
 footer {
     font-size: 1rem;
     background-color: #0B0C0D;
@@ -322,6 +327,7 @@ footer {
     #appna-icon {
         display: inline;
         margin-right: 1rem;
+        padding: 0;
     }
 
     /* Speed up scroll animation for larger screens */
