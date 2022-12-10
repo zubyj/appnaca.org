@@ -2,6 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Scroll animations */
+
+
 /* Reused components */
 .section-header {
     text-transform: uppercase;
@@ -220,7 +223,7 @@ html {
 
 /* Socials */
 #socialsBg {
-    background-image: url('img/wallpaper/repeated-square.webp')
+    background-image: url('img/wallpaper/repeated-square.webp');
 }
 
 #socials {
@@ -234,7 +237,7 @@ html {
 }
 
 .socials-btn {
-    background-color: lightcyan;
+    background-color: #FAF9F6;
     border: 3px solid #B59410;
     padding-top: 1rem;
     color: black;
@@ -464,6 +467,10 @@ footer {
         width: 50%;
     }
 
+    #socials {
+        margin-top: 10rem;
+    }
+
     .socials-btn {
         margin-left: 3rem;
         margin-right: 3rem;
@@ -471,5 +478,11 @@ footer {
 
     #contactForm {
         width: 40rem;
+    }
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
     }
 }

@@ -44,7 +44,7 @@ $(function(){
 // set up text to print, each item in array is new line
 var aText = new Array(
     "Strengthening cross-community collaboration",
-    "to support community services & initiatives."
+    "to support community services & initiatives"
 );
 
 var iSpeed = 100; // time delay of print out
@@ -79,3 +79,18 @@ function typewriter()
 }
 
 typewriter();
+
+/* Scrolling animations */
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('invisible');
+        }
+        else {
+            entry.target.classList.add('invisible');
+        }
+    });
+})
+
+const hiddenElements = document.querySelectorAll('.invisible');
+hiddenElements.forEach((el) => observer.observe(el));
