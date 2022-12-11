@@ -78,19 +78,19 @@ function typewriter()
     }
 }
 
-typewriter();
-
 /* Scrolling animations */
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
+        console.log(entry.target.id)
         if (entry.isIntersecting) {
-            entry.target.classList.remove('invisible');
-        }
-        else {
-            entry.target.classList.add('invisible');
+            entry.target.classList.add('show');
+
+            if (entry.target.id === 'typedtext') {
+                typewriter();
+            }
         }
     });
 })
 
-const hiddenElements = document.querySelectorAll('.invisible');
+const hiddenElements = document.querySelectorAll('.hide');
 hiddenElements.forEach((el) => observer.observe(el));
