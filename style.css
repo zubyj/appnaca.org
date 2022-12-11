@@ -12,6 +12,13 @@ html {
 .show {
     opacity: 1;
     filter: blur(0);
+}
+
+#socialsBg .hide {
+    transform: translateX(-100%);
+}
+
+#socialsBg .show {
     transform: translateX(0);
 }
 
@@ -161,23 +168,23 @@ html {
     font-size: 1.5rem;
 }
 
-#covidSection table {
+.table {
     border-collapse: collapse;
     text-align: center;
     padding: 1rem;
 }
 
-#covidSection table td {
+.table td {
     border-top: none;
     border-bottom: none;
 }
 
-#covidSection table th {
+.table th {
     border-top: none;
     border-bottom: none;
 }
 
-#covidSection table a {
+.table a {
     color: #90ee90;
 }
 
@@ -219,8 +226,14 @@ html {
 }
 
 #teamSection table {
-    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
+#teamSection th {
+    color: #90ee90;
+}
+
 
 #teamTitle {
     font-size: 1.5rem;
