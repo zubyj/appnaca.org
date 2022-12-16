@@ -432,7 +432,6 @@ footer {
         height: 60rem;
     }
 
-
     .carousel-control-prev, .carousel-control-next {
         height: 5rem;
         margin-top: 11rem;
@@ -484,6 +483,10 @@ footer {
 
     .section-header {
         padding-top: 1rem;
+    }
+
+    #covidSection {
+        padding-top: 15rem;
     }
 
     #covidTable table {
