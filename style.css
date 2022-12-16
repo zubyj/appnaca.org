@@ -1,508 +1,460 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
-
 /* Scroll animations */
+
 .hide {
-    opacity: 0;
-    filter: blur(5px);
-    transition: all 1s;
+	opacity: 0;
+	filter: blur(5px);
+	transition: all 1s;
 }
-
 .show {
-    opacity: 1;
-    filter: blur(0);
+	opacity: 1;
+	filter: blur(0);
 }
-
 #socialsBg .hide {
-    transform: translateX(-100%);
+	transform: translateX(-100%);
 }
-
 #socialsBg .show {
-    transform: translateX(0);
+	transform: translateX(0);
 }
-
 /* Reused components */
-.section-header {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-    color: white;
-}
 
+.section-header {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding-top: 3rem !important;
+	padding-bottom: 3rem !important;
+	color: white;
+}
 /* Navigation Bar */
+
 /* Scrolling news text */
+
 .scroll-left {
-    height: 50px;	
-    overflow: hidden;
-    position: relative;
-    background: #121212;
-    color: whitesmoke;
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+	background: #121212;
+	color: whitesmoke;
 }
 .scroll-left p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 50px;
-    text-align: center;
-    /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);	
-    transform:translateX(100%);
-    /* Apply animation to this element */	
-    -moz-animation: scroll-left 15s linear infinite;
-    -webkit-animation: scroll-left 15s linear infinite;
-    animation: scroll-left 15s linear infinite;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	/* Starting position */
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	/* Apply animation to this element */
+	-moz-animation: scroll-left 15s linear infinite;
+	-webkit-animation: scroll-left 15s linear infinite;
+	animation: scroll-left 15s linear infinite;
 }
 /* Move it (define the animation) */
+
 @-moz-keyframes scroll-left {
-    0%   { -moz-transform: translateX(100%); }
-    100% { -moz-transform: translateX(-100%); }
+	0% {
+		-moz-transform: translateX(100%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+	}
 }
 @-webkit-keyframes scroll-left {
-    0%   { -webkit-transform: translateX(100%); }
-    100% { -webkit-transform: translateX(-100%); }
+	0% {
+		-webkit-transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+	}
 }
 @keyframes scroll-left {
- 0%   { 
-    -moz-transform: translateX(100%); /* Browser bug fix */
-    -webkit-transform: translateX(100%); /* Browser bug fix */
-    transform: translateX(100%); 		
- }
- 100% { 
-    -moz-transform: translateX(-100%); /* Browser bug fix */
-    -webkit-transform: translateX(-100%); /* Browser bug fix */
-    transform: translateX(-100%); 
- }
+	0% {
+		-moz-transform: translateX(100%);
+		/* Browser bug fix */
+		-webkit-transform: translateX(100%);
+		/* Browser bug fix */
+		transform: translateX(100%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+		/* Browser bug fix */
+		-webkit-transform: translateX(-100%);
+		/* Browser bug fix */
+		transform: translateX(-100%);
+	}
 }
-
 /* Hide appna icon on mobile */
+
 #appna-icon {
-    display: none;
+	display: none;
 }
-
 .nav-link {
-    color: #006600;
-    padding-bottom: 2px; /* on hover, padding replaced with border */
+	color: #006600;
+	padding-bottom: 2px;
+	/* on hover, padding replaced with border */
 }
-
 .nav-item:hover {
-    border-bottom: 1px solid #006600;
-    padding-bottom: 0px;
-    color: #006600;
+	border-bottom: 1px solid #006600;
+	padding-bottom: 0px;
+	color: #006600;
 }
-
 .nav-link:hover {
-    color: #006600;
+	color: #006600;
 }
-
 #aboutDropdown {
-    padding-left: 6px;
+	padding-left: 6px;
 }
-
 .fa-info {
-    margin-right: 5px;
+	margin-right: 5px;
 }
-
 .fa-address-book {
-    margin-right: 3px;
+	margin-right: 3px;
 }
-
 /* Image Slider */
+
 #slides-bg {
-    position: relative;
-    background-image: url('img/wallpaper/repeated-square.webp');
-    border-radius: 10px;
-    padding-top: 2rem;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	position: relative;
+	background-image: url('img/wallpaper/repeated-square.webp');
+	border-radius: 10px;
+	padding-top: 2rem;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
-
 #slides-bg .section-header {
-    color: white;
+	color: white;
 }
-
-
 .carousel-inner {
-    height: 45rem;
+	height: 45rem;
 }
-
 .carousel-item, .carousel-item a {
-    color: #90ee90;
+	color: #90ee90;
 }
-
 .slides-text {
-    font-size:1.5rem;
+	font-size: 1.5rem;
 }
-
 .carousel-item img {
-    margin:auto;
+	margin: auto;
 }
-
 #backArrow, #forwardArrow {
-    color: #90ee90;
-    font-size:2rem;
+	color: #90ee90;
+	font-size: 2rem;
 }
-
 .carousel-control-prev, .carousel-control-next {
-    height: 5rem;
-    margin-top: 1rem;
+	height: 5rem;
+	margin-top: 1rem;
 }
-
 #promoVideo {
-    margin-top: 6rem;
+	margin-top: 6rem;
 }
-
 /* Covid Section */
+
 #covidSection {
-    background-color: #00081e;
+	background-color: #00081e;
 }
-
 #covidImg {
-    justify-content: center;
-    max-width: 100%;
+	justify-content: center;
+	max-width: 100%;
 }
-
 #covidHeader {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
-
 .table {
-    border-collapse: collapse;
-    text-align: center;
-    padding: 1rem;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 1rem;
 }
-
 .table td {
-    border-top: none;
-    border-bottom: none;
+	border-top: none;
+	border-bottom: none;
 }
-
 .table th {
-    border-top: none;
-    border-bottom: none;
+	border-top: none;
+	border-bottom: none;
 }
-
 .table a {
-    color: #90ee90;
+	color: #90ee90;
 }
-
 /* Mission */
+
 #mission {
-    background-color: black;
+	background-color: black;
 }
-
 #typedtext {
-    font-size: 2rem;
+	font-size: 2rem;
 }
-
 /* Typewriter animation */
+
 .typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-
-/* Executive Commitee */
-#teamSection {
-    background-color: #00081e;
-}
-
-#teamSection table {
-    display: flex;
-    justify-content: center;
-}
-
-#teamSection th {
-    color: #90ee90;
-}
-
-
-#teamTitle {
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-}
-
-#teamImg {
-    max-width: 100%;
-}
-
-/* Socials */
-#socialsBg {
-    background-image: url('img/wallpaper/repeated-square.webp');
-}
-
-#socials {
-    transition: all 0.4s ease-in-out;
 	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	/* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange;
+	/* The typwriter cursor */
+	margin: 0 auto;
+	/* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em;
+	/* Adjust as needed */
+	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+	to {
+		width: 100%
+	}
+}
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+	from, to {
+		border-color: transparent
+	}
+	50% {
+		border-color: orange;
+	}
+}
+/* Executive Commitee */
+
+#teamSection {
+	background-color: #00081e;
+}
+#teamSection table {
+	display: flex;
+	justify-content: center;
+}
+#teamSection th {
+	color: #90ee90;
+}
+#teamTitle {
+	font-size: 1.5rem;
+	padding-bottom: 2rem;
+}
+#teamImg {
+	max-width: 100%;
+}
+/* Socials */
+
+#socialsBg {
+	background-image: url('img/wallpaper/repeated-square.webp');
+}
+#socials {
+	transition: all 0.4s ease-in-out;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
-
 .socials-btn {
-    background-color: #FAF9F6;
-    border: 3px solid #B59410;
-    padding-top: 1rem;
-    color: black;
-    border-radius: 10px;
-    min-width: 10rem;
-    margin: 1rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+	background-color: #FAF9F6;
+	border: 3px solid #B59410;
+	padding-top: 1rem;
+	color: black;
+	border-radius: 10px;
+	min-width: 10rem;
+	margin: 1rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-
 .socials-btn:hover {
-    background-color: #90ee90 !important;
-    cursor: pointer;
-    text-decoration: none;
+	background-color: #90ee90 !important;
+	cursor: pointer;
+	text-decoration: none;
 }
-
 .socials-text {
-    padding-top: 2rem;
+	padding-top: 2rem;
 }
-
 /* Float animation */
+
 @keyframes float {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 		transform: translatey(0px);
 	}
 	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
 		transform: translatey(-20px);
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 		transform: translatey(0px);
 	}
 }
-
 #fb-icon {
-    color: #4267B2;
+	color: #4267B2;
 }
-
 #clinic-icon {
-    color: #660000;
+	color: #660000;
 }
-
 #national-appna-icon {
-    color: #006600;
+	color: #006600;
 }
-
 /* Contact Us Form */
+
 #contactBg {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background-color: #00081e;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	background-color: #00081e;
 }
-
 #contactForm {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    background-image: url('img/wallpaper/repeated-square.webp');
-    border-radius: 10px;     
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+	background-image: url('img/wallpaper/repeated-square.webp');
+	border-radius: 10px;
 }
-
 #contactForm .form-control {
-    display: inline-block;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+	display: inline-block;
+	border-radius: 10px;
+	margin-bottom: 1rem;
 }
-
 #inputMessage {
-    margin-top: 1rem;
-    height: 10rem;
+	margin-top: 1rem;
+	height: 10rem;
 }
-
 #submitBtn {
-    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
-    color: white;
-    background-color: #006600;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: .5rem;
-    width: 10rem;
+	box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+	color: white;
+	background-color: #006600;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: .5rem;
+	width: 10rem;
 }
-
 #submitBtn:hover {
-    background: #4267B2;
+	background: #4267B2;
 }
- 
 /* spinner is hidden until submit clicked */
+
 .hidden {
-    display: none !important;
+	display: none !important;
 }
-
 #contactSubmitMsg {
-    padding-bottom: 2rem;
+	padding-bottom: 2rem;
 }
-
 #emailInfo {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
-
 footer {
-    font-size: 1rem;
-    background-color: #0B0C0D;
-    border-top: 1px solid white;
+	font-size: 1rem;
+	background-color: #0B0C0D;
+	border-top: 1px solid white;
 }
-
 /*
     Website is designed for mobile 
     so changes are for larger devices
 */
 
 @media (min-width: 768px) and (min-height: 500px) {
-    #appna-icon {
-        display: inline;
-        margin-right: 1rem;
-        padding: 0;
-    }
-
-    /* Speed up scroll animation for larger screens */
-    .scroll-left p {
-        -moz-animation: scroll-left 30s linear infinite;
-        -webkit-animation: scroll-left 30s linear infinite;
-        animation: scroll-left 30s linear infinite;
-    }
-
-    #map {
-        height: 130vh;
-        width: 100%;
-        position: absolute;
-        z-index: 0;
-    }
-
-    .section-header {
-        padding-bottom: 5rem !important;
-    }
-
-    .carousel-inner {
-        height: 50rem;
-    }
-
-    #teamImg {
-        width: 70%;
-    }
-
-    #contactBg {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-    }
-    
-    #contactForm {
-        padding: 4rem;
-        margin-top: 7rem;
-    }
-
-    #facebookBg {
-        padding-top: 6rem !important;
-        padding-bottom: 6rem !important;
-    }
+	#appna-icon {
+		display: inline;
+		margin-right: 1rem;
+		padding: 0;
+	}
+	/* Speed up scroll animation for larger screens */
+	.scroll-left p {
+		-moz-animation: scroll-left 30s linear infinite;
+		-webkit-animation: scroll-left 30s linear infinite;
+		animation: scroll-left 30s linear infinite;
+	}
+	#map {
+		height: 130vh;
+		width: 100%;
+		position: absolute;
+		z-index: 0;
+	}
+	.section-header {
+		padding-bottom: 5rem !important;
+	}
+	.carousel-inner {
+		height: 50rem;
+	}
+	#teamImg {
+		width: 70%;
+	}
+	#contactBg {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+	#contactForm {
+		padding: 4rem;
+		margin-top: 7rem;
+	}
+	#facebookBg {
+		padding-top: 6rem !important;
+		padding-bottom: 6rem !important;
+	}
 }
-
 @media (min-width: 768px) {
-    .section-header {
-        font-size: 2.5rem;
-    }
-
-    #slides-bg {
-        margin-top: 8rem;
-        width: 50rem;
-        height: 60rem;
-    }
-
-    .carousel-control-prev, .carousel-control-next {
-        height: 5rem;
-        margin-top: 11rem;
-    }
-
-    .carousel-item img {
-        width: auto !important;
-        height: 35rem;
-    }
-
-    .slides-text {
-        font-size: 2rem !important;
-    }
-
-    #covidSection {
-        padding-top: 10rem;
-    }
-
-    #covidTable{
-        display: flex;
-        justify-content: center;
-    }
-
-    #covidTable table {
-        width: 50%;
-    }
-
-    #fb-header {
-        margin-bottom: 5rem;
-    }
-
-    .form-control {
-        margin-bottom: 2rem;
-    }
+	.section-header {
+		font-size: 2.5rem;
+	}
+	#slides-bg {
+		margin-top: 8rem;
+		width: 50rem;
+		height: 60rem;
+	}
+	.carousel-control-prev, .carousel-control-next {
+		height: 5rem;
+		margin-top: 11rem;
+	}
+	.carousel-item img {
+		width: auto !important;
+		height: 35rem;
+	}
+	.slides-text {
+		font-size: 2rem !important;
+	}
+	#covidSection {
+		padding-top: 10rem;
+	}
+	#covidTable {
+		display: flex;
+		justify-content: center;
+	}
+	#covidTable table {
+		width: 50%;
+	}
+	#fb-header {
+		margin-bottom: 5rem;
+	}
+	.form-control {
+		margin-bottom: 2rem;
+	}
 }
-
 @media (min-width: 992px) {
-    .navbar {
-        height: 7rem;
-    }
-    
-    .nav-item {
-        margin-left: 20px;
-    }
-
-    .nav-link-name {
-        padding-left: .5rem;
-    }
-
-    .section-header {
-        padding-top: 1rem;
-    }
-
-    #covidSection {
-        padding-top: 15rem;
-    }
-
-    #covidTable table {
-        width: 50%;
-    }
-
-    #socials {
-        margin-top: 10rem;
-    }
-
-    .socials-btn {
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-
-    #contactForm {
-        width: 40rem;
-    }
+	.navbar {
+		height: 7rem;
+	}
+	.nav-item {
+		margin-left: 20px;
+	}
+	.nav-link-name {
+		padding-left: .5rem;
+	}
+	.section-header {
+		padding-top: 1rem;
+	}
+	#covidSection {
+		padding-top: 15rem;
+	}
+	#covidTable table {
+		width: 50%;
+	}
+	#socials {
+		margin-top: 10rem;
+	}
+	.socials-btn {
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+	#contactForm {
+		width: 40rem;
+	}
 }
