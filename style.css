@@ -3,6 +3,8 @@ html {
 }
 /* Scroll animations */
 
+/* Scroll animations */
+
 .hide {
 	opacity: 0;
 	filter: blur(5px);
@@ -18,6 +20,7 @@ html {
 #socialsBg .show {
 	transform: translateX(0);
 }
+
 /* Reused components */
 
 .section-header {
@@ -187,38 +190,8 @@ html {
 	font-size: 2rem;
 }
 /* Typewriter animation */
-
-.typewriter {
-	overflow: hidden;
-	/* Ensures the content is not revealed until the animation */
-	border-right: .15em solid orange;
-	/* The typwriter cursor */
-	margin: 0 auto;
-	/* Gives that scrolling effect as the typing happens */
-	letter-spacing: .15em;
-	/* Adjust as needed */
-	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-}
 /* The typing effect */
-
-@keyframes typing {
-	from {
-		width: 0
-	}
-	to {
-		width: 100%
-	}
-}
 /* The typewriter cursor effect */
-
-@keyframes blink-caret {
-	from, to {
-		border-color: transparent
-	}
-	50% {
-		border-color: orange;
-	}
-}
 /* Executive Commitee */
 
 #teamSection {
@@ -386,10 +359,6 @@ footer {
 		padding: 4rem;
 		margin-top: 7rem;
 	}
-	#facebookBg {
-		padding-top: 6rem !important;
-		padding-bottom: 6rem !important;
-	}
 }
 @media (min-width: 768px) {
 	.section-header {
@@ -420,9 +389,6 @@ footer {
 	}
 	#covidTable table {
 		width: 50%;
-	}
-	#fb-header {
-		margin-bottom: 5rem;
 	}
 	.form-control {
 		margin-bottom: 2rem;
