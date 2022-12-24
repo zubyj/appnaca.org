@@ -157,6 +157,7 @@ html {
 
 #covidSection {
 	background-color: #00081e;
+	padding-bottom: 4rem;
 }
 #covidImg {
 	justify-content: center;
@@ -185,17 +186,18 @@ html {
 
 #mission {
 	background-color: black;
+	padding-top: 5rem !important;
+	padding-bottom: 5rem !important;
 }
 #typedtext {
 	font-size: 2rem;
 }
-/* Typewriter animation */
-/* The typing effect */
-/* The typewriter cursor effect */
-/* Executive Commitee */
 
+/* Executive Commitee */
 #teamSection {
 	background-color: #00081e;
+	padding-top: 6rem !important;
+	padding-bottom: 6rem !important;
 }
 #teamSection table {
 	display: flex;
@@ -215,6 +217,8 @@ html {
 
 #socialsBg {
 	background-image: url('img/wallpaper/repeated-square.webp');
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 #socials {
 	transition: all 0.4s ease-in-out;
