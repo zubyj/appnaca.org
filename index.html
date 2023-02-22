@@ -4,16 +4,15 @@ Created by Zuby Javed
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177895022-1">
-	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177895022-1"></script>
 	<script>
-	       window.dataLayer = window.dataLayer || [];
-	       function gtag(){dataLayer.push(arguments);}
-	       gtag('js', new Date());
-	       gtag('config', 'UA-177895022-1');
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-177895022-1');
 	</script>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
@@ -26,91 +25,131 @@ Created by Zuby Javed
 	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js">
 	</script>
 	<script>
-	           // Initialize and add the map
-	           function initMap() {
-	               const map = new google.maps.Map(document.getElementById("map"), {
-	                   zoom: 8,
-	                   center: { lat: 37.34017224895144, lng: -125 },
-	               });
-	               // The marker, positioned at free health clinic location
-	               // const marker = new google.maps.Marker({
-	               //     position: {lat: 37.34022342849497, lng: -121.7854836016765},
-	               //     map: map,
-	               // });
-	               }
+		// Initialize and add the map
+		function initMap() {
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 8,
+				center: { lat: 37.34017224895144, lng: -125 },
+			});
+			// The marker, positioned at free health clinic location
+			// const marker = new google.maps.Marker({
+			//     position: {lat: 37.34022342849497, lng: -121.7854836016765},
+			//     map: map,
+			// });
+		}
 	</script>
 </head>
+
 <body>
 	<!-- Scrolling text header -->
 	<div class="scroll-left">
-		<p>We are dedicated to supporting scientific development and education in Medicine, and delivering better health care, regardless of race, creed or gender. Check out our free health clinic led by licensed physicians, every Sunday in San Jose, CA.</p>
+		<p>We are dedicated to supporting scientific development and education in Medicine, and delivering better health
+			care, regardless of race, creed or gender. Check out our free health clinic led by licensed physicians,
+			every Sunday in San Jose, CA.</p>
 	</div>
 
-    <!-- Navbar -->
+	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg sticky-top bg-light">
 		<div class="container">
 			<!-- APPNA Logo-->
-			 <a class="navbar-brand" href="#"><span><img alt="Icon for APPNA Northern California Chapter" id="appna-icon" src="img/logo/appna-icon-transparent.png" width="90"> <img alt="APPNA Logo" src="img/logo/appna.png"></span></a> <!-- Toggle navbar for small screens -->
-			 <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation bar" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#006600; font-size:30px;"></i></span></button>
+			<a class="navbar-brand" href="#"><span><img alt="Icon for APPNA Northern California Chapter" id="appna-icon"
+						src="img/logo/appna-icon-transparent.png" width="90"> <img alt="APPNA Logo"
+						src="img/logo/appna.png"></span></a> <!-- Toggle navbar for small screens -->
+			<button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation bar"
+				class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button"><span
+					class="navbar-toggler-icon"><i class="fas fa-bars"
+						style="color:#006600; font-size:30px;"></i></span></button>
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="fa fa-home"></i> <span class="nav-link-name">Home</span></a>
+						<a class="nav-link" href="#"><i class="fa fa-home"></i> <span
+								class="nav-link-name">Home</span></a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="aboutDropdown" role="button"><i class="fa fa-info"></i> <span class="nav-link-name">About</span></a>
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="aboutDropdown"
+							role="button"><i class="fa fa-info"></i> <span class="nav-link-name">About</span></a>
 						<div class="dropdown-menu">
-							<a class="nav-link dropdown-item" href="https://appnafreeclinicca.org/" rel="noopener" target="_blank">Free Health Clinic</a> <a class="nav-link dropdown-item" href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" rel="noopener" target="_blank">Covid Webinar</a> <a class="nav-link dropdown-item" href="https://www.facebook.com/paccbayarea/videos/234234834764052/" rel="noopener" target="_blank">Debunking Covid Myths</a> <a class="nav-link dropdown-item" href="https://appna.org/">National APPNA</a> <a class="nav-link dropdown-item" href="bylaws.pdf" rel="noopener" target="_blank">Bylaws</a>
+							<a class="nav-link dropdown-item" href="https://appnafreeclinicca.org/" rel="noopener"
+								target="_blank">Free Health Clinic</a>
+							<a class="nav-link dropdown-item"
+								href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/"
+								rel="noopener" target="_blank">Covid Webinar</a>
+							<a class="nav-link dropdown-item"
+								href="https://www.facebook.com/paccbayarea/videos/234234834764052/" rel="noopener"
+								target="_blank">Debunking Covid Myths</a>
+							<a class="nav-link dropdown-item" href="https://appna.org/">National APPNA</a>
+							<a class="nav-link dropdown-item" href="bylaws.pdf" rel="noopener"
+								target="_blank">Bylaws</a>
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="https://portal.ideasregistration.com//Donation/Index?client=13" rel="noopener" target="_blank"><i class="fa fa-hand-holding-medical"></i> <span class="nav-link-name">Donate</span></a>
+						<a class="nav-link" href="https://portal.ideasregistration.com//Donation/Index?client=13"
+							rel="noopener" target="_blank"><i class="fa fa-hand-holding-medical"></i> <span
+								class="nav-link-name">Donate</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contactForm"><i class="fa fa-address-book"></i> <span class="nav-link-name">Contact</span></a>
+						<a class="nav-link" href="#contactForm"><i class="fa fa-address-book"></i> <span
+								class="nav-link-name">Contact</span></a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-    
-    <!-- Google map background -->
+
+	<!-- Google map background -->
 	<div id="map"></div>
-    
-    <!-- Events Slideshow -->
+
+	<!-- Events Slideshow -->
 	<div class="container" id="slides-bg">
 		<div class="carousel slide" data-ride="carousel" id="carouselIndicators">
 			<div class="carousel-inner text-center">
 				<div class="carousel-item">
-				<h1 class="py-3 section-header">WELCOME TO APPNA</h1>
-				<h1 class="py-3 display-5 slides-text">NORTHERN CALIFORNIA</h1><img alt="Golden Gate Bridge" class="d-block w-100" src="img/goldengate.jpg"></div>
+					<h1 class="py-3 section-header">WELCOME TO APPNA</h1>
+					<h1 class="py-3 display-5 slides-text">NORTHERN CALIFORNIA</h1><img alt="Golden Gate Bridge"
+						class="d-block w-100" src="img/goldengate.jpg">
+				</div>
 				<div class="carousel-item active">
 					<h1 class="py-3 section-header">EVENTS</h1>
 					<h1 class="py-3 display-5 slides-text">2022 ANNUAL DINNER</h1>
 					<div class="embed-responsive embed-responsive-16by9" id="promoVideo">
-						<iframe allowfullscreen class="embed-responsive-item" src="https://www.youtube.com/embed/vHf9cJ-Lb-w"></iframe>
+						<iframe allowfullscreen class="embed-responsive-item"
+							src="https://www.youtube.com/embed/vHf9cJ-Lb-w"></iframe>
 					</div>
 				</div>
 				<div class="carousel-item">
-				<h1 class="py-3 section-header">EVENTS</h1>
-				<h1 class="py-3 display-5 slides-text">2022 ANNUAL DINNER</h1><img alt="Flyer for 2022 annual APPNA event" class="d-block w-100" src="img/flyer/2022-dinner-flyer.jpg"></div>
-				<div class="carousel-item">
-					<h1 class="py-3 section-header">EVENTS</h1><a href="https://appnafreeclinicca.org/" rel="noopener" target="_blank">
-					<h1 class="py-3 display-5 slides-text">WEEKLY HEALTH CLINIC</h1><img alt="Free Health Clinic Flyer" class="d-block w-100" src="img/flyer/free_clinic/free_clinic_2.png"></a>
+					<h1 class="py-3 section-header">EVENTS</h1>
+					<h1 class="py-3 display-5 slides-text">2022 ANNUAL DINNER</h1><img
+						alt="Flyer for 2022 annual APPNA event" class="d-block w-100"
+						src="img/flyer/2022-dinner-flyer.jpg">
 				</div>
 				<div class="carousel-item">
-					<h1 class="py-3 section-header">EVENTS</h1><a href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905" rel="noopener" target="_blank">
-					<h1 class="py-3 display-5 slides-text">WATCH OUR LIVE WEBINAR</h1><img alt="Covid Webinar Flyer" class="d-block w-100" src="img/flyer/covid_webinar/mar_21_webinar.jpg"></a>
+					<h1 class="py-3 section-header">EVENTS</h1><a href="https://appnafreeclinicca.org/" rel="noopener"
+						target="_blank">
+						<h1 class="py-3 display-5 slides-text">WEEKLY HEALTH CLINIC</h1><img
+							alt="Free Health Clinic Flyer" class="d-block w-100"
+							src="img/flyer/free_clinic/free_clinic_2.png">
+					</a>
 				</div>
-			</div><a class="carousel-control-prev" data-slide="prev" href="#carouselIndicators" role="button"><i class="fas fa-arrow-left" id="backArrow"></i> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#carouselIndicators" role="button"><i class="fas fa-arrow-right" id="forwardArrow"></i> <span class="sr-only">Next</span></a>
+				<div class="carousel-item">
+					<h1 class="py-3 section-header">EVENTS</h1><a
+						href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905" rel="noopener"
+						target="_blank">
+						<h1 class="py-3 display-5 slides-text">WATCH OUR LIVE WEBINAR</h1><img alt="Covid Webinar Flyer"
+							class="d-block w-100" src="img/flyer/covid_webinar/mar_21_webinar.jpg">
+					</a>
+				</div>
+			</div><a class="carousel-control-prev" data-slide="prev" href="#carouselIndicators" role="button"><i
+					class="fas fa-arrow-left" id="backArrow"></i> <span class="sr-only">Previous</span></a> <a
+				class="carousel-control-next" data-slide="next" href="#carouselIndicators" role="button"><i
+					class="fas fa-arrow-right" id="forwardArrow"></i> <span class="sr-only">Next</span></a>
 		</div>
 	</div>
-    
-    <!-- Covid Webinars -->
+
+	<!-- Covid Webinars -->
 	<div class="container-fluid" id="covidSection">
 		<div class="row py-5 text-center">
 			<div class="col-xs-12 col-lg-6">
-				<video autoplay="" id="covidImg" loop=""><source src="img/covid.mp4" type="video/mp4"></video>
+				<img src="img/covid-gif.gif" id="covidGif" alt="Covid-19 Icon GIF" />
 			</div>
 			<div class="col-xs-12 col-lg-6">
 				<h4 class="display-1 py-5 text-light hide" id="covidHeader">Check out our covid webinars</h4>
@@ -120,19 +159,22 @@ Created by Zuby Javed
 							<tr>
 								<th scope="row">3/21/21</th>
 								<td>
-									<a href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" rel="noopener" target="_blank">Life Post Vaccination</a>
+									<a href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/"
+										rel="noopener" target="_blank">Life Post Vaccination</a>
 								</td>
 							</tr>
 							<tr>
 								<th scope="row">4/11/20</th>
 								<td>
-									<a href="https://www.facebook.com/paccbayarea/videos/153119052758541/" rel="noopener" target="_blank">Covid Updates (Urdu)</a>
+									<a href="https://www.facebook.com/paccbayarea/videos/153119052758541/"
+										rel="noopener" target="_blank">Covid Updates (Urdu)</a>
 								</td>
 							</tr>
 							<tr>
 								<th scope="row">4/11/20</th>
 								<td>
-									<a href="https://www.facebook.com/135955409917905/videos/223722272165443/" rel="noopener" target="_blank">Covid Updates (English)</a>
+									<a href="https://www.facebook.com/135955409917905/videos/223722272165443/"
+										rel="noopener" target="_blank">Covid Updates (English)</a>
 								</td>
 							</tr>
 						</tbody>
@@ -141,19 +183,20 @@ Created by Zuby Javed
 			</div>
 		</div>
 	</div>
-    
-    <!-- Mission Statement -->
+
+	<!-- Mission Statement -->
 	<div class="container-fluid text-center py-5" id="mission">
 		<div class="container text-light">
-			<h1 class="section-header text-light">Our Mission</h1>
+			<h1 class="section-header">Our Mission</h1>
 			<h2 class="hide" id="typedtext"></h2>
 		</div>
 	</div>
-    
-    <!-- Executive Commitee -->
+
+	<!-- Executive Commitee -->
 	<div class="container-fluid py-5" id="teamSection">
 		<div class="row text-center">
-			<div class="col-xs-6 col-lg-6"><img alt="GIF of handshake" id="teamImg" src="img/handshake-white-outline.gif"></div>
+			<div class="col-xs-6 col-lg-6"><img alt="GIF of handshake" id="teamImg"
+					src="img/handshake-white-outline.gif"></div>
 			<div class="col-xs-6 col-lg-6 about-block">
 				<h3 class="display-1 text-light py-5 hide" id="teamTitle">Meet our Executive Committee</h3>
 				<table class="table text-light">
@@ -179,36 +222,47 @@ Created by Zuby Javed
 			</div>
 		</div>
 	</div>
-    
-    <!-- Social Buttons  -->
+
+	<!-- Social Buttons  -->
 	<div class="container-fluid text-center" id="socialsBg">
 		<div class="row">
 			<div class="col-lg-6">
 				<h1 class="section-header hide">Socials</h1>
 				<div class="row" id="socials">
-					<a class="socials-btn col-xs-12" href="https://www.facebook.com/pages/category/Nonprofit-organization/APPNA-Northern-California-Chapter-135955409917905/" rel="noopener" target="_blank"><i class="fab fa-facebook fa-3x" id="fb-icon"></i>
-					<p class="socials-text">Facebook</p></a> <a class="socials-btn col-xs-12" href="https://appnafreeclinicca.org/" rel="noopener" target="_blank"><i class="fa fa-medkit fa-3x" id="clinic-icon"></i>
-					<p class="socials-text">Free Health Clinic</p></a> <a class="socials-btn col-xs-12" href="https://appna.org/" rel="noopener" target="_blank"><i class="fas fa-user-md fa-3x" id="national-appna-icon"></i>
-					<p class="socials-text">National APPNA</p></a>
+					<a class="socials-btn col-xs-12"
+						href="https://www.facebook.com/pages/category/Nonprofit-organization/APPNA-Northern-California-Chapter-135955409917905/"
+						rel="noopener" target="_blank"><i class="fab fa-facebook fa-3x" id="fb-icon"></i>
+						<p class="socials-text">Facebook</p>
+					</a> <a class="socials-btn col-xs-12" href="https://appnafreeclinicca.org/" rel="noopener"
+						target="_blank"><i class="fa fa-medkit fa-3x" id="clinic-icon"></i>
+						<p class="socials-text">Free Health Clinic</p>
+					</a> <a class="socials-btn col-xs-12" href="https://appna.org/" rel="noopener" target="_blank"><i
+							class="fas fa-user-md fa-3x" id="national-appna-icon"></i>
+						<p class="socials-text">National APPNA</p>
+					</a>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<h1 class="section-header">Connect</h1>
-				<div class="fb-page" data-adapt-container-width="true" data-height="600" data-hide-cover="true" data-href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" data-show-facepile="true" data-small-header="false" data-tabs="timeline" data-width="450">
-					<blockquote cite="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/" class="fb-xfbml-parse-ignore">
-						<a href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/">APPNA, Northern California Chapter.</a>
+				<div class="fb-page" data-adapt-container-width="true" data-height="600" data-hide-cover="true"
+					data-href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/"
+					data-show-facepile="true" data-small-header="false" data-tabs="timeline" data-width="450">
+					<blockquote cite="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/"
+						class="fb-xfbml-parse-ignore">
+						<a href="https://www.facebook.com/APPNA-Northern-California-Chapter-135955409917905/">APPNA,
+							Northern California Chapter.</a>
 					</blockquote>
 				</div>
 			</div>
 		</div>
 	</div>
-    
-    <!-- Facebook Plugin-->
+
+	<!-- Facebook Plugin-->
 	<div id="fb-root"></div>
 	<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0">
-	</script> 
-    
-    <!-- Contact Us Form -->
+	</script>
+
+	<!-- Contact Us Form -->
 	<div class="container-fluid" id="contactBg">
 		<div class="container text-center" id="contactForm">
 			<h1 class="section-header hide">Contact us</h1>
@@ -219,11 +273,14 @@ Created by Zuby Javed
 					<input class="form-control" id="inputName" name="name" placeholder="Enter name" type="text">
 				</div>
 				<div class="form-group">
-					<input class="form-control" id="inputEmail" name="email" placeholder="Enter email" type="email"> 
-					<textarea class="form-control" id="inputMessage" name="message" placeholder="Enter your message" rows="4"></textarea>
-				</div><button class="btn" id="submitBtn" type="submit">Submit <span aria-hidden="true" class="spinner-border spinner-border-sm hidden" id="spinner" role="status"></span></button>
+					<input class="form-control" id="inputEmail" name="email" placeholder="Enter email" type="email">
+					<textarea class="form-control" id="inputMessage" name="message" placeholder="Enter your message"
+						rows="4"></textarea>
+				</div><button class="btn" id="submitBtn" type="submit">Submit <span aria-hidden="true"
+						class="spinner-border spinner-border-sm hidden" id="spinner" role="status"></span></button>
 			</form>
-			<p class="display-4 text-light text-center py-5" id="emailInfo">Feel free to message us directly at caappna@gmail.com.</p>
+			<p class="display-4 text-light text-center py-5" id="emailInfo">Feel free to message us directly at
+				caappna@gmail.com.</p>
 		</div>
 	</div>
 	<footer>
@@ -232,14 +289,16 @@ Created by Zuby Javed
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
-	</script> 
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
-	</script> 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js">
-	</script> 
-	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgfUqw58cEoWzdnNjw0kXJuoLVWSWADSo&callback=initMap">
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js">
+	</script>
+	<script async
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgfUqw58cEoWzdnNjw0kXJuoLVWSWADSo&callback=initMap">
+		</script>
 	<script src="script.js">
 	</script>
 </body>
+
 </html>

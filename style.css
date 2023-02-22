@@ -1,27 +1,8 @@
 html {
 	scroll-behavior: smooth;
 }
-/* Scroll animations */
 
-/* Scroll animations */
-
-.hide {
-	opacity: 0;
-	filter: blur(5px);
-	transition: all 1s;
-}
-.show {
-	opacity: 1;
-	filter: blur(0);
-}
-#socialsBg .hide {
-	transform: translateX(-100%);
-}
-#socialsBg .show {
-	transform: translateX(0);
-}
-
-/* Reused components */
+/* General components */
 
 .section-header {
 	text-transform: uppercase;
@@ -30,9 +11,29 @@ html {
 	padding-bottom: 3rem !important;
 	color: white;
 }
-/* Navigation Bar */
 
-/* Scrolling news text */
+/* Hide elements until scroll into view */
+
+.hide {
+	opacity: 0;
+	filter: blur(5px);
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+}
+
+#socialsBg .hide {
+	transform: translateX(-100%);
+}
+
+#socialsBg .show {
+	transform: translateX(0);
+}
+
+/* Navigation Bar */
 
 .scroll-left {
 	height: 50px;
@@ -41,6 +42,7 @@ html {
 	background: #121212;
 	color: whitesmoke;
 }
+
 .scroll-left p {
 	position: absolute;
 	width: 100%;
@@ -57,24 +59,29 @@ html {
 	-webkit-animation: scroll-left 15s linear infinite;
 	animation: scroll-left 15s linear infinite;
 }
+
 /* Move it (define the animation) */
 
 @-moz-keyframes scroll-left {
 	0% {
 		-moz-transform: translateX(100%);
 	}
+
 	100% {
 		-moz-transform: translateX(-100%);
 	}
 }
+
 @-webkit-keyframes scroll-left {
 	0% {
 		-webkit-transform: translateX(100%);
 	}
+
 	100% {
 		-webkit-transform: translateX(-100%);
 	}
 }
+
 @keyframes scroll-left {
 	0% {
 		-moz-transform: translateX(100%);
@@ -83,6 +90,7 @@ html {
 		/* Browser bug fix */
 		transform: translateX(100%);
 	}
+
 	100% {
 		-moz-transform: translateX(-100%);
 		/* Browser bug fix */
@@ -91,33 +99,33 @@ html {
 		transform: translateX(-100%);
 	}
 }
+
 /* Hide appna icon on mobile */
 
 #appna-icon {
 	display: none;
 }
+
 .nav-link {
 	color: #006600;
-	padding-bottom: 2px;
-	/* on hover, padding replaced with border */
 }
-.nav-item:hover {
-	border-bottom: 1px solid #006600;
-	padding-bottom: 0px;
-	color: #006600;
-}
+
 .nav-link:hover {
-	color: #006600;
+	color: black;
 }
+
 #aboutDropdown {
-	padding-left: 6px;
+	padding-left: 6px !important;
 }
+
 .fa-info {
 	margin-right: 5px;
 }
+
 .fa-address-book {
 	margin-right: 3px;
 }
+
 /* Image Slider */
 
 #slides-bg {
@@ -127,70 +135,95 @@ html {
 	padding-top: 2rem;
 	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
+
 #slides-bg .section-header {
 	color: white;
 }
+
 .carousel-inner {
 	height: 45rem;
 }
-.carousel-item, .carousel-item a {
+
+.carousel-item,
+.carousel-item a {
 	color: #90ee90;
 }
+
 .slides-text {
 	font-size: 1.5rem;
 }
+
 .carousel-item img {
 	margin: auto;
 }
-#backArrow, #forwardArrow {
+
+#backArrow,
+#forwardArrow {
 	color: #90ee90;
 	font-size: 2rem;
 }
-.carousel-control-prev, .carousel-control-next {
+
+.carousel-control-prev,
+.carousel-control-next {
 	height: 5rem;
 	margin-top: 1rem;
 }
+
 #promoVideo {
 	margin-top: 6rem;
 }
+
 /* Covid Section */
 
 #covidSection {
 	background-color: #00081e;
 	padding-bottom: 4rem;
 }
-#covidImg {
+
+#covidGif {
 	justify-content: center;
 	max-width: 100%;
 }
+
 #covidHeader {
 	font-size: 1.5rem;
 }
+
 .table {
 	border-collapse: collapse;
 	text-align: center;
 	padding: 1rem;
 }
+
 .table td {
 	border-top: none;
 	border-bottom: none;
 }
+
 .table th {
 	border-top: none;
 	border-bottom: none;
 }
+
 .table a {
 	color: #90ee90;
 }
+
 /* Mission */
 
 #mission {
 	background-color: black;
-	padding-top: 5rem !important;
-	padding-bottom: 5rem !important;
+	height: 30rem;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
 }
+
+#mission .section-header {
+	color: #90ee90;
+}
+
 #typedtext {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 /* Executive Commitee */
@@ -199,20 +232,25 @@ html {
 	padding-top: 6rem !important;
 	padding-bottom: 6rem !important;
 }
+
 #teamSection table {
 	display: flex;
 	justify-content: center;
 }
+
 #teamSection th {
 	color: #90ee90;
 }
+
 #teamTitle {
 	font-size: 1.5rem;
 	padding-bottom: 2rem;
 }
+
 #teamImg {
 	max-width: 100%;
 }
+
 /* Socials */
 
 #socialsBg {
@@ -220,6 +258,7 @@ html {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
+
 #socials {
 	transition: all 0.4s ease-in-out;
 	overflow: hidden;
@@ -229,6 +268,7 @@ html {
 	display: flex;
 	justify-content: center;
 }
+
 .socials-btn {
 	background-color: #FAF9F6;
 	border: 3px solid #B59410;
@@ -239,14 +279,17 @@ html {
 	margin: 1rem;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+
 .socials-btn:hover {
 	background-color: #90ee90 !important;
 	cursor: pointer;
 	text-decoration: none;
 }
+
 .socials-text {
 	padding-top: 2rem;
 }
+
 /* Float animation */
 
 @keyframes float {
@@ -254,24 +297,30 @@ html {
 		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 		transform: translatey(0px);
 	}
+
 	50% {
 		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
 		transform: translatey(-20px);
 	}
+
 	100% {
 		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 		transform: translatey(0px);
 	}
 }
+
 #fb-icon {
 	color: #4267B2;
 }
+
 #clinic-icon {
 	color: #660000;
 }
+
 #national-appna-icon {
 	color: #006600;
 }
+
 /* Contact Us Form */
 
 #contactBg {
@@ -279,6 +328,7 @@ html {
 	padding-bottom: 3rem;
 	background-color: #00081e;
 }
+
 #contactForm {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
@@ -286,15 +336,18 @@ html {
 	background-image: url('img/wallpaper/repeated-square.webp');
 	border-radius: 10px;
 }
+
 #contactForm .form-control {
 	display: inline-block;
 	border-radius: 10px;
 	margin-bottom: 1rem;
 }
+
 #inputMessage {
 	margin-top: 1rem;
 	height: 10rem;
 }
+
 #submitBtn {
 	box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
 	color: white;
@@ -304,25 +357,31 @@ html {
 	padding: .5rem;
 	width: 10rem;
 }
+
 #submitBtn:hover {
 	background: #4267B2;
 }
+
 /* spinner is hidden until submit clicked */
 
 .hidden {
 	display: none !important;
 }
+
 #contactSubmitMsg {
 	padding-bottom: 2rem;
 }
+
 #emailInfo {
 	font-size: 1.5rem;
 }
+
 footer {
 	font-size: 1rem;
 	background-color: #0B0C0D;
 	border-top: 1px solid white;
 }
+
 /*
     Website is designed for mobile 
     so changes are for larger devices
@@ -334,96 +393,126 @@ footer {
 		margin-right: 1rem;
 		padding: 0;
 	}
+
 	/* Speed up scroll animation for larger screens */
 	.scroll-left p {
 		-moz-animation: scroll-left 30s linear infinite;
 		-webkit-animation: scroll-left 30s linear infinite;
 		animation: scroll-left 30s linear infinite;
 	}
+
 	#map {
 		height: 130vh;
 		width: 100%;
 		position: absolute;
 		z-index: 0;
 	}
+
 	.section-header {
 		padding-bottom: 5rem !important;
 	}
+
 	.carousel-inner {
 		height: 50rem;
 	}
+
 	#teamImg {
 		width: 70%;
 	}
+
+	#typedtext {
+		font-size: 2rem;
+	}
+
 	#contactBg {
 		padding-top: 6rem;
 		padding-bottom: 6rem;
 	}
+
 	#contactForm {
 		padding: 4rem;
 		margin-top: 7rem;
 	}
 }
+
 @media (min-width: 768px) {
 	.section-header {
 		font-size: 2.5rem;
 	}
+
 	#slides-bg {
 		margin-top: 8rem;
 		width: 50rem;
 		height: 60rem;
 	}
-	.carousel-control-prev, .carousel-control-next {
+
+	.carousel-control-prev,
+	.carousel-control-next {
 		height: 5rem;
 		margin-top: 11rem;
 	}
+
 	.carousel-item img {
 		width: auto !important;
 		height: 35rem;
 	}
+
 	.slides-text {
 		font-size: 2rem !important;
 	}
+
 	#covidSection {
 		padding-top: 10rem;
 	}
+
 	#covidTable {
 		display: flex;
 		justify-content: center;
 	}
+
 	#covidTable table {
 		width: 50%;
 	}
+
 	.form-control {
 		margin-bottom: 2rem;
 	}
 }
+
 @media (min-width: 992px) {
 	.navbar {
 		height: 7rem;
 	}
+
 	.nav-item {
 		margin-left: 20px;
 	}
+
 	.nav-link-name {
 		padding-left: .5rem;
 	}
+
 	.section-header {
 		padding-top: 1rem;
 	}
+
 	#covidSection {
 		padding-top: 15rem;
 	}
+
 	#covidTable table {
 		width: 50%;
 	}
+
 	#socials {
 		margin-top: 10rem;
 	}
+
 	.socials-btn {
 		margin-left: 3rem;
 		margin-right: 3rem;
 	}
+
 	#contactForm {
 		width: 40rem;
 	}
