@@ -34,7 +34,7 @@ html {
 
 /* Navigation Bar */
 
-.scroll-left {
+#scrolling-banner {
 	height: 50px;
 	overflow: hidden;
 	position: relative;
@@ -42,7 +42,7 @@ html {
 	color: whitesmoke;
 }
 
-.scroll-left p {
+#scrolling-banner p {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -149,7 +149,7 @@ html {
 }
 
 .slides-text {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .carousel-item img {
@@ -396,8 +396,8 @@ footer {
 		padding: 0;
 	}
 
-	/* Speed up scroll animation for larger screens */
-	.scroll-left p {
+	/* Slow scroll animation for larger screens */
+	#scrolling-banner p {
 		-moz-animation: scroll-left 30s linear infinite;
 		-webkit-animation: scroll-left 30s linear infinite;
 		animation: scroll-left 30s linear infinite;
@@ -411,6 +411,7 @@ footer {
 	}
 
 	.section-header {
+		font-size: 1.5rem;
 		padding-bottom: 5rem !important;
 	}
 
@@ -456,7 +457,7 @@ footer {
 	}
 
 	.slides-text {
-		font-size: 2rem !important;
+		font-size: 1.5rem !important;
 	}
 
 	#covidSection {
