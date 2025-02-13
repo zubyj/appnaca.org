@@ -6,8 +6,6 @@ html {
 
 .section-header {
 	font-size: 1rem;
-	padding-top: 3rem !important;
-	padding-bottom: 3rem !important;
 	color: white;
 }
 
@@ -418,7 +416,6 @@ footer {
 
 	.section-header {
 		font-size: 1.5rem;
-		padding-bottom: 5rem !important;
 	}
 
 	.carousel-inner {
