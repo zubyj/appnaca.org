@@ -115,7 +115,7 @@ html {
 }
 
 #aboutDropdown {
-	padding-left: 6px !important;
+	padding-left: 6px;
 }
 
 .fa-info {
@@ -170,12 +170,10 @@ html {
 	margin-top: 1rem;
 }
 
-.download-btn {
-	color: white !important;
+#slides-bg .download-btn {
 	border: 1px solid lightslategrey;
 	margin-bottom: 3rem;
 }
-
 
 /* Covid Section */
 #covidSection {
@@ -185,7 +183,7 @@ html {
 
 #covidGif {
 	justify-content: center;
-	max-width: 50%;
+	max-width: 100%;
 }
 
 #covidHeader {
@@ -232,8 +230,6 @@ html {
 /* Executive Commitee */
 #teamSection {
 	background-color: #00081e;
-	padding-top: 6rem !important;
-	padding-bottom: 6rem !important;
 }
 
 #teamSection table {
@@ -285,7 +281,7 @@ html {
 }
 
 .socials-btn:hover {
-	background-color: #90ee90 !important;
+	background-color: #90ee90;
 	cursor: pointer;
 	text-decoration: none;
 	color: #660000;
@@ -368,7 +364,7 @@ html {
 /* spinner is hidden until submit clicked */
 
 .hidden {
-	display: none !important;
+	display: none;
 }
 
 #contactSubmitMsg {
@@ -420,6 +416,10 @@ footer {
 		height: 50rem;
 	}
 
+	#covidGif {
+		max-width: 40%;
+	}
+
 	#handshakeGif {
 		width: 40%;
 	}
@@ -453,12 +453,11 @@ footer {
 	}
 
 	.carousel-item img {
-		width: auto !important;
 		height: 35rem;
 	}
 
 	.slides-text {
-		font-size: 1.2rem !important;
+		font-size: 1.3rem;
 	}
 
 	#covidSection {
