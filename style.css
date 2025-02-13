@@ -109,7 +109,9 @@ html {
 }
 
 .nav-link:hover {
-	color: #006600;
+	color: black;
+	font-weight: 600;
+	border-bottom: 1.5px solid black;
 }
 
 #aboutDropdown {
@@ -169,7 +171,7 @@ html {
 }
 
 .download-btn {
-	border: 2px solid #fff;
+	border: 1px solid lightslategrey;
 	margin-bottom: 3rem;
 }
 
@@ -213,7 +215,7 @@ html {
 
 #mission {
 	background-color: black;
-	height: 30rem;
+	height: 20rem;
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
 }
@@ -412,6 +414,7 @@ footer {
 	}
 
 	.section-header {
+		margin-bottom: 2rem;
 		font-size: 1.5rem;
 	}
 
