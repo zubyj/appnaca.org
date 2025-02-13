@@ -104,11 +104,12 @@ html {
 }
 
 .nav-link {
-	color: #006600;
+	color: #232b2b;
+	font-weight: 500;
 }
 
 .nav-link:hover {
-	color: black;
+	color: #006600;
 }
 
 #aboutDropdown {
@@ -148,7 +149,7 @@ html {
 }
 
 .slides-text {
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 .carousel-item img {
@@ -165,10 +166,6 @@ html {
 .carousel-control-next {
 	height: 5rem;
 	margin-top: 1rem;
-}
-
-#promoVideo {
-	margin-top: 6rem;
 }
 
 .download-btn {
@@ -460,7 +457,7 @@ footer {
 	}
 
 	.slides-text {
-		font-size: 1.5rem !important;
+		font-size: 1.2rem !important;
 	}
 
 	#covidSection {
