@@ -35,10 +35,10 @@ html {
 /* Navigation Bar */
 
 #scrolling-banner {
-	height: 50px;
+	height: 30px;
 	overflow: hidden;
 	position: relative;
-	background: #121212;
+	background: #232b2b;
 	color: whitesmoke;
 }
 
@@ -47,7 +47,7 @@ html {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	line-height: 50px;
+	line-height: 30px;
 	text-align: center;
 	/* Starting position */
 	-moz-transform: translateX(100%);
@@ -129,9 +129,10 @@ html {
 
 #slides-bg {
 	position: relative;
-	background-image: url('img/wallpaper/repeated-square.webp');
-	border-radius: 10px;
+	background-color: #0e1111;
+	border-radius: 2px;
 	padding-top: 2rem;
+	border: 10px solid #232b2b;
 	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
@@ -170,6 +171,11 @@ html {
 
 #promoVideo {
 	margin-top: 6rem;
+}
+
+.download-btn {
+	border: 2px solid #fff;
+	margin-bottom: 3rem;
 }
 
 /* Covid Section */
