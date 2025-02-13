@@ -171,12 +171,13 @@ html {
 }
 
 .download-btn {
+	color: white !important;
 	border: 1px solid lightslategrey;
 	margin-bottom: 3rem;
 }
 
-/* Covid Section */
 
+/* Covid Section */
 #covidSection {
 	background-color: #00081e;
 	padding-bottom: 4rem;
@@ -184,7 +185,7 @@ html {
 
 #covidGif {
 	justify-content: center;
-	max-width: 100%;
+	max-width: 50%;
 }
 
 #covidHeader {
@@ -256,7 +257,7 @@ html {
 /* Socials */
 
 #socialsBg {
-	background-image: url('img/wallpaper/repeated-square.webp');
+	background-color: #0e1111;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
@@ -334,12 +335,9 @@ html {
 }
 
 #contactForm {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
 	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-	background-image: url('img/wallpaper/repeated-square.webp');
-	border-radius: 10px;
-	border: 2px solid grey;
+	background-color: #0B0C0D;
+	border: 1px solid grey;
 }
 
 #contactForm .form-control {
@@ -382,9 +380,9 @@ html {
 }
 
 footer {
-	font-size: 1rem;
-	background-color: #0B0C0D;
-	border-top: 1px solid white;
+	font-size: .8rem;
+	font-weight: 400;
+	background-color: #232b2b;
 }
 
 /*
@@ -423,7 +421,7 @@ footer {
 	}
 
 	#handshakeGif {
-		width: 60%;
+		width: 40%;
 	}
 
 	#typedtext {
